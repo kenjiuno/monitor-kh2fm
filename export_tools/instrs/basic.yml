@@ -1,0 +1,240 @@
+pushImm:
+  body: |
+    push(full_ext:4);
+  help: |
+    > push(_imm32_);
+pushFromPSp:
+  help: |
+    > push(sp + _imm16_)
+pushFromPWp:
+  help: |
+    > push(wp + _imm16_)
+pushFromPSpVal:
+  help: |
+    > push(fetch(sp) + _imm16_)
+pushFromPAi:
+  help: |
+    > push(ai + 16 + 2 * _imm16_)
+pushFromFSp:
+  help: |
+    > push(fetch(sp + _imm16_))
+pushFromFWp:
+  help: |
+    > push(fetch(wp + _imm16_))
+pushFromFSpVal:
+  help: |
+    > push(fetch(fetch(sp) + _imm16_))
+pushFromFAi:
+  help: |
+    > push(fetch(ai + 16 + 2 * imm16));
+
+memcpyToSp:
+  help: |
+    > memcpy(sp + _imm16_, pop(), _imm16_);
+memcpyToWp:
+  help: |
+    > memcpy(wp + _imm16_, pop(), _imm16_);
+memcpyToSpVal:
+  help: |
+    > memcpy(fetch(sp) + _imm16_, pop(), _imm16_);
+memcpyToSpAi:
+  help: |
+    > memcpy(ai + 16 + _imm16_, pop(), _imm16_);
+
+memcpy:
+  help: |
+    > src = pop(); dst = pop(); memcpy(dst, src, imm16);
+
+    Copy single word (4 bytes), if _imm16_ == 0.
+
+popToSp:
+  help: |
+    > store(sp + _imm16_, pop())
+popToWp:
+  help: |
+    > store(wp + _imm16_, pop())
+popToSpVal:
+  help: |
+    > store(fetch(wp) + _imm16_, pop())
+popToAi:
+  help: |
+    > store(ai + 16 + 2 * _imm16_, pop())
+
+gosub:
+  help: |
+    > sp += ssub
+    >
+    > gosub(_imm16_)
+
+gosub32:
+  help: |
+    > sp += ssub
+    >
+    > gosub(_imm32_)
+
+fetchValue:
+  help: |
+    > push(fetch(pop() + _imm16_))
+
+cfti:
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp = round(tmp);
+    push(tmp);
+  help: |
+    > push(popf())
+
+    Retrieves the last value pushed on to the stack and converts it from a signed integer to a floating point value, pushing back the result to the stack.
+neg:
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp=-tmp;
+    push(tmp);
+  help: |
+    > push(-pop())
+
+    Retrieves the last value pushed on to the stack and converts it to a negative number, pushing back the result to the stack.
+inv:
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp = ~tmp;
+    push(tmp);
+  help: |
+    > push(~pop())
+
+    Retrieves the last value pushed on to the stack and inverts it, pushing back the result to the stack.
+eqz:
+  help: |
+    > push(pop() == 0)
+
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    local ret = (tmp == 0);
+    push(ret);
+abs:
+  help: |
+    > push(abs(pop()))
+
+    Retrieves the last value pushed on to the stack and converts it to an absolute value, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    if(tmp s<= 0) goto <min>;
+    goto <done>;
+    <min>
+        tmp=-tmp;     
+    <done>
+        push(tmp);
+msb:
+  help: |
+    > push(srl(pop(), 31))
+
+    Retrieves the last value pushed on to the stack and gets back its most significant bit, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp = tmp >> 0x1F;
+    push(tmp);
+info:
+  help: |
+    > push(slti(pop(), 1))
+
+    Retrieves the last value pushed on to the stack and compares it to one, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp s< 1));
+neqz:
+  help: |
+    > push(pop() != 0)
+
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp != 0));
+msbi:
+  help: |
+    > push(srl(nor(0, pop()), 31))
+
+    Retrieves the last value pushed on to the stack and gets back its most significant bit and inverts it, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp = tmp >> 0x1F;
+    push(~tmp);
+ipos:
+  help: |
+    > push(slt(0, pop()))
+
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp s> 0));
+citf:
+  help: |
+    Retrieves the last value pushed on to the stack and converts it from a signed integer to a floating point value, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp=int2float(tmp);
+    push(tmp);
+negf:
+  help: |
+    Retrieves the last value pushed on to the stack and converts it to a negative value, pushing back the result to the stack.
+absf:
+  help: |
+    Retrieves the last value pushed on to the stack and converts it to an absolute value, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    tmp=abs(tmp);
+    push(tmp);
+infzf:
+  help: |
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp f< 0));
+infoezf:
+  help: |
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp f<= 0));
+eqzf:
+  help: |
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp f== 0));
+neqzf:
+  help: |
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp f!= 0));
+supoezf:
+  help: |
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp f>= 0));
+supzf:
+  help: |
+    Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+  body: |
+    local tmp:4 = sp;
+    pop(tmp);
+    push((tmp f> 0));

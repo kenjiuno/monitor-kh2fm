@@ -1,0 +1,5 @@
+{% for instr in instrList %}
+:{{ instr.name }} {{ instr.args }} is {{ instr.conditions }} {
+    {{ instr.doc.body|default('')|indent }}
+}
+{% endfor %}

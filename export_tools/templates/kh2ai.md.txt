@@ -1,0 +1,83 @@
+# KH2 ai
+
+## Credits
+
+The basic research result is inherited from Govanify's works.
+
+- [Kingdom Hearts II - AI ISA | OpenKh](https://openkh.dev/kh2/file/ai/kh2ai.html)
+
+## Language
+
+Maybe: [Stack machine - Wikipedia](https://en.wikipedia.org/wiki/Stack_machine)
+
+## File format
+
+```c
+struct header {
+    char name[16];
+    s32 workSize;
+    s32 stackSize;
+    s32 termSize;
+    struct {
+        s32 trigger; // key
+        s32 entry; // pointer to code
+    } triggers[n];
+    s32 endTrigger; // 0
+    s32 endEntry; // 0
+};
+```
+
+Instruments follow.
+
+## Instrument format
+
+3 patterns:
+
+- 16 bits only. (used in unary and binary operators and so on)
+- 16 bits +16 bits arg. (branch and so on)
+- 16 bits +32 bits arg. (pushImm and gosub32)
+
+Basic form:
+
+```
+FEDCBA9876 54 3210
+---- ssub sub opcode
+0000000000 00 0000 +u32: PUSH.V ri
+```
+
+Instrument list:
+
+| opcode | sub | ssub | name |
+|--:|--:|--:|---|
+{%- for instr in instrList %}
+| {{ instr.part1 }} | {{ instr.part2 }} | {{ instr.part3 }} | [{{ instr.name }}](#{{ instr.name }}) |
+{%- endfor %}
+
+## Instrument list
+
+{% for instr in instrList %}
+### {{ instr.name }}
+
+_Format:_
+
+`{{ instr.funcForm }}`
+
+_Description:_
+
+{% if instr.doc.help %}
+{{ instr.doc.help }}
+{% else %}
+> Not yet described.
+{% endif %}
+
+_Operations:_
+
+{% if instr.doc.body %}
+```
+{{ instr.doc.body }}
+```
+{% else %}
+> Not yet operated.
+{% endif %}
+
+{% endfor %}
