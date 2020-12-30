@@ -1,6 +1,6 @@
 # pcsx2-execmon monitor scripts
 
-## run inside pcsx2
+## run inside pcsx2-execmon
 
 No additional package will be required.
 

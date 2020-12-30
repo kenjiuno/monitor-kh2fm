@@ -2,6 +2,7 @@ from invoke import task
 from export_tools import to_xml
 from export_tools import to_sinc
 from export_tools import to_markdown
+import os
 
 
 @task
@@ -17,6 +18,6 @@ def sinc(c):
 
 
 @task
-def md(c):
-    with open('kh2ai.md', 'wt') as f:
+def md(c, out_file="docs/kh2ai.md"):
+    with open(out_file, 'wt') as f:
         print(to_markdown.run(), file=f)
