@@ -4,7 +4,7 @@
 
 The basic research result is inherited from Govanify's works.
 
-- [Kingdom Hearts II - AI ISA | OpenKh](https://openkh.dev/kh2/file/ai/kh2ai.html)
+- [Kingdom Hearts II - AI ISA &#124; OpenKh](https://openkh.dev/kh2/file/ai/kh2ai.html)
 
 ## Language
 
