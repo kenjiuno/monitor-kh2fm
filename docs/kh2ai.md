@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Wed Dec 30 07:09:06 2020 UTC
+Update timestamp: Wed Dec 30 07:12:49 2020 UTC
 
 ## Credits
 
@@ -33,11 +33,11 @@ Instruments follow.
 
 ## Instrument format
 
-3 patterns:
+4 patterns:
 
 - 16 bits only. (used in unary and binary operators and so on)
 - 16 bits +16 bits 1 arg. (branch and so on)
-- 16 bits +16 bits 2 args. (memcpy)
+- 16 bits +16 bits 2 args. (memcpyTo*)
 - 16 bits +32 bits 1 arg. (pushImm and gosub32)
 
 Basic form:
