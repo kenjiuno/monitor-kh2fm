@@ -30,16 +30,16 @@ pushFromFAi:
 
 memcpyToSp:
   help: |
-    > memcpy(sp + _imm16_, pop(), _imm16_);
+    > memcpy(sp + ssub, pop(), _imm16_);
 memcpyToWp:
   help: |
-    > memcpy(wp + _imm16_, pop(), _imm16_);
+    > memcpy(wp + ssub, pop(), _imm16_);
 memcpyToSpVal:
   help: |
-    > memcpy(fetch(sp) + _imm16_, pop(), _imm16_);
+    > memcpy(fetch(sp) + ssub, pop(), _imm16_);
 memcpyToSpAi:
   help: |
-    > memcpy(ai + 16 + _imm16_, pop(), _imm16_);
+    > memcpy(ai + 16 + ssub, pop(), _imm16_);
 
 memcpy:
   help: |

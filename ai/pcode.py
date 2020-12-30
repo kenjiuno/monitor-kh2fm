@@ -31,10 +31,10 @@ table = [
     [1, None, 2, "POP.L +(*sp)", "popToSpVal", Arg16],
     [1, None, 3, "POP.L *2 +top", "popToAi", Arg16],
     # 2 unk
-    [2, None, 0, "?", "memcpyToSp", Arg16],
-    [2, None, 1, "?", "memcpyToWp", Arg16],
-    [2, None, 2, "?", "memcpyToSpVal", Arg16],
-    [2, None, 3, "?", "memcpyToSpAi", Arg16],
+    [2, 0, None, "?", "memcpyToSp", ArgPart3 | Arg16],
+    [2, 1, None, "?", "memcpyToWp", ArgPart3 | Arg16],
+    [2, 2, None, "?", "memcpyToSpVal", ArgPart3 | Arg16],
+    [2, 3, None, "?", "memcpyToSpAi", ArgPart3 | Arg16],
     # 3 unk
     [3, None, None, "?", "fetchValue", Arg16],
     # 4 unk

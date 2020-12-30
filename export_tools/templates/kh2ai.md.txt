@@ -1,5 +1,7 @@
 # KH2 ai
 
+Update timestamp: {{ when }}
+
 ## Credits
 
 The basic research result is inherited from Govanify's works.

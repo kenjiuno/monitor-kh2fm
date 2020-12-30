@@ -3,6 +3,7 @@ from ai import pcode
 from ai import trap_table
 from . import instr_docs
 from typing import Union, Callable, List, Iterable, Tuple, Sequence, Dict
+import datetime
 
 
 class Instr1:
@@ -90,4 +91,4 @@ def run() -> str:
         loader=PackageLoader("export_tools", 'templates'),
     )
     template = env.get_template('kh2ai.md.txt')
-    return template.render(instrList=instrList)
+    return template.render(instrList=instrList, when=datetime.datetime.utcnow().strftime("%c UTC"))

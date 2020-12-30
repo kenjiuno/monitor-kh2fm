@@ -1,5 +1,7 @@
 # KH2 ai
 
+Update timestamp: Wed Dec 30 06:57:55 2020 UTC
+
 ## Credits
 
 The basic research result is inherited from Govanify's works.
@@ -63,10 +65,10 @@ Instrument list:
 | 1 | None | 1 | [popToWp](#poptowp) |
 | 1 | None | 2 | [popToSpVal](#poptospval) |
 | 1 | None | 3 | [popToAi](#poptoai) |
-| 2 | None | 0 | [memcpyToSp](#memcpytosp) |
-| 2 | None | 1 | [memcpyToWp](#memcpytowp) |
-| 2 | None | 2 | [memcpyToSpVal](#memcpytospval) |
-| 2 | None | 3 | [memcpyToSpAi](#memcpytospai) |
+| 2 | 0 | None | [memcpyToSp](#memcpytosp) |
+| 2 | 1 | None | [memcpyToWp](#memcpytowp) |
+| 2 | 2 | None | [memcpyToSpVal](#memcpytospval) |
+| 2 | 3 | None | [memcpyToSpAi](#memcpytospai) |
 | 3 | None | None | [fetchValue](#fetchvalue) |
 | 4 | None | None | [memcpy](#memcpy) |
 | 5 | 0 | 0 | [cfti](#cfti) |
@@ -1242,12 +1244,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSp  imm16`
+`memcpyToSp  ssub_opc,imm16`
 
 _Description:_
 
 
-> memcpy(sp + _imm16_, pop(), _imm16_);
+> memcpy(sp + ssub, pop(), _imm16_);
 
 
 
@@ -1262,12 +1264,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToWp  imm16`
+`memcpyToWp  ssub_opc,imm16`
 
 _Description:_
 
 
-> memcpy(wp + _imm16_, pop(), _imm16_);
+> memcpy(wp + ssub, pop(), _imm16_);
 
 
 
@@ -1282,12 +1284,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSpVal  imm16`
+`memcpyToSpVal  ssub_opc,imm16`
 
 _Description:_
 
 
-> memcpy(fetch(sp) + _imm16_, pop(), _imm16_);
+> memcpy(fetch(sp) + ssub, pop(), _imm16_);
 
 
 
@@ -1302,12 +1304,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSpAi  imm16`
+`memcpyToSpAi  ssub_opc,imm16`
 
 _Description:_
 
 
-> memcpy(ai + 16 + _imm16_, pop(), _imm16_);
+> memcpy(ai + 16 + ssub, pop(), _imm16_);
 
 
 
