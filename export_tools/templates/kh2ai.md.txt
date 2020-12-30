@@ -36,8 +36,9 @@ Instruments follow.
 3 patterns:
 
 - 16 bits only. (used in unary and binary operators and so on)
-- 16 bits +16 bits arg. (branch and so on)
-- 16 bits +32 bits arg. (pushImm and gosub32)
+- 16 bits +16 bits 1 arg. (branch and so on)
+- 16 bits +16 bits 2 args. (memcpy)
+- 16 bits +32 bits 1 arg. (pushImm and gosub32)
 
 Basic form:
 

@@ -29,6 +29,8 @@ def run() -> str:
             args.append("imm32")
         if flags & pcode.Arg16:
             args.append("imm16")
+        if flags & pcode.Arg16_2:
+            args.append("imm16_2")
         return name + "  " + ",".join(args)
 
     def toMarkdownQuotes(text: str) -> str:

@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Wed Dec 30 06:57:55 2020 UTC
+Update timestamp: Wed Dec 30 07:09:06 2020 UTC
 
 ## Credits
 
@@ -36,8 +36,9 @@ Instruments follow.
 3 patterns:
 
 - 16 bits only. (used in unary and binary operators and so on)
-- 16 bits +16 bits arg. (branch and so on)
-- 16 bits +32 bits arg. (pushImm and gosub32)
+- 16 bits +16 bits 1 arg. (branch and so on)
+- 16 bits +16 bits 2 args. (memcpy)
+- 16 bits +32 bits 1 arg. (pushImm and gosub32)
 
 Basic form:
 
@@ -65,10 +66,10 @@ Instrument list:
 | 1 | None | 1 | [popToWp](#poptowp) |
 | 1 | None | 2 | [popToSpVal](#poptospval) |
 | 1 | None | 3 | [popToAi](#poptoai) |
-| 2 | 0 | None | [memcpyToSp](#memcpytosp) |
-| 2 | 1 | None | [memcpyToWp](#memcpytowp) |
-| 2 | 2 | None | [memcpyToSpVal](#memcpytospval) |
-| 2 | 3 | None | [memcpyToSpAi](#memcpytospai) |
+| 2 | None | 0 | [memcpyToSp](#memcpytosp) |
+| 2 | None | 1 | [memcpyToWp](#memcpytowp) |
+| 2 | None | 2 | [memcpyToSpVal](#memcpytospval) |
+| 2 | None | 3 | [memcpyToSpAi](#memcpytospai) |
 | 3 | None | None | [fetchValue](#fetchvalue) |
 | 4 | None | None | [memcpy](#memcpy) |
 | 5 | 0 | 0 | [cfti](#cfti) |
@@ -1244,12 +1245,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSp  ssub_opc,imm16`
+`memcpyToSp  ssub_opc,imm16,imm16_2`
 
 _Description:_
 
 
-> memcpy(sp + ssub, pop(), _imm16_);
+> memcpy(sp + _imm16_2_, pop(), _imm16_);
 
 
 
@@ -1264,12 +1265,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToWp  ssub_opc,imm16`
+`memcpyToWp  ssub_opc,imm16,imm16_2`
 
 _Description:_
 
 
-> memcpy(wp + ssub, pop(), _imm16_);
+> memcpy(wp + _imm16_2_, pop(), _imm16_);
 
 
 
@@ -1284,12 +1285,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSpVal  ssub_opc,imm16`
+`memcpyToSpVal  ssub_opc,imm16,imm16_2`
 
 _Description:_
 
 
-> memcpy(fetch(sp) + ssub, pop(), _imm16_);
+> memcpy(fetch(sp) + _imm16_2_, pop(), _imm16_);
 
 
 
@@ -1304,12 +1305,12 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSpAi  ssub_opc,imm16`
+`memcpyToSpAi  ssub_opc,imm16,imm16_2`
 
 _Description:_
 
 
-> memcpy(ai + 16 + ssub, pop(), _imm16_);
+> memcpy(ai + 16 + _imm16_2_, pop(), _imm16_);
 
 
 
