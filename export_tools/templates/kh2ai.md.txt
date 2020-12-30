@@ -50,7 +50,7 @@ Instrument list:
 | opcode | sub | ssub | name |
 |--:|--:|--:|---|
 {%- for instr in instrList %}
-| {{ instr.part1 }} | {{ instr.part2 }} | {{ instr.part3 }} | [{{ instr.name }}](#{{ instr.name }}) |
+| {{ instr.part1 }} | {{ instr.part2 }} | {{ instr.part3 }} | [{{ instr.name }}](#{{ instr.name|lower }}) |
 {%- endfor %}
 
 ## Instrument list
