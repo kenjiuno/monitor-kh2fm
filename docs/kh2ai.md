@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Wed Dec 30 07:12:49 2020 UTC
+Update timestamp: Wed Dec 30 07:14:13 2020 UTC
 
 ## Credits
 
@@ -1245,7 +1245,7 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSp  ssub_opc,imm16,imm16_2`
+`memcpyToSp  imm16,imm16_2`
 
 _Description:_
 
@@ -1265,7 +1265,7 @@ _Operations:_
 
 _Format:_
 
-`memcpyToWp  ssub_opc,imm16,imm16_2`
+`memcpyToWp  imm16,imm16_2`
 
 _Description:_
 
@@ -1285,7 +1285,7 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSpVal  ssub_opc,imm16,imm16_2`
+`memcpyToSpVal  imm16,imm16_2`
 
 _Description:_
 
@@ -1305,7 +1305,7 @@ _Operations:_
 
 _Format:_
 
-`memcpyToSpAi  ssub_opc,imm16,imm16_2`
+`memcpyToSpAi  imm16,imm16_2`
 
 _Description:_
 
