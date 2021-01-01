@@ -2,6 +2,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 from ai import pcode
 from ai import trap_table
 
+
 def run() -> str:
     root = Element('PCode')
 
@@ -11,38 +12,42 @@ def run() -> str:
     def boolToXml(text):
         return "1" if text else "0"
 
-    for array in pcode.table:
-        flags = array[5]
+    for opDef in pcode.table:
+        behavior = opDef.behavior
 
-        def setFlagsTo(instr):
-            instr.set("ArgPart3", boolToXml(pcode.ArgPart3 & array[5]))
-            instr.set("Arg16", boolToXml(pcode.Arg16 & array[5]))
-            instr.set("Arg32", boolToXml(pcode.Arg32 & array[5]))
-            instr.set("Syscall", boolToXml(pcode.Syscall & array[5]))
-            instr.set("Gosub", boolToXml(pcode.Gosub & array[5]))
-            instr.set("UnconditionalBranch", boolToXml(
-                pcode.UnconditionalBranch & array[5]))
-            instr.set("ConditionalBranch", boolToXml(
-                pcode.ConditionalBranch & array[5]))
-            instr.set("NeverReturn", boolToXml(pcode.NeverReturn & array[5]))
-            instr.set("GosubRet", boolToXml(pcode.GosubRet & array[5]))
-
-        if flags & pcode.Syscall:
+        if pcode.Syscall & behavior:
             for tableIdx, table in enumerate(trap_table.tables):
                 for funcIdx, func in enumerate(table):
                     if len(func[0]) != 0:
                         instr = SubElement(root, 'Instr')
-                        instr.set("Part1", partToStr(array[0]))
-                        instr.set("Part2", partToStr(tableIdx))
-                        instr.set("Part3", partToStr(funcIdx))
-                        instr.set("Name", func[0])
-                        setFlagsTo(instr)
+                        instr.set("opcode", partToStr(opDef.opc))
+                        instr.set("sub", partToStr(tableIdx))
+                        instr.set("ssub", partToStr(funcIdx))
+                        instr.set("name", func[0])
+                        instr.set("syscall", boolToXml(True))
         else:
             instr = SubElement(root, 'Instr')
-            instr.set("Part1", partToStr(array[0]))
-            instr.set("Part2", partToStr(array[1]))
-            instr.set("Part3", partToStr(array[2]))
-            instr.set("Name", array[4])
-            setFlagsTo(instr)
+            instr.set("opcode", partToStr(opDef.opc))
+            instr.set("sub", partToStr(opDef.sub))
+            instr.set("ssub", partToStr(opDef.ssub))
+            instr.set("name", opDef.name)
+
+            instr.set("gosub", boolToXml(pcode.Gosub & behavior))
+            instr.set("jump", boolToXml(pcode.Jump & behavior))
+            instr.set("conditional", boolToXml(pcode.Conditional & behavior))
+            instr.set("neverReturn", boolToXml(pcode.NeverReturn & behavior))
+            instr.set("gosubRet", boolToXml(pcode.GosubRet & behavior))
+
+            for opArg in opDef.args:
+                arg = SubElement(instr, 'Arg')
+                arg.set('name', opArg.name)
+                if pcode.ArgSsub & opArg.flags:
+                    arg.set("type", "ssub")
+                elif pcode.Arg16 & opArg.flags:
+                    arg.set("type", "imm16")
+                elif pcode.Arg32 & opArg.flags:
+                    arg.set("type", "imm32")
+
+                arg.set("aiPos", boolToXml(pcode.AiPos & opArg.flags))
 
     return tostring(root, "unicode")

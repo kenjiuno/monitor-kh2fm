@@ -22,35 +22,40 @@ class ai_disasm:
 
         (code,) = struct.unpack("<H", raw[0:2])
 
-        part1 = (code & 15)
-        part2 = (code >> 4) & 3
-        part3 = (code >> 6)
+        opc = (code & 15)
+        sub = (code >> 4) & 3
+        ssub = (code >> 6)
 
-        for array in pcode.table:
-            if array[0] == part1:
-                if array[1] == None or array[1] == part2:
-                    if array[2] == None or array[2] == part3:
-                        name = array[4]
+        for opDef in pcode.table:
+            if opDef.opc == opc:
+                if opDef.sub == None or opDef.sub == sub:
+                    if opDef.ssub == None or opDef.ssub == ssub:
+                        name = opDef.name
 
                         args = []
-                        if array[5] & pcode.ArgPart3:
-                            args.append(part3)
+                        rawPos = 2
+                        for opArg in opDef.args:
+                            if pcode.ArgSsub & opArg.flags:
+                                args.append(ssub)
+                            elif pcode.Arg16 & opArg.flags:
+                                # signed int16
+                                args.append(struct.unpack(
+                                    "<h", raw[rawPos:rawPos+2])[0])
+                                rawPos += 2
+                            elif pcode.Arg32 & opArg.flags:
+                                # signed int32
+                                args.append(struct.unpack(
+                                    "<i", raw[rawPos:rawPos+4])[0])
+                                rawPos += 4
 
-                        if array[5] & pcode.Arg16:
-                            # signed int16
-                            args.append(struct.unpack("<h", raw[2:4])[0])
-                        elif array[5] & pcode.Arg32:
-                            # signed int32
-                            args.append(struct.unpack("<i", raw[2:6])[0])
-
-                        if array[5] & pcode.Syscall:
+                        if pcode.Syscall & opDef.behavior:
                             try:
                                 funcIdx = args.pop()
-                                name = trap_table.tables[part3][funcIdx][0]
+                                name = trap_table.tables[ssub][funcIdx][0]
                             except IndexError:
                                 # fallback
                                 name = "syscall"
-                                args.append(part3)
+                                args.append(ssub)
                                 args.append(args[0])
 
                         return name + " " + (", ".join(map(str, args)))

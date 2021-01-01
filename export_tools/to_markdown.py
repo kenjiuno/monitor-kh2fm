@@ -20,17 +20,10 @@ def run() -> str:
 
     instrList: List[Instr1] = []
 
-    def formFunc(name, array) -> str:
+    def formFunc(name, opDef: pcode.OpDef) -> str:
         args = []
-        flags = array[5]
-        if flags & pcode.ArgPart3:
-            args.append("ssub_opc")
-        if flags & pcode.Arg32:
-            args.append("imm32")
-        if flags & pcode.Arg16:
-            args.append("imm16")
-        if flags & pcode.Arg16_2:
-            args.append("imm16_2")
+        for arg in opDef.args:
+            args.append(arg.name)
         return name + "  " + ",".join(args)
 
     def toMarkdownQuotes(text: str) -> str:
@@ -58,18 +51,18 @@ def run() -> str:
             "help": toMarkdownQuotes(text.strip())
         }
 
-    for array in pcode.table:
-        flags = array[5]
+    for opDef in pcode.table:
+        behavior = opDef.behavior
 
         def setFlagsTo(instr):
             pass
 
-        if flags & pcode.Syscall:
+        if behavior & pcode.Syscall:
             for tableIdx, table in enumerate(trap_table.tables):
                 for funcIdx, func in enumerate(table):
                     if len(func[0]) != 0:
                         instr = Instr1()
-                        instr.part1 = array[0]
+                        instr.part1 = opDef.opc
                         instr.part2 = tableIdx
                         instr.part3 = funcIdx
                         instr.name = func[0]
@@ -80,11 +73,11 @@ def run() -> str:
                         setFlagsTo(instr)
         else:
             instr = Instr1()
-            instr.part1 = array[0]
-            instr.part2 = array[1]
-            instr.part3 = array[2]
-            instr.name = array[4]
-            instr.funcForm = formFunc(instr.name, array)
+            instr.part1 = opDef.opc
+            instr.part2 = opDef.sub
+            instr.part3 = opDef.ssub
+            instr.name = opDef.name
+            instr.funcForm = formFunc(instr.name, opDef)
             instr.doc = funcsDoc[instr.name] if instr.name in funcsDoc else {}
             instrList.append(instr)
             setFlagsTo(instr)

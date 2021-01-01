@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Wed Dec 30 07:14:13 2020 UTC
+Update timestamp: Fri Jan  1 10:09:07 2021 UTC
 
 ## Credits
 
@@ -2278,7 +2278,7 @@ _Operations:_
 
 _Format:_
 
-`gosub  ssub_opc,imm16`
+`gosub  ssub,imm16`
 
 _Description:_
 
@@ -21149,7 +21149,7 @@ _Operations:_
 
 _Format:_
 
-`gosub32  ssub_opc,imm32`
+`gosub32  ssub,imm32`
 
 _Description:_
 

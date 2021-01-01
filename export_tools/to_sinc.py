@@ -45,29 +45,31 @@ def run() -> str:
 
     funcsDoc = instr_docs.load()
 
-    def buildInstr(instr: SingleInstrument, part1, part2, part3, arg16Value, flags):
-        Arg32 = bool(pcode.Arg32 & flags)
-        Arg16 = bool(pcode.Arg16 & flags)
-        ArgPart3 = bool(pcode.ArgPart3 & flags)
-        Gosub = bool(pcode.Gosub & array[5])
-        Syscall = bool(pcode.Syscall & array[5])
-        UnconditionalBranch = bool(pcode.UnconditionalBranch & array[5])
-        ConditionalBranch = bool(pcode.ConditionalBranch & array[5])
-        Branch = bool(Gosub or UnconditionalBranch or ConditionalBranch)
+    def buildInstr(instr: SingleInstrument, part1, part2, part3, arg16Value, behavior, funcArgs):
+        Gosub = bool(pcode.Gosub & behavior)
+        Syscall = bool(pcode.Syscall & behavior)
+        Jump = bool(pcode.Jump & behavior)
+        Conditional = bool(pcode.Conditional & behavior)
+        Branch = bool(Gosub or Jump)
 
         if True:
             args = []
             cond = []
 
-            if Arg32:
-                args.append("full_ext")
-            elif Branch:
+            SingleArg16 = False
+
+            if Branch:
                 args.append("LABEL8")
-            elif ArgPart3 and Arg16:
-                args.append("rn")
-                args.append("ope2")
-            elif Arg16:
-                args.append("ope2")
+            if len(funcArgs) == 1:
+                if bool(pcode.Arg32 & funcArgs[0].flags):
+                    args.append("full_ext")
+                elif bool(pcode.Arg16 & funcArgs[0].flags):
+                    args.append("ope2")
+                    SingleArg16 = True
+            elif len(funcArgs) == 2:
+                if bool(pcode.ArgSsub & funcArgs[0].flags) and bool(pcode.Arg16 & funcArgs[1].flags):
+                    args.append("rn")
+                    args.append("ope2")
 
             # :push.v full_ext is opcode=0 & ( sub_opc=1 | sub_opc=0 ) ; full_ext {
             # :push2_unk0 is opcode_ext=0 & sub_opc_ext=2 & opesub=0  {
@@ -83,7 +85,7 @@ def run() -> str:
                     cond.append("ope3=%d" % (part3,))
                 if arg16Value != None:
                     cond.append("ope2=%d" % (arg16Value,))
-            elif Arg16:
+            elif SingleArg16:
                 cond.append("opcode_ext=%d" % (part1,))
                 if part2 != None:
                     cond.append("sub_opc_ext=%d" % (part2,))
@@ -107,8 +109,8 @@ def run() -> str:
             # Note about "7.4.4.1. The ';' Operator", see
             # https://ghidra.re/courses/languages/html/sleigh_constructors.html
 
-    for array in pcode.table:
-        flags = array[5]
+    for opDef in pcode.table:
+        flags = opDef.behavior
 
         if flags & pcode.Syscall:
             for tableIdx, table in enumerate(trap_table.tables):
@@ -116,13 +118,14 @@ def run() -> str:
                     if len(func[0]) != 0:
                         instr = SingleInstrument()
                         instr.name = func[0]
-                        buildInstr(instr, array[0],
-                                   None, tableIdx, funcIdx, pcode.Syscall)
+                        buildInstr(instr, opDef.opc,
+                                   None, tableIdx, funcIdx, pcode.Syscall, [])
                         instrList.append(instr)
         else:
             instr = SingleInstrument()
-            instr.name = array[4]
-            buildInstr(instr, array[0], array[1], array[2], None, array[5])
+            instr.name = opDef.name
+            buildInstr(instr, opDef.opc, opDef.sub, opDef.ssub,
+                       None, opDef.behavior, opDef.args)
             instrList.append(instr)
 
     mixedInstrList = []
