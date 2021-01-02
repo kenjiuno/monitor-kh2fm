@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sat Jan  2 13:00:25 2021 UTC
+Update timestamp: Sat Jan  2 17:02:54 2021 UTC
 
 ## Credits
 
@@ -109,7 +109,7 @@ Instrument list:
 | 6 | 1 | 2 | [mulf](#mulf) |
 | 6 | 1 | 3 | [divf](#divf) |
 | 6 | 1 | 4 | [modf](#modf) |
-| 7 | None | 0 | [j](#j) |
+| 7 | None | 0 | [jmp](#jmp) |
 | 7 | None | 1 | [jnz](#jnz) |
 | 7 | None | 2 | [jz](#jz) |
 | 8 | None | None | [gosub](#gosub) |
@@ -2228,11 +2228,11 @@ _Operations:_
 
 
 
-### j
+### jmp
 
 _Format:_
 
-`j  imm16`
+`jmp  imm16`
 
 _Description:_
 
