@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sat Jan  2 07:04:04 2021 UTC
+Update timestamp: Sat Jan  2 07:07:58 2021 UTC
 
 ## Credits
 
@@ -2538,9 +2538,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_puti(arg1, arg2);
 
 
 
@@ -2560,9 +2560,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_putf(arg1, arg2);
 
 
 
@@ -2582,9 +2582,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_puts(arg1);
 
 
 
@@ -2604,9 +2604,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_frametime();
+> 
+> push(return);
 
 
 
@@ -2626,9 +2626,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_add(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -2648,9 +2650,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_sub(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -2670,9 +2674,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_vector_len(arg1);
+> 
+> push(return);
 
 
 
@@ -2692,9 +2698,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_vector_normalize(arg1);
+> 
+> push(return);
 
 
 
@@ -2714,9 +2722,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vector_dump(arg1, arg2);
 
 
 
@@ -2736,9 +2744,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_thread_start(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -2758,9 +2768,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_file_is_reading();
+> 
+> push(return);
 
 
 
@@ -2780,9 +2790,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_file_flush();
 
 
 
@@ -2802,9 +2810,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_roty(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -2824,9 +2834,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_progress_set_flag(arg1);
 
 
 
@@ -2846,9 +2856,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_progress_check_flag(arg1);
+> 
+> push(return);
 
 
 
@@ -2868,9 +2880,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_random_get(arg1);
+> 
+> push(return);
 
 
 
@@ -2890,9 +2904,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_random_getf(arg1);
+> 
+> push(return);
 
 
 
@@ -2912,9 +2928,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_random_range(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -2934,9 +2952,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_worldflag_set(arg1);
 
 
 
@@ -2956,9 +2974,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_worldflag_check(arg1);
+> 
+> push(return);
 
 
 
@@ -2978,9 +2998,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_get_rot_xz(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -3000,9 +3022,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_abs(arg1);
+> 
+> push(return);
 
 
 
@@ -3022,9 +3046,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_absf(arg1);
+> 
+> push(return);
 
 
 
@@ -3044,9 +3070,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_stputi(arg1, arg2);
 
 
 
@@ -3066,9 +3092,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_stputf(arg1, arg2);
 
 
 
@@ -3088,9 +3114,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_stputs(arg1);
 
 
 
@@ -3110,9 +3136,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> func_system_set_game_speed(arg1);
 
 
 
@@ -3132,9 +3158,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> method_blur_init(arg1);
 
 
 
@@ -3154,9 +3180,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> method_blur_start(arg1);
 
 
 
@@ -3176,9 +3202,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> method_blur_stop(arg1);
 
 
 
@@ -3198,9 +3224,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> func_screen_whiteout(arg1);
 
 
 
@@ -3220,9 +3246,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> func_screen_whitein(arg1);
 
 
 
@@ -3242,9 +3268,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> method_vector_scale(arg1, arg2);
 
 
 
@@ -3264,9 +3290,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_mul(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -3286,9 +3314,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_div(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -3308,9 +3338,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_set_pos(arg1, arg2);
 
 
 
@@ -3330,9 +3360,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_set_scale(arg1, arg2);
 
 
 
@@ -3352,9 +3382,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_set_rot(arg1, arg2);
 
 
 
@@ -3374,9 +3404,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_set_dir(arg1, arg2);
 
 
 
@@ -3396,9 +3426,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_vector_atan_xz(arg1);
+> 
+> push(return);
 
 
 
@@ -3418,9 +3450,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_fixrad(arg1);
+> 
+> push(return);
 
 
 
@@ -3440,9 +3474,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_effect_loop_end(arg1);
 
 
 
@@ -3462,9 +3496,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vector_addf(arg1, arg2, arg3);
 
 
 
@@ -3484,9 +3518,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vector_homing(arg1, arg2, arg3);
 
 
 
@@ -3506,9 +3540,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_memory_alloc(arg1);
+> 
+> push(return);
 
 
 
@@ -3528,9 +3564,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_memory_free(arg1);
 
 
 
@@ -3550,9 +3586,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_effect_is_alive(arg1);
+> 
+> push(return);
 
 
 
@@ -3572,9 +3610,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_effect_is_active(arg1);
+> 
+> push(return);
 
 
 
@@ -3594,9 +3634,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_effect_kill(arg1);
 
 
 
@@ -3616,9 +3656,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_fadeout(arg1, arg2, arg3);
 
 
 
@@ -3638,9 +3678,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_effect_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -3660,9 +3702,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_effect_dir(arg1);
+> 
+> push(return);
 
 
 
@@ -3682,9 +3726,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_timer_count_down(arg1);
 
 
 
@@ -3704,9 +3748,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_timer_count_up(arg1);
 
 
 
@@ -3726,9 +3770,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_saveflag_set(arg1);
 
 
 
@@ -3748,9 +3792,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_saveflag_reset(arg1);
 
 
 
@@ -3770,9 +3814,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_saveflag_check(arg1);
+> 
+> push(return);
 
 
 
@@ -3792,9 +3838,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_assert(arg1);
 
 
 
@@ -3814,9 +3860,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_saveram_get_partram(arg1);
+> 
+> push(return);
 
 
 
@@ -3836,9 +3884,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_set_item_max(arg1, arg2);
 
 
 
@@ -3858,9 +3906,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_item_get(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -3880,9 +3930,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_sound_disable();
 
 
 
@@ -3902,9 +3950,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_sound_play_system(arg1);
 
 
 
@@ -3924,9 +3972,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_pause(arg1, arg2);
 
 
 
@@ -3946,9 +3994,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_set_color(arg1, arg2);
 
 
 
@@ -3968,9 +4016,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_rotx(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -3990,9 +4040,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_menuflag_set(arg1);
 
 
 
@@ -4012,9 +4062,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_progress_is_second();
+> 
+> push(return);
 
 
 
@@ -4034,9 +4084,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_menuflag_reset(arg1);
 
 
 
@@ -4056,9 +4106,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_screen_show_picture(arg1, arg2);
 
 
 
@@ -4078,9 +4128,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_saveram_set_weapon(arg1, arg2, arg3);
 
 
 
@@ -4100,9 +4150,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_saveram_set_form_weapon(arg1, arg2);
 
 
 
@@ -4122,9 +4172,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_screen_cross_fade(arg1);
 
 
 
@@ -4144,9 +4194,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_inter(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -4166,9 +4218,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_effect_add_dead_block(arg1);
 
 
 
@@ -4188,9 +4240,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_pad_is_button(arg1);
+> 
+> push(return);
 
 
 
@@ -4210,9 +4264,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_pad_is_trigger(arg1);
+> 
+> push(return);
 
 
 
@@ -4232,9 +4288,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_outer_product(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -4254,9 +4312,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_rot(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -4276,9 +4336,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_angle(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -4298,9 +4360,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_effect_loop_end_kill(arg1);
 
 
 
@@ -4320,9 +4382,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_effect_set_type(arg1, arg2);
 
 
 
@@ -4342,9 +4404,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_screen_fadeout(arg1);
 
 
 
@@ -4364,9 +4426,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_screen_fadein(arg1);
 
 
 
@@ -4386,9 +4448,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_menuflag_check(arg1);
+> 
+> push(return);
 
 
 
@@ -4408,9 +4472,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vector_draw(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -4430,9 +4494,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vector_inner_prodcut(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -4452,9 +4518,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_add_attack(arg1, arg2);
 
 
 
@@ -4474,9 +4540,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_add_wisdom(arg1, arg2);
 
 
 
@@ -4496,9 +4562,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_add_defence(arg1, arg2);
 
 
 
@@ -4518,9 +4584,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_set_levelup_type(arg1, arg2);
 
 
 
@@ -4540,9 +4606,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_add_ap(arg1, arg2);
 
 
 
@@ -4562,9 +4628,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_item_reduce(arg1, arg2);
 
 
 
@@ -4584,9 +4650,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_saveram_set_form_ability(arg1, arg2);
 
 
 
@@ -4606,9 +4672,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_partram_add_ability(arg1, arg2, arg3);
 
 
 
@@ -4628,9 +4694,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_saveram_increment_friend_recov();
 
 
 
@@ -4650,9 +4714,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_progress_is_secret_movie();
+> 
+> push(return);
 
 
 
@@ -4672,9 +4736,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_vector_to_angle(arg1);
+> 
+> push(return);
 
 
 
@@ -4694,9 +4760,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_progress_is_fm_secret_movie();
+> 
+> push(return);
 
 
 
@@ -4716,9 +4782,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_sound_set_bgse_volume(arg1);
 
 
 
@@ -4738,9 +4804,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_appear(arg1);
+> 
+> push(return);
 
 
 
@@ -4760,9 +4828,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_rot(arg1, arg2);
 
 
 
@@ -4782,9 +4850,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_sysobj_moveto(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -4804,9 +4874,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_sysobj_player();
+> 
+> push(return);
 
 
 
@@ -4826,9 +4896,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_wish_dir(arg1, arg2);
 
 
 
@@ -4848,9 +4918,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_act_table_init(arg1);
 
 
 
@@ -4870,9 +4940,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg12 = pop(); arg11 = pop(); arg10 = pop(); arg9 = pop(); arg8 = pop(); arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_act_table_add(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
 
 
 
@@ -4892,9 +4962,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_act_table(arg1, arg2);
 
 
 
@@ -4914,9 +4984,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_act_start(arg1, arg2);
 
 
 
@@ -4936,9 +5006,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_act_push(arg1, arg2);
 
 
 
@@ -4958,9 +5028,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_act_exec(arg1);
+> 
+> push(return);
 
 
 
@@ -4980,9 +5052,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_motion_start(arg1, arg2, arg3);
 
 
 
@@ -5002,9 +5074,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_motion_change(arg1, arg2, arg3);
 
 
 
@@ -5024,9 +5096,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_motion_push(arg1, arg2, arg3);
 
 
 
@@ -5046,9 +5118,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_motion_is_end(arg1);
+> 
+> push(return);
 
 
 
@@ -5068,9 +5142,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_motion_id(arg1);
+> 
+> push(return);
 
 
 
@@ -5090,9 +5166,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_leave_force(arg1);
 
 
 
@@ -5112,9 +5188,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_attach(arg1, arg2, arg3, arg4, arg5, arg6);
 
 
 
@@ -5134,9 +5210,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_fadeout(arg1, arg2);
 
 
 
@@ -5156,9 +5232,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_fadein(arg1, arg2);
 
 
 
@@ -5178,9 +5254,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_effect_start(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -5200,9 +5278,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_effect_start_pos(arg1, arg2, arg3, arg4, arg5);
+> 
+> push(return);
 
 
 
@@ -5222,9 +5302,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_world();
+> 
+> push(return);
 
 
 
@@ -5244,9 +5324,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_area();
+> 
+> push(return);
 
 
 
@@ -5266,9 +5346,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_map_set();
+> 
+> push(return);
 
 
 
@@ -5288,9 +5368,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_battle_set();
+> 
+> push(return);
 
 
 
@@ -5310,9 +5390,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_event_set();
+> 
+> push(return);
 
 
 
@@ -5332,9 +5412,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_leave(arg1);
 
 
 
@@ -5354,9 +5434,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_motion_capture(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -5376,9 +5458,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_area_jump(arg1, arg2, arg3);
 
 
 
@@ -5398,9 +5480,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_area_setjump(arg1, arg2);
 
 
 
@@ -5420,9 +5502,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_message_open(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -5442,9 +5526,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_message_close(arg1);
 
 
 
@@ -5464,9 +5548,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_event_is_exec();
+> 
+> push(return);
 
 
 
@@ -5486,9 +5570,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_area_init(arg1, arg2, arg3);
 
 
 
@@ -5508,9 +5592,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_bg_hide(arg1);
 
 
 
@@ -5530,9 +5614,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_bg_show(arg1);
 
 
 
@@ -5552,9 +5636,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_team(arg1, arg2);
 
 
 
@@ -5574,9 +5658,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_unit_arg(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -5596,9 +5682,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_pirate_shade(arg1);
+> 
+> push(return);
 
 
 
@@ -5618,9 +5706,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_signal_call(arg1, arg2);
 
 
 
@@ -5640,9 +5728,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> func_obj_control_off(arg1);
 
 
 
@@ -5662,9 +5750,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> func_obj_control_on(arg1);
 
 
 
@@ -5684,9 +5772,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> func_history_clear_enemy();
 
 
 
@@ -5706,9 +5792,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> func_area_activate_unit(arg1);
 
 
 
@@ -5728,9 +5814,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> func_bg_barrier_on();
 
 
 
@@ -5750,9 +5834,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> func_bg_barrier_off();
 
 
 
@@ -5772,9 +5854,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = method_message_is_end(arg1);
+> 
+> push(return);
 
 
 
@@ -5794,9 +5878,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_enable_reaction_command(arg1, arg2, arg3);
 
 
 
@@ -5816,9 +5900,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_disable_reaction_command(arg1, arg2, arg3);
 
 
 
@@ -5838,9 +5922,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_reset_reaction_command(arg1, arg2, arg3);
 
 
 
@@ -5860,9 +5944,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_enable_collision(arg1, arg2);
 
 
 
@@ -5882,9 +5966,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_disable_collision(arg1, arg2);
 
 
 
@@ -5904,9 +5988,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_reset_collision(arg1, arg2);
 
 
 
@@ -5926,9 +6010,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> method_obj_jump(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -5948,9 +6032,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = method_obj_is_culling(arg1);
+> 
+> push(return);
 
 
 
@@ -5970,9 +6056,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_jump(arg1);
+> 
+> push(return);
 
 
 
@@ -5992,9 +6080,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_fly(arg1, arg2, arg3);
 
 
 
@@ -6014,9 +6102,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_fly(arg1);
+> 
+> push(return);
 
 
 
@@ -6036,9 +6126,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_air(arg1);
+> 
+> push(return);
 
 
 
@@ -6058,9 +6150,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_motion_frame_start(arg1, arg2, arg3, arg4);
 
 
 
@@ -6080,9 +6172,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_moved(arg1);
+> 
+> push(return);
 
 
 
@@ -6102,9 +6196,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_motion_in_loop(arg1);
+> 
+> push(return);
 
 
 
@@ -6124,9 +6220,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_wish_movement(arg1);
+> 
+> push(return);
 
 
 
@@ -6146,9 +6244,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_exec_fall(arg1);
 
 
 
@@ -6168,9 +6266,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_exec_land(arg1);
 
 
 
@@ -6190,9 +6288,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_motion_get_length(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -6212,9 +6312,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_motion_get_loop_top(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -6234,9 +6336,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_motion_get_time(arg1);
+> 
+> push(return);
 
 
 
@@ -6256,9 +6360,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_flag(arg1, arg2);
 
 
 
@@ -6278,9 +6382,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_reset_flag(arg1, arg2);
 
 
 
@@ -6300,9 +6404,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_check_flag(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -6322,9 +6428,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_hover(arg1, arg2, arg3);
 
 
 
@@ -6344,9 +6450,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_idle(arg1);
 
 
 
@@ -6366,9 +6472,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_motion_hook(arg1, arg2);
 
 
 
@@ -6388,9 +6494,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_motion_unhook(arg1);
 
 
 
@@ -6410,9 +6516,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_motion_is_hook(arg1);
+> 
+> push(return);
 
 
 
@@ -6432,9 +6540,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_motion_is_no_control(arg1);
+> 
+> push(return);
 
 
 
@@ -6454,9 +6564,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_dir(arg1, arg2);
 
 
 
@@ -6476,9 +6586,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_turn_dir(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -6498,9 +6610,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_act_wedge(arg1, arg2);
 
 
 
@@ -6520,9 +6632,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_thread_start(arg1, arg2, arg3, arg4, arg5);
+> 
+> push(return);
 
 
 
@@ -6542,9 +6656,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_apply_bone_matrix(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -6564,9 +6680,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_sheet(arg1);
+> 
+> push(return);
 
 
 
@@ -6586,9 +6704,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_texanm_start(arg1, arg2);
 
 
 
@@ -6608,9 +6726,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_texanm_stop(arg1, arg2);
 
 
 
@@ -6630,9 +6748,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_effect_start_bind(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -6652,9 +6772,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_target_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -6674,9 +6796,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_move_request(arg1, arg2, arg3);
 
 
 
@@ -6696,9 +6818,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_act_shout(arg1, arg2, arg3);
 
 
 
@@ -6718,9 +6840,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_star(arg1, arg2);
 
 
 
@@ -6740,9 +6862,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_scatter_prize(arg1, arg2);
 
 
 
@@ -6762,9 +6884,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_party(arg1);
+> 
+> push(return);
 
 
 
@@ -6784,9 +6908,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_exist(arg1);
+> 
+> push(return);
 
 
 
@@ -6806,9 +6932,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_fly_to_jump(arg1);
 
 
 
@@ -6828,9 +6954,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_action(arg1);
+> 
+> push(return);
 
 
 
@@ -6850,9 +6978,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_spec(arg1);
+> 
+> push(return);
 
 
 
@@ -6872,9 +7002,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_step_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -6894,9 +7026,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_float_height(arg1);
+> 
+> push(return);
 
 
 
@@ -6916,9 +7050,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_jump_height_to_uptime(arg1);
+> 
+> push(return);
 
 
 
@@ -6938,9 +7074,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_motion_is_capture(arg1);
+> 
+> push(return);
 
 
 
@@ -6960,9 +7098,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_detach(arg1);
 
 
 
@@ -6982,9 +7120,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_detach_callback(arg1, arg2, arg3);
 
 
 
@@ -7004,9 +7142,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_shadow_move_start(arg1);
 
 
 
@@ -7026,9 +7164,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_shadow_move_end(arg1);
 
 
 
@@ -7048,9 +7186,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_signal_reserve_hp(arg1, arg2, arg3, arg4);
 
 
 
@@ -7070,9 +7208,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_motion_speed(arg1, arg2);
 
 
 
@@ -7092,9 +7230,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_show_part(arg1, arg2);
 
 
 
@@ -7114,9 +7252,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_hide_part(arg1, arg2);
 
 
 
@@ -7136,9 +7274,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_appear_way(arg1);
+> 
+> push(return);
 
 
 
@@ -7158,9 +7298,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_movement(arg1, arg2, arg3);
 
 
 
@@ -7180,9 +7320,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_hook(arg1, arg2, arg3);
 
 
 
@@ -7202,9 +7342,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_player_get_movement(arg1);
+> 
+> push(return);
 
 
 
@@ -7224,9 +7366,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_search_by_entry(arg1, arg2);
 
 
 
@@ -7246,9 +7388,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_jump_motion(arg1, arg2);
 
 
 
@@ -7268,9 +7410,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_command_cage_on();
 
 
 
@@ -7290,9 +7430,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_command_cage_off();
 
 
 
@@ -7312,9 +7450,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_check_step(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -7334,9 +7474,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_target_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -7356,9 +7498,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_search(arg1, arg2, arg3);
 
 
 
@@ -7378,9 +7520,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_dump(arg1);
 
 
 
@@ -7400,9 +7542,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_tex_fade_set(arg1, arg2);
 
 
 
@@ -7422,9 +7564,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_entry_fly(arg1);
+> 
+> push(return);
 
 
 
@@ -7444,9 +7588,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_tex_fade_start(arg1, arg2, arg3, arg4);
 
 
 
@@ -7466,9 +7610,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_motion_sync(arg1, arg2);
 
 
 
@@ -7488,9 +7632,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_act_clear(arg1);
 
 
 
@@ -7510,9 +7654,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_sysjump(arg1, arg2);
 
 
 
@@ -7532,9 +7676,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_blow(arg1, arg2);
 
 
 
@@ -7554,9 +7698,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_cmp(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -7576,9 +7722,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_target_dup(arg1);
+> 
+> push(return);
 
 
 
@@ -7598,9 +7746,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_target_free(arg1);
 
 
 
@@ -7620,9 +7768,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_hide(arg1);
 
 
 
@@ -7642,9 +7790,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_show(arg1);
 
 
 
@@ -7664,9 +7812,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_bg_cross_pos(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -7686,9 +7836,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_bg_is_floor(arg1);
+> 
+> push(return);
 
 
 
@@ -7708,9 +7860,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_bg_get_normal(arg1);
+> 
+> push(return);
 
 
 
@@ -7730,9 +7884,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_pax_start(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -7752,9 +7908,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_pax_start_bind(arg1, arg2, arg3, arg4, arg5);
+> 
+> push(return);
 
 
 
@@ -7774,9 +7932,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_target_is_exist(arg1);
+> 
+> push(return);
 
 
 
@@ -7796,9 +7956,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_bg_ground_pos(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -7818,9 +7980,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_signal_reserve_min_hp(arg1, arg2, arg3);
 
 
 
@@ -7840,9 +8002,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_search_by_serial(arg1, arg2);
 
 
 
@@ -7862,9 +8024,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_serial(arg1);
+> 
+> push(return);
 
 
 
@@ -7884,9 +8048,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_touch_zone(arg1);
+> 
+> push(return);
 
 
 
@@ -7906,9 +8072,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_hitback(arg1, arg2, arg3);
 
 
 
@@ -7928,9 +8094,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -7950,9 +8118,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_pos(arg1, arg2);
 
 
 
@@ -7972,9 +8140,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_effect_start_bind_other(arg1, arg2, arg3, arg4, arg5);
+> 
+> push(return);
 
 
 
@@ -7994,9 +8164,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_motion_check_range(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -8016,9 +8188,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_motion_check_trigger(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -8038,9 +8212,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_status_is_mission();
+> 
+> push(return);
 
 
 
@@ -8060,9 +8234,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_reset_pos(arg1, arg2);
 
 
 
@@ -8082,9 +8256,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_secure_mode_start();
 
 
 
@@ -8104,9 +8276,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_add_hp(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -8126,9 +8300,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_hop(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 
 
 
@@ -8148,9 +8322,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_camera_start(arg1, arg2, arg3);
 
 
 
@@ -8170,9 +8344,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_bg_set_belt_conveyor(arg1);
 
 
 
@@ -8192,9 +8366,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_bg_set_uvscroll_speed(arg1);
 
 
 
@@ -8214,9 +8388,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_set_obj(arg1, arg2);
 
 
 
@@ -8236,9 +8410,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_attach(arg1);
+> 
+> push(return);
 
 
 
@@ -8258,9 +8434,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_set_before_player(arg1, arg2);
 
 
 
@@ -8280,9 +8456,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_set_after_player(arg1, arg2);
 
 
 
@@ -8302,9 +8478,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_camera_start_global(arg1, arg2);
 
 
 
@@ -8324,9 +8500,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_command_override(arg1, arg2, arg3, arg4);
 
 
 
@@ -8346,9 +8522,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_target_attack(arg1);
+> 
+> push(return);
 
 
 
@@ -8368,9 +8546,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_act_start_pri(arg1, arg2);
 
 
 
@@ -8390,9 +8568,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_flyjump(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -8412,9 +8590,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_effect_unbind(arg1, arg2);
 
 
 
@@ -8434,9 +8612,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_unit_group(arg1);
+> 
+> push(return);
 
 
 
@@ -8456,9 +8636,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_status_no_leave();
+> 
+> push(return);
 
 
 
@@ -8478,9 +8658,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_can_look(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -8500,9 +8682,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_can_look_pos(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -8522,9 +8706,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_look_start(arg1, arg2, arg3);
 
 
 
@@ -8544,9 +8728,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_look_start_pos(arg1, arg2, arg3);
 
 
 
@@ -8566,9 +8750,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_look_end(arg1, arg2);
 
 
 
@@ -8588,9 +8772,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_set_path(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -8610,9 +8796,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_path_movement(arg1);
+> 
+> push(return);
 
 
 
@@ -8632,9 +8820,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_fall_motion(arg1, arg2);
 
 
 
@@ -8654,9 +8842,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_land_motion(arg1, arg2);
 
 
 
@@ -8676,9 +8864,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_light_create(arg1);
+> 
+> push(return);
 
 
 
@@ -8698,9 +8888,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_set_flag(arg1, arg2);
 
 
 
@@ -8720,9 +8910,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_set_color(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -8742,9 +8932,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_fadeout(arg1, arg2);
 
 
 
@@ -8764,9 +8954,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_parts_color(arg1, arg2, arg3, arg4);
 
 
 
@@ -8786,9 +8976,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_reset_parts_color(arg1, arg2, arg3);
 
 
 
@@ -8808,9 +8998,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_prize_drain_start();
 
 
 
@@ -8830,9 +9018,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_prize_drain_end();
 
 
 
@@ -8852,9 +9038,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_history_mark(arg1);
 
 
 
@@ -8874,9 +9060,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_history_mark(arg1);
+> 
+> push(return);
 
 
 
@@ -8896,9 +9084,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_lockon_target(arg1);
+> 
+> push(return);
 
 
 
@@ -8918,9 +9108,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_motion_cancel(arg1);
+> 
+> push(return);
 
 
 
@@ -8940,9 +9132,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_camera_warp();
 
 
 
@@ -8962,9 +9152,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_stealth(arg1, arg2);
 
 
 
@@ -8984,9 +9174,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_reset_stealth(arg1, arg2);
 
 
 
@@ -9006,9 +9196,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_entrance();
+> 
+> push(return);
 
 
 
@@ -9028,9 +9218,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_cost_rest();
+> 
+> push(return);
 
 
 
@@ -9050,9 +9240,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_set_player_random_pos(arg1);
 
 
 
@@ -9072,9 +9262,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_random_pos(arg1, arg2, arg3, arg4);
 
 
 
@@ -9094,9 +9284,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_bg_collision_type(arg1, arg2);
 
 
 
@@ -9116,9 +9306,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_dir(arg1);
+> 
+> push(return);
 
 
 
@@ -9138,9 +9330,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_unit_disable(arg1);
 
 
 
@@ -9160,9 +9352,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_unit_enable(arg1);
 
 
 
@@ -9182,9 +9374,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_force_leave_start();
 
 
 
@@ -9204,9 +9394,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_force_leave_end();
 
 
 
@@ -9226,9 +9414,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_status_is_force_leave();
+> 
+> push(return);
 
 
 
@@ -9248,9 +9436,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_camera_watch(arg1);
 
 
 
@@ -9270,9 +9458,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_hover(arg1);
+> 
+> push(return);
 
 
 
@@ -9292,9 +9482,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_dead(arg1);
 
 
 
@@ -9314,9 +9504,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_search_by_part(arg1, arg2);
 
 
 
@@ -9336,9 +9526,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_pattern_enable(arg1, arg2);
 
 
 
@@ -9358,9 +9548,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_pattern_disable(arg1, arg2);
 
 
 
@@ -9380,9 +9570,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_part(arg1);
+> 
+> push(return);
 
 
 
@@ -9402,9 +9594,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_hook_stop(arg1);
 
 
 
@@ -9424,9 +9616,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_pos_trans(arg1, arg2);
 
 
 
@@ -9446,9 +9638,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_unit_arg(arg1, arg2, arg3);
 
 
 
@@ -9468,9 +9660,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_camera_start(arg1, arg2, arg3);
 
 
 
@@ -9490,9 +9682,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_move_to_space(arg1, arg2, arg3);
 
 
 
@@ -9512,9 +9704,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_can_decide_command(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -9534,9 +9728,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_entry_id(arg1);
+> 
+> push(return);
 
 
 
@@ -9556,9 +9752,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_camera_cancel(arg1);
 
 
 
@@ -9578,9 +9774,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_action_air(arg1);
+> 
+> push(return);
 
 
 
@@ -9600,9 +9798,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_star(arg1);
+> 
+> push(return);
 
 
 
@@ -9622,9 +9822,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_scatter_prize_mu(arg1, arg2);
 
 
 
@@ -9644,9 +9844,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_jump_direct(arg1, arg2);
 
 
 
@@ -9666,9 +9866,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_sheet_hp(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -9688,9 +9890,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_sheet_max_hp(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -9710,9 +9914,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_sheet_hp_rate(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -9732,9 +9938,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sheet_set_min_hp(arg1, arg2, arg3);
 
 
 
@@ -9754,9 +9960,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_sheet_min_hp(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -9776,9 +9984,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sheet_set_hp(arg1, arg2, arg3);
 
 
 
@@ -9798,9 +10006,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_party_get_weapon(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -9820,9 +10030,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_party_hand_to_bone(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -9842,9 +10054,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_motion_unsync(arg1, arg2);
 
 
 
@@ -9864,9 +10076,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_command_override_top(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -9886,9 +10098,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_motion_capture_id(arg1);
+> 
+> push(return);
 
 
 
@@ -9908,9 +10122,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_unit_active(arg1);
+> 
+> push(return);
 
 
 
@@ -9930,9 +10146,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_scatter_prize_tt(arg1, arg2, arg3);
 
 
 
@@ -9952,9 +10168,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_act_shout(arg1, arg2);
 
 
 
@@ -9974,9 +10190,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_player_capture_form(arg1);
 
 
 
@@ -9996,9 +10212,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_player_capture_form_end();
 
 
 
@@ -10018,9 +10232,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_status_is_battle();
+> 
+> push(return);
 
 
 
@@ -10040,9 +10254,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_target_clear_before_player();
 
 
 
@@ -10062,9 +10274,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_target_clear_after_player();
 
 
 
@@ -10084,9 +10294,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_bg_get_random_pos(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -10106,9 +10318,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_bg_get_random_pos_air(arg1, arg2, arg3, arg4, arg5);
+> 
+> push(return);
 
 
 
@@ -10128,9 +10342,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_status_set_prize_ratio(arg1);
 
 
 
@@ -10150,9 +10364,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_status_set_lockon_ratio(arg1);
 
 
 
@@ -10172,9 +10386,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_fadein(arg1, arg2);
 
 
 
@@ -10194,9 +10408,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_camera_apply_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -10216,9 +10432,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_can_capture_control(arg1);
+> 
+> push(return);
 
 
 
@@ -10238,9 +10456,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_ride(arg1);
+> 
+> push(return);
 
 
 
@@ -10260,9 +10480,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_disable_occ(arg1);
 
 
 
@@ -10282,9 +10502,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_enable_occ(arg1);
 
 
 
@@ -10304,9 +10524,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_set_fog_near(arg1, arg2);
 
 
 
@@ -10326,9 +10546,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_set_fog_far(arg1, arg2);
 
 
 
@@ -10348,9 +10568,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_set_fog_min(arg1, arg2);
 
 
 
@@ -10370,9 +10590,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_light_set_fog_max(arg1, arg2);
 
 
 
@@ -10392,9 +10612,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_sheet_munny();
+> 
+> push(return);
 
 
 
@@ -10414,9 +10634,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_voice(arg1, arg2, arg3);
 
 
 
@@ -10436,9 +10656,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_player_set_exec_rc(arg1, arg2);
 
 
 
@@ -10458,9 +10678,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_secure_mode_end();
 
 
 
@@ -10480,9 +10698,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_medal(arg1, arg2);
 
 
 
@@ -10502,9 +10720,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_medal(arg1);
+> 
+> push(return);
 
 
 
@@ -10524,9 +10744,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_scatter_medal(arg1, arg2);
 
 
 
@@ -10546,9 +10766,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_action_lightcycle(arg1);
 
 
 
@@ -10568,9 +10788,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_get_lightcycle_movement(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -10590,9 +10812,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_motion_disable_anmatr_effect(arg1, arg2);
 
 
 
@@ -10612,9 +10834,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_motion_enable_anmatr_effect(arg1, arg2);
 
 
 
@@ -10634,9 +10856,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_dead(arg1);
+> 
+> push(return);
 
 
 
@@ -10656,9 +10880,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_signal_hook(arg1, arg2);
 
 
 
@@ -10678,9 +10902,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_event_get_rest_time();
+> 
+> push(return);
 
 
 
@@ -10700,9 +10924,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_recov_holylight(arg1);
 
 
 
@@ -10722,9 +10946,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_use_mp(arg1);
 
 
 
@@ -10744,9 +10968,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_reraise(arg1);
 
 
 
@@ -10766,9 +10990,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_scatter_prize_tr(arg1, arg2);
 
 
 
@@ -10788,9 +11012,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_prize_appear_tr(arg1, arg2);
 
 
 
@@ -10810,9 +11034,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sheet_add_munny(arg1);
+> 
+> push(return);
 
 
 
@@ -10832,9 +11058,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_camera_begin_scope(arg1, arg2);
 
 
 
@@ -10854,9 +11080,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_camera_end_scope();
 
 
 
@@ -10876,9 +11100,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_tutorial_pause(arg1);
 
 
 
@@ -10898,9 +11122,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_show_picture(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -10920,9 +11146,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_hide_shadow();
 
 
 
@@ -10942,9 +11166,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_show_shadow();
 
 
 
@@ -10964,9 +11186,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_begin_free_ability();
 
 
 
@@ -10986,9 +11206,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_end_free_ability();
 
 
 
@@ -11008,9 +11226,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_picture_change(arg1, arg2);
 
 
 
@@ -11030,9 +11248,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_levelup_unit(arg1);
 
 
 
@@ -11052,9 +11270,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_search_by_unit_arg(arg1, arg2, arg3);
 
 
 
@@ -11074,9 +11292,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_event_control_off();
 
 
 
@@ -11096,9 +11312,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_event_control_on();
 
 
 
@@ -11118,9 +11332,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_camera_reset();
 
 
 
@@ -11140,9 +11352,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_tutorial_open(arg1);
 
 
 
@@ -11162,9 +11374,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_player_get_rc(arg1);
+> 
+> push(return);
 
 
 
@@ -11184,9 +11398,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_worldwork_get();
+> 
+> push(return);
 
 
 
@@ -11206,9 +11420,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_area_set_next_entrance();
 
 
 
@@ -11228,9 +11440,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_prize_num();
+> 
+> push(return);
 
 
 
@@ -11250,9 +11462,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_tutorial_is_open();
+> 
+> push(return);
 
 
 
@@ -11272,9 +11484,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_skateboard_mode(arg1, arg2);
 
 
 
@@ -11294,9 +11506,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_area_cost_ratio();
+> 
+> push(return);
 
 
 
@@ -11316,9 +11528,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_search_by_glance(arg1, arg2);
 
 
 
@@ -11338,9 +11550,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_camera_eye();
+> 
+> push(return);
 
 
 
@@ -11360,9 +11572,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_camera_at();
+> 
+> push(return);
 
 
 
@@ -11382,9 +11594,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_search_by_camera(arg1, arg2);
 
 
 
@@ -11404,9 +11616,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_capture_command(arg1, arg2);
 
 
 
@@ -11426,9 +11638,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_player(arg1);
+> 
+> push(return);
 
 
 
@@ -11448,9 +11662,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_weight(arg1);
+> 
+> push(return);
 
 
 
@@ -11470,9 +11686,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sheet_set_element_rate(arg1, arg2, arg3);
 
 
 
@@ -11492,9 +11708,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_camera_set_scope_zoom(arg1);
 
 
 
@@ -11514,9 +11730,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_camera_set_scope_closeup_distance(arg1);
 
 
 
@@ -11536,9 +11752,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_camera_set_scope_target_pos(arg1);
 
 
 
@@ -11558,9 +11774,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_picture_set_pos(arg1, arg2, arg3);
 
 
 
@@ -11580,9 +11796,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_camera_get_projection_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -11602,9 +11820,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_no_gameover();
 
 
 
@@ -11624,9 +11840,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_play_se(arg1, arg2);
 
 
 
@@ -11646,9 +11862,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_sora(arg1);
+> 
+> push(return);
 
 
 
@@ -11668,9 +11886,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_unit_get_enemy_num();
+> 
+> push(return);
 
 
 
@@ -11690,9 +11908,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_player_lockon(arg1, arg2, arg3);
 
 
 
@@ -11712,9 +11930,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_command_enable_item();
 
 
 
@@ -11734,9 +11950,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_count_entry(arg1);
+> 
+> push(return);
 
 
 
@@ -11756,9 +11974,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_pattern_reset(arg1, arg2);
 
 
 
@@ -11778,9 +11996,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_reaction_callback(arg1, arg2, arg3, arg4);
 
 
 
@@ -11800,9 +12018,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_bg_set_animation_speed(arg1);
 
 
 
@@ -11822,9 +12040,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_prize_get_all_tr(arg1);
 
 
 
@@ -11844,9 +12062,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_dead_mark(arg1);
 
 
 
@@ -11866,9 +12084,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sheet_set_prize_range(arg1, arg2);
 
 
 
@@ -11888,9 +12106,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_cannon_camera_offset(arg1, arg2, arg3);
 
 
 
@@ -11910,9 +12128,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_each_all(arg1);
+> 
+> push(return);
 
 
 
@@ -11932,9 +12152,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_btlnpc(arg1);
+> 
+> push(return);
 
 
 
@@ -11954,9 +12176,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_cannon_param(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -11976,9 +12198,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_command_enable();
 
 
 
@@ -11998,9 +12218,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_disable_occ_bone(arg1, arg2);
 
 
 
@@ -12020,9 +12240,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_enable_occ_bone(arg1, arg2);
 
 
 
@@ -12042,9 +12262,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_command_set_side_b();
 
 
 
@@ -12064,9 +12282,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_prize_return_ca(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -12086,9 +12306,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_prize_vacuum_ca(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -12108,9 +12330,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_prize_vacuum_range_ca(arg1, arg2);
 
 
 
@@ -12130,9 +12352,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_prize_num_ca();
+> 
+> push(return);
 
 
 
@@ -12152,9 +12374,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_prize_appear_num(arg1, arg2, arg3);
 
 
 
@@ -12174,9 +12396,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_is_equip_ability(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -12196,9 +12420,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_clear_occ(arg1);
 
 
 
@@ -12218,9 +12442,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_command_override_slot(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -12240,9 +12466,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_command_slot_set_status(arg1, arg2);
 
 
 
@@ -12262,9 +12488,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_can_see(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -12284,9 +12512,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sheet_set_hitback_addition(arg1, arg2);
 
 
 
@@ -12306,9 +12534,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_effect_kill_all(arg1);
 
 
 
@@ -12328,9 +12556,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_close_pete_curtain();
 
 
 
@@ -12350,9 +12576,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_open_pete_curtain();
 
 
 
@@ -12372,9 +12596,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_area_set_return_tr();
 
 
 
@@ -12394,9 +12616,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_start_mpdrive(arg1, arg2);
 
 
 
@@ -12416,9 +12638,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_event_layer_off();
 
 
 
@@ -12438,9 +12658,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_player_can_capture_form();
+> 
+> push(return);
 
 
 
@@ -12460,9 +12680,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_event_layer_on();
 
 
 
@@ -12482,9 +12700,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sheet_attack_level(arg1);
+> 
+> push(return);
 
 
 
@@ -12504,9 +12724,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sheet_set_attack_level(arg1, arg2);
 
 
 
@@ -12526,9 +12746,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_hook_command_image(arg1);
 
 
 
@@ -12548,9 +12768,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_reset_command_image(arg1);
 
 
 
@@ -12570,9 +12790,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sheet_level(arg1);
+> 
+> push(return);
 
 
 
@@ -12592,9 +12814,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_treasure_get(arg1);
 
 
 
@@ -12614,9 +12836,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_prize_appear_xaldin(arg1, arg2);
 
 
 
@@ -12636,9 +12858,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_jigsaw_get(arg1, arg2);
 
 
 
@@ -12658,9 +12880,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_command_disable_group(arg1);
 
 
 
@@ -12680,9 +12902,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_command_enable_group(arg1);
 
 
 
@@ -12702,9 +12924,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_get_move_to_space_pos(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -12724,9 +12948,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_exec_damage(arg1, arg2);
 
 
 
@@ -12746,9 +12970,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_exec_damage_blow(arg1, arg2, arg3, arg4, arg5, arg6);
 
 
 
@@ -12768,9 +12992,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_exec_damage_small(arg1, arg2, arg3);
 
 
 
@@ -12790,9 +13014,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_exec_damage_hitback(arg1, arg2, arg3);
 
 
 
@@ -12812,9 +13036,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_enemy_each(arg1);
+> 
+> push(return);
 
 
 
@@ -12834,9 +13060,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_enemy_is_no_control(arg1);
+> 
+> push(return);
 
 
 
@@ -12856,9 +13084,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_enemy_is_damage_motion(arg1);
+> 
+> push(return);
 
 
 
@@ -12878,9 +13108,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_reaction(arg1);
+> 
+> push(return);
 
 
 
@@ -12900,9 +13132,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_is_reaction(arg1);
+> 
+> push(return);
 
 
 
@@ -12922,9 +13156,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_btlobj_set_sheet(arg1, arg2, arg3);
 
 
 
@@ -12944,9 +13178,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_attack_new(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -12966,9 +13202,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_radius(arg1, arg2, arg3);
 
 
 
@@ -12988,9 +13224,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_pos(arg1, arg2);
 
 
 
@@ -13010,9 +13246,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_attack_free(arg1);
 
 
 
@@ -13032,9 +13268,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_hit(arg1);
+> 
+> push(return);
 
 
 
@@ -13054,9 +13292,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_damage_exec_reaction(arg1);
 
 
 
@@ -13076,9 +13314,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_is_exec_reaction(arg1);
+> 
+> push(return);
 
 
 
@@ -13098,9 +13338,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_strike(arg1, arg2, arg3, arg4);
 
 
 
@@ -13120,9 +13360,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_attack_is_strike(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -13142,9 +13384,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_line(arg1, arg2, arg3);
 
 
 
@@ -13164,9 +13406,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_magic_start_thread(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -13186,9 +13430,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_teamwork_alloc(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -13208,9 +13454,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_obj_pax(arg1, arg2);
 
 
 
@@ -13230,9 +13476,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_btlobj_target(arg1);
+> 
+> push(return);
 
 
 
@@ -13252,9 +13500,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_get_owner(arg1);
+> 
+> push(return);
 
 
 
@@ -13274,9 +13524,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_get_param_id(arg1);
+> 
+> push(return);
 
 
 
@@ -13296,9 +13548,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_attack_exec_reflect(arg1);
 
 
 
@@ -13318,9 +13570,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_exec_reflect(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -13340,9 +13592,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_attack_refresh(arg1);
 
 
 
@@ -13362,9 +13614,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_hit_bg(arg1);
+> 
+> push(return);
 
 
 
@@ -13384,9 +13638,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_pax(arg1, arg2);
 
 
 
@@ -13406,9 +13660,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_attack_dup(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -13428,9 +13684,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_blow_up(arg1);
+> 
+> push(return);
 
 
 
@@ -13450,9 +13708,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_blow_speed(arg1);
+> 
+> push(return);
 
 
 
@@ -13472,9 +13732,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_get_type(arg1);
+> 
+> push(return);
 
 
 
@@ -13494,9 +13756,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_attack_type(arg1);
+> 
+> push(return);
 
 
 
@@ -13516,9 +13780,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_add_damage(arg1, arg2);
 
 
 
@@ -13538,9 +13802,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_team(arg1, arg2);
 
 
 
@@ -13560,9 +13824,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_hit_callback(arg1, arg2, arg3);
 
 
 
@@ -13582,9 +13846,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_reflect(arg1);
+> 
+> push(return);
 
 
 
@@ -13604,9 +13870,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_hit_wall(arg1);
+> 
+> push(return);
 
 
 
@@ -13626,9 +13894,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_hit_floor(arg1);
+> 
+> push(return);
 
 
 
@@ -13648,9 +13918,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_hit_bg_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -13670,9 +13942,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_get_reflect_vector(arg1);
+> 
+> push(return);
 
 
 
@@ -13692,9 +13966,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_reflecter(arg1);
+> 
+> push(return);
 
 
 
@@ -13714,9 +13990,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_attack_param_id(arg1);
+> 
+> push(return);
 
 
 
@@ -13736,9 +14014,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_damage(arg1);
+> 
+> push(return);
 
 
 
@@ -13758,9 +14038,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_limit_motion_start(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -13780,9 +14062,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_limit_player(arg1);
+> 
+> push(return);
 
 
 
@@ -13802,9 +14086,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_limit_friend(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -13824,9 +14110,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_limit_camera_start(arg1, arg2, arg3, arg4);
 
 
 
@@ -13846,9 +14132,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_rc(arg1, arg2, arg3, arg4, arg5);
 
 
 
@@ -13868,9 +14154,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_rc_receiver(arg1);
+> 
+> push(return);
 
 
 
@@ -13890,9 +14178,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_enemy_last_dead();
+> 
+> push(return);
 
 
 
@@ -13912,9 +14200,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_limit_start_thread(arg1, arg2);
 
 
 
@@ -13934,9 +14222,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_limit_light(arg1);
+> 
+> push(return);
 
 
 
@@ -13956,9 +14246,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_btlobj_lockon_target(arg1);
+> 
+> push(return);
 
 
 
@@ -13978,9 +14270,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_limit_effect_start(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -14000,9 +14294,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_limit_effect_start_pos(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -14022,9 +14318,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_limit_effect_start_bind(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -14044,9 +14342,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_limit_time(arg1);
+> 
+> push(return);
 
 
 
@@ -14066,9 +14366,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_effect(arg1, arg2);
 
 
 
@@ -14088,9 +14388,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_time(arg1, arg2, arg3, arg4);
 
 
 
@@ -14110,9 +14410,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_limit_reference(arg1);
+> 
+> push(return);
 
 
 
@@ -14132,9 +14434,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_orig_reaction(arg1);
+> 
+> push(return);
 
 
 
@@ -14154,9 +14458,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_enemy_count_damager();
+> 
+> push(return);
 
 
 
@@ -14176,9 +14480,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_get_reflect_count(arg1);
+> 
+> push(return);
 
 
 
@@ -14198,9 +14504,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_attack_new_combo_group();
+> 
+> push(return);
 
 
 
@@ -14220,9 +14526,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_magic_set_cost(arg1, arg2);
 
 
 
@@ -14242,9 +14548,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_magic_can_add_cost(arg1);
+> 
+> push(return);
 
 
 
@@ -14264,9 +14572,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_parts(arg1);
+> 
+> push(return);
 
 
 
@@ -14286,9 +14596,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_hitmark_pos(arg1, arg2);
 
 
 
@@ -14308,9 +14618,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_is_cure(arg1);
+> 
+> push(return);
 
 
 
@@ -14330,9 +14642,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_bonuslevel_up(arg1);
 
 
 
@@ -14352,9 +14664,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_reflect_callback(arg1, arg2, arg3);
 
 
 
@@ -14374,9 +14686,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_summon_is_tink_exist();
+> 
+> push(return);
 
 
 
@@ -14396,9 +14708,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_set_karma_limit(arg1, arg2);
 
 
 
@@ -14418,9 +14730,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_vacuum_create(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -14440,9 +14754,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_vacuum_destroy(arg1);
 
 
 
@@ -14462,9 +14776,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_ignore_type(arg1, arg2);
 
 
 
@@ -14484,9 +14798,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_pos(arg1, arg2);
 
 
 
@@ -14506,9 +14820,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_speed(arg1, arg2, arg3, arg4);
 
 
 
@@ -14528,9 +14842,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_rot_speed(arg1, arg2);
 
 
 
@@ -14550,9 +14864,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_near_range(arg1, arg2);
 
 
 
@@ -14572,9 +14886,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_dist_rate(arg1, arg2);
 
 
 
@@ -14594,9 +14908,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_element(arg1);
+> 
+> push(return);
 
 
 
@@ -14616,9 +14932,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_get_hitback(arg1);
+> 
+> push(return);
 
 
 
@@ -14638,9 +14956,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_exec_damage_large(arg1, arg2, arg3);
 
 
 
@@ -14660,9 +14978,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_enemy_get_attacker(arg1);
+> 
+> push(return);
 
 
 
@@ -14682,9 +15002,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_limit_reset_special_command(arg1);
 
 
 
@@ -14704,9 +15024,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_limit_close_gauge(arg1);
 
 
 
@@ -14726,9 +15046,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_get_reaction_type(arg1);
+> 
+> push(return);
 
 
 
@@ -14748,9 +15070,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_is_finish(arg1);
+> 
+> push(return);
 
 
 
@@ -14770,9 +15094,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_damage_is_normal(arg1);
+> 
+> push(return);
 
 
 
@@ -14792,9 +15118,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_attack_set_system_pax(arg1);
 
 
 
@@ -14814,9 +15140,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_btlobj_dup_sheet(arg1, arg2);
 
 
 
@@ -14836,9 +15162,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_valid(arg1);
+> 
+> push(return);
 
 
 
@@ -14858,9 +15186,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_enemy_set_attacker(arg1, arg2);
 
 
 
@@ -14880,9 +15208,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_event_is_exec();
+> 
+> push(return);
 
 
 
@@ -14902,9 +15230,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_complete(arg1);
 
 
 
@@ -14924,9 +15252,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_information(arg1);
 
 
 
@@ -14946,9 +15274,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_count(arg1, arg2);
 
 
 
@@ -14968,9 +15296,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_increment_count(arg1);
 
 
 
@@ -14990,9 +15318,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_restart_timer(arg1, arg2);
 
 
 
@@ -15012,9 +15340,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_gauge(arg1, arg2);
 
 
 
@@ -15034,9 +15362,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_add_gauge(arg1, arg2);
 
 
 
@@ -15056,9 +15384,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_gauge_ratio(arg1, arg2);
 
 
 
@@ -15078,9 +15406,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_failed();
 
 
 
@@ -15100,9 +15426,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_mission_get_gauge_ratio(arg1);
+> 
+> push(return);
 
 
 
@@ -15122,9 +15450,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_pause_timer();
 
 
 
@@ -15144,9 +15470,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_activate2d();
 
 
 
@@ -15166,9 +15490,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_deactivate2d();
 
 
 
@@ -15188,9 +15510,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_dead_boss(arg1);
 
 
 
@@ -15210,9 +15532,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_timer_param(arg1, arg2, arg3, arg4);
 
 
 
@@ -15232,9 +15554,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_count_param(arg1, arg2, arg3, arg4);
 
 
 
@@ -15254,9 +15576,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_gauge_param(arg1, arg2, arg3, arg4);
 
 
 
@@ -15276,9 +15598,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_decrement_count(arg1);
 
 
 
@@ -15298,9 +15620,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_mission_is_activate2d();
+> 
+> push(return);
 
 
 
@@ -15320,9 +15642,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_exit(arg1);
 
 
 
@@ -15342,9 +15664,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_reset_pause_mode();
 
 
 
@@ -15364,9 +15684,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_cancel_pause_timer();
 
 
 
@@ -15386,9 +15704,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_start_combo_counter(arg1);
 
 
 
@@ -15408,9 +15726,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_mission_get_timer(arg1);
+> 
+> push(return);
 
 
 
@@ -15430,9 +15750,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_stop_combo_counter();
 
 
 
@@ -15452,9 +15770,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_mission_get_gauge_warning_ratio(arg1);
+> 
+> push(return);
 
 
 
@@ -15474,9 +15794,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_mission_get_count(arg1);
+> 
+> push(return);
 
 
 
@@ -15496,9 +15818,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_mission_get_max_combo_counter();
+> 
+> push(return);
 
 
 
@@ -15518,9 +15840,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_mission_get_combo_counter();
+> 
+> push(return);
 
 
 
@@ -15540,9 +15862,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_return();
 
 
 
@@ -15562,9 +15882,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_add_combo_counter(arg1, arg2);
 
 
 
@@ -15584,9 +15904,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_mission_is_gauge_warning(arg1);
+> 
+> push(return);
 
 
 
@@ -15606,9 +15928,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_score_type(arg1);
+> 
+> push(return);
 
 
 
@@ -15628,9 +15952,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_score_score(arg1);
+> 
+> push(return);
 
 
 
@@ -15650,9 +15976,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_score_update(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -15672,9 +16000,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_score_get(arg1);
+> 
+> push(return);
 
 
 
@@ -15694,9 +16024,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_watch(arg1, arg2);
 
 
 
@@ -15716,9 +16046,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_mission_get_timer_second(arg1);
+> 
+> push(return);
 
 
 
@@ -15738,9 +16070,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_add_count(arg1, arg2);
 
 
 
@@ -15760,9 +16092,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_struggle_increment(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -15782,9 +16116,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_max_combo_counter(arg1, arg2);
 
 
 
@@ -15804,9 +16138,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_disable_count(arg1);
 
 
 
@@ -15826,9 +16160,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_disable_watch(arg1);
 
 
 
@@ -15848,9 +16182,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_warning_se(arg1, arg2);
 
 
 
@@ -15870,9 +16204,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_warning_timer(arg1);
 
 
 
@@ -15892,9 +16226,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_count_figure_num(arg1, arg2, arg3);
 
 
 
@@ -15914,9 +16248,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_disable_timer(arg1);
 
 
 
@@ -15936,9 +16270,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_warning_count(arg1);
 
 
 
@@ -15958,9 +16292,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_combo_counter_param(arg1, arg2, arg3, arg4);
 
 
 
@@ -15980,9 +16314,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_warning_combo_counter(arg1);
 
 
 
@@ -16002,9 +16336,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_set_combo_counter_warning_se(arg1, arg2);
 
 
 
@@ -16024,9 +16358,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_mission_lock();
 
 
 
@@ -16046,9 +16378,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_mission_is_lock();
+> 
+> push(return);
 
 
 
@@ -16068,9 +16400,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_event_continue_control_off();
 
 
 
@@ -16090,9 +16420,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_mission_warning_gauge(arg1, arg2);
 
 
 
@@ -16112,9 +16442,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_mission_reset_warning_count(arg1);
 
 
 
@@ -16134,9 +16464,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_start_rtn_action(arg1);
+> 
+> push(return);
 
 
 
@@ -16156,9 +16488,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_set_path_way(arg1, arg2);
 
 
 
@@ -16178,9 +16510,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_reverse_path_way(arg1);
+> 
+> push(return);
 
 
 
@@ -16200,9 +16534,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_get_path_dir(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -16222,9 +16558,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_end_rtn_action(arg1);
 
 
 
@@ -16244,9 +16580,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_rtn_action(arg1);
+> 
+> push(return);
 
 
 
@@ -16266,9 +16604,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_rtn_action_dir(arg1);
+> 
+> push(return);
 
 
 
@@ -16288,9 +16628,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_is_rtn_change_dir(arg1);
+> 
+> push(return);
 
 
 
@@ -16310,9 +16652,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_create_active_path(arg1, arg2);
 
 
 
@@ -16332,9 +16674,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_get_path_dir_from_obj(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -16354,9 +16698,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_forward_path_current_pointer(arg1, arg2);
 
 
 
@@ -16376,9 +16720,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_is_end_rtn_action(arg1);
+> 
+> push(return);
 
 
 
@@ -16398,9 +16744,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_reset_active_path(arg1);
 
 
 
@@ -16420,9 +16766,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_set_path_target_point(arg1, arg2);
 
 
 
@@ -16442,9 +16788,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_get_path_point_pos(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -16464,9 +16812,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_clear_active_path(arg1);
 
 
 
@@ -16486,9 +16834,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_reset_leave_way(arg1, arg2);
 
 
 
@@ -16508,9 +16856,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_check_rtn_option_flag(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -16530,9 +16880,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_reset_path_current_pointer(arg1);
 
 
 
@@ -16552,9 +16902,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_path_current_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -16574,9 +16926,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_path_current_dir(arg1);
+> 
+> push(return);
 
 
 
@@ -16596,9 +16950,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_path_first_point_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -16618,9 +16974,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_path_last_point_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -16640,9 +16998,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_set_path_by_id(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -16662,9 +17022,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_set_path_by_group(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -16684,9 +17046,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_get_path_dir_r(arg1, arg2, arg3);
+> 
+> push(return);
 
 
 
@@ -16706,9 +17070,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_set_rtn_partner(arg1, arg2);
 
 
 
@@ -16728,9 +17092,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_set_rtn_option_flag(arg1, arg2);
 
 
 
@@ -16750,9 +17114,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_eh22_path_move_next(arg1);
 
 
 
@@ -16772,9 +17136,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_eh22_path_move_before(arg1);
 
 
 
@@ -16794,9 +17158,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_eh22_path_is_moving(arg1);
+> 
+> push(return);
 
 
 
@@ -16816,9 +17182,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_eh22_path_get_point(arg1);
+> 
+> push(return);
 
 
 
@@ -16838,9 +17206,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_eh22_path_play(arg1, arg2, arg3);
 
 
 
@@ -16860,9 +17228,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_set_rtn_time_param(arg1, arg2);
 
 
 
@@ -16882,9 +17250,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_get_obj_head_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -16904,9 +17274,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_camera_shake(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 
 
 
@@ -16926,9 +17296,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_prize_appear(arg1, arg2);
 
 
 
@@ -16948,9 +17318,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_player_get_form();
+> 
+> push(return);
 
 
 
@@ -16970,9 +17340,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_searcher_init(arg1, arg2);
 
 
 
@@ -16992,9 +17362,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_target_searcher_reset(arg1);
 
 
 
@@ -17014,9 +17384,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_seracher_search(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 
 
 
@@ -17036,9 +17406,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_stop(arg1, arg2, arg3);
 
 
 
@@ -17058,9 +17428,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_restart(arg1, arg2);
 
 
 
@@ -17080,9 +17450,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_searcher_add(arg1, arg2);
 
 
 
@@ -17102,9 +17472,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_target_dist(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -17124,9 +17496,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_hit_attack(arg1);
+> 
+> push(return);
 
 
 
@@ -17146,9 +17520,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_searcher_search_obj(arg1, arg2, arg3);
 
 
 
@@ -17168,9 +17542,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_searcher_get_old(arg1, arg2, arg3);
 
 
 
@@ -17190,9 +17564,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_force_warp(arg1);
 
 
 
@@ -17212,9 +17586,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_get(arg1);
+> 
+> push(return);
 
 
 
@@ -17234,9 +17610,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_set_warp_level(arg1);
 
 
 
@@ -17256,9 +17632,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_target_clear(arg1);
 
 
 
@@ -17278,9 +17654,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_lockon_show();
 
 
 
@@ -17300,9 +17674,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_lockon_hide();
 
 
 
@@ -17322,9 +17694,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_peterpan_prize_drain_start();
 
 
 
@@ -17344,9 +17714,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_status_peterpan_prize_drain_end();
 
 
 
@@ -17366,9 +17734,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_searcher_add_target(arg1, arg2);
 
 
 
@@ -17388,9 +17756,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_target_searcher_get_target_num(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -17410,9 +17780,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_near_parts(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -17432,9 +17804,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_get_bg_press(arg1);
+> 
+> push(return);
 
 
 
@@ -17454,9 +17828,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_tt_ball_blow(arg1, arg2, arg3, arg4);
 
 
 
@@ -17476,9 +17850,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_limit_hover(arg1, arg2, arg3, arg4);
 
 
 
@@ -17498,9 +17872,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_player_dice();
 
 
 
@@ -17520,9 +17892,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_dice_set_spec(arg1, arg2, arg3, arg4);
 
 
 
@@ -17542,9 +17914,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_player_card();
 
 
 
@@ -17564,9 +17934,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_card_set_spec(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 
 
 
@@ -17586,9 +17956,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_limit_aladdin_prize_drain();
 
 
 
@@ -17608,9 +17976,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_skateboard_ride(arg1, arg2);
 
 
 
@@ -17630,9 +17998,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_skateboard_trick(arg1, arg2, arg3);
 
 
 
@@ -17652,9 +18020,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_skateboard_trick_motion_push(arg1, arg2, arg3);
 
 
 
@@ -17674,9 +18042,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_attach_camera(arg1);
 
 
 
@@ -17696,9 +18064,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_detach_camera(arg1);
 
 
 
@@ -17718,9 +18086,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_attach_camera(arg1);
+> 
+> push(return);
 
 
 
@@ -17740,9 +18110,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_limit_mulan_idle(arg1);
 
 
 
@@ -17762,9 +18132,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_skateboard_ride_edge(arg1);
 
 
 
@@ -17784,9 +18154,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_limit_peterpan_idle(arg1);
 
 
 
@@ -17806,9 +18176,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_skateboard_edge_jump(arg1, arg2, arg3);
 
 
 
@@ -17828,9 +18198,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_hop_direct(arg1, arg2, arg3, arg4);
 
 
 
@@ -17850,9 +18220,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_command_limit_trinity_commbo_start(arg1);
 
 
 
@@ -17872,9 +18242,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_limit_riku_idle(arg1);
 
 
 
@@ -17894,9 +18264,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_hide_shadow(arg1);
 
 
 
@@ -17916,9 +18286,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_rc_stop_all(arg1, arg2, arg3, arg4);
 
 
 
@@ -17938,9 +18308,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_stop_end_all(arg1);
 
 
 
@@ -17960,9 +18330,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_skateboardscore_add_count(arg1, arg2);
 
 
 
@@ -17982,9 +18352,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_stop(arg1);
+> 
+> push(return);
 
 
 
@@ -18004,9 +18376,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_stop_start(arg1, arg2);
 
 
 
@@ -18026,9 +18398,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_bghit_check_line(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -18048,9 +18422,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_bghit_get_normal(arg1);
+> 
+> push(return);
 
 
 
@@ -18070,9 +18446,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_bghit_is_hit(arg1);
+> 
+> push(return);
 
 
 
@@ -18092,9 +18470,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_bghit_get_cross_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -18114,9 +18494,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_bghit_get_kind(arg1);
+> 
+> push(return);
 
 
 
@@ -18136,9 +18518,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_set_group(arg1, arg2);
 
 
 
@@ -18158,9 +18540,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_target_get_group(arg1);
+> 
+> push(return);
 
 
 
@@ -18180,9 +18564,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_act_child_push(arg1, arg2);
 
 
 
@@ -18202,9 +18586,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_xemnas_get_obj(arg1);
+> 
+> push(return);
 
 
 
@@ -18224,9 +18610,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_stealth_color(arg1, arg2, arg3, arg4);
 
 
 
@@ -18246,9 +18632,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_hook(arg1);
+> 
+> push(return);
 
 
 
@@ -18268,9 +18656,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_carpet_obj_idle(arg1);
 
 
 
@@ -18290,9 +18678,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_damage_motion(arg1);
+> 
+> push(return);
 
 
 
@@ -18312,9 +18702,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_show_shadow(arg1);
 
 
 
@@ -18334,9 +18724,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_scissoring(arg1, arg2);
 
 
 
@@ -18356,9 +18746,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_clear_hitback(arg1);
 
 
 
@@ -18378,9 +18768,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_party_attack(arg1, arg2);
 
 
 
@@ -18400,9 +18790,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_strike_raid_calc_xyzrot(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -18422,9 +18814,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_larxene_dead(arg1);
 
 
 
@@ -18444,9 +18836,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_play_se_loop(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -18466,9 +18860,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_fadeout_se(arg1, arg2);
 
 
 
@@ -18488,9 +18882,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_enemy_stop_all_start(arg1);
 
 
 
@@ -18510,9 +18904,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_enemy_stop_all_end(arg1);
 
 
 
@@ -18532,9 +18926,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_hit_mark_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -18554,9 +18950,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_flare_init();
 
 
 
@@ -18576,9 +18970,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_flare_new();
+> 
+> push(return);
 
 
 
@@ -18598,9 +18992,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_flare_free(arg1);
 
 
 
@@ -18620,9 +19014,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_flare_set_pos(arg1, arg2);
 
 
 
@@ -18642,9 +19036,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_flare_set_radius(arg1, arg2, arg3);
 
 
 
@@ -18664,9 +19058,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_flare_set_effect(arg1, arg2);
 
 
 
@@ -18686,9 +19080,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_flare_set_target(arg1, arg2);
 
 
 
@@ -18708,9 +19102,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_flare_get_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -18730,9 +19126,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_flare_is_empty();
+> 
+> push(return);
 
 
 
@@ -18752,9 +19148,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_limit_aladdin_exclamation_mark_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -18774,9 +19172,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_magic_calc_speed(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -18796,9 +19196,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_reaction_offset(arg1, arg2);
 
 
 
@@ -18818,9 +19218,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_get_target_size(arg1);
+> 
+> push(return);
 
 
 
@@ -18840,9 +19242,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_get_current_action(arg1);
+> 
+> push(return);
 
 
 
@@ -18862,9 +19266,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_friend_set_script_status(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -18884,9 +19290,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_get_main_status(arg1);
+> 
+> push(return);
 
 
 
@@ -18906,9 +19314,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_friend_update_target(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -18928,9 +19338,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_limit_hover_set_spec(arg1);
 
 
 
@@ -18950,9 +19360,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_enable_system_wishdir(arg1);
 
 
 
@@ -18972,9 +19382,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_disable_system_wishdir(arg1);
 
 
 
@@ -18994,9 +19404,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_friend_call(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -19016,9 +19428,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_limit_start_command();
+> 
+> push(return);
 
 
 
@@ -19038,9 +19450,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_trinity_shot_init();
 
 
 
@@ -19060,9 +19470,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_trinity_shot_start(arg1, arg2, arg3, arg4);
+> 
+> push(return);
 
 
 
@@ -19082,9 +19494,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_trinity_shot_ensure();
 
 
 
@@ -19104,9 +19514,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_trinity_shot_set_effect_id(arg1, arg2);
 
 
 
@@ -19126,9 +19536,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_vacuum_set_effective_range(arg1, arg2);
 
 
 
@@ -19148,9 +19558,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_enemy_summon_entry(arg1);
+> 
+> push(return);
 
 
 
@@ -19170,9 +19582,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_attack_set_rc_owner(arg1, arg2);
 
 
 
@@ -19192,9 +19604,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> return = trap_summon_is_exec();
+> 
+> push(return);
 
 
 
@@ -19214,9 +19626,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_limit_reset_hit_counter(arg1);
+> 
+> push(return);
 
 
 
@@ -19236,9 +19650,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_target_radius(arg1);
+> 
+> push(return);
 
 
 
@@ -19258,9 +19674,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_player_push_ability_button(arg1);
+> 
+> push(return);
 
 
 
@@ -19280,9 +19698,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_xyzrot(arg1, arg2);
 
 
 
@@ -19302,9 +19720,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_special_last_xemnus_laser_start(arg1);
 
 
 
@@ -19324,9 +19742,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_special_last_xemnus_laser_attack();
 
 
 
@@ -19346,9 +19762,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_special_last_xemnus_laser_end();
 
 
 
@@ -19368,9 +19782,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_special_last_xemnus_laser_optimize();
 
 
 
@@ -19390,9 +19802,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_special_last_xemnus_laser_optimize_end();
 
 
 
@@ -19412,9 +19822,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_camera_apply_inverse_pos(arg1);
+> 
+> push(return);
 
 
 
@@ -19434,9 +19846,7 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> trap_empty_func();
 
 
 
@@ -19456,9 +19866,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_stitch_set_screen_position(arg1, arg2);
 
 
 
@@ -19478,9 +19888,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_stitch_get_screen_position(arg1);
+> 
+> push(return);
 
 
 
@@ -19500,9 +19912,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_start_limit(arg1);
 
 
 
@@ -19522,9 +19934,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_end_limit(arg1);
 
 
 
@@ -19544,9 +19956,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_chickenlittle_get_shoot_target(arg1);
+> 
+> push(return);
 
 
 
@@ -19566,9 +19980,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_special_command(arg1, arg2);
 
 
 
@@ -19588,9 +20002,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_obj_reset_special_command(arg1);
 
 
 
@@ -19610,9 +20024,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_get_target_last_position(arg1);
+> 
+> push(return);
 
 
 
@@ -19632,9 +20048,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_genie_change_form(arg1, arg2);
 
 
 
@@ -19654,9 +20070,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_genie_get_limit_command(arg1);
+> 
+> push(return);
 
 
 
@@ -19676,9 +20094,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_stop_timer(arg1, arg2, arg3);
 
 
 
@@ -19698,9 +20116,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg8 = pop(); arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_stitch_effect_start(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+> 
+> push(return);
 
 
 
@@ -19720,9 +20140,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_stitch_shot_effect(arg1, arg2);
 
 
 
@@ -19742,9 +20162,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_friend_set_target(arg1, arg2, arg3);
 
 
 
@@ -19764,9 +20184,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_sysobj_motion_cont_push(arg1, arg2, arg3);
 
 
 
@@ -19786,9 +20206,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_stitch_effect_kill(arg1, arg2);
 
 
 
@@ -19808,9 +20228,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_zako(arg1);
+> 
+> push(return);
 
 
 
@@ -19830,9 +20252,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_boss(arg1);
+> 
+> push(return);
 
 
 
@@ -19852,9 +20276,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_limit(arg1);
+> 
+> push(return);
 
 
 
@@ -19874,9 +20300,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_follow_player(arg1);
 
 
 
@@ -19896,9 +20322,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_follow_enemy(arg1);
 
 
 
@@ -19918,9 +20344,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_blow(arg1);
+> 
+> push(return);
 
 
 
@@ -19940,9 +20368,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_enemy_is_attacked_from(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -19962,9 +20392,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = tarp_friend_is_equiped_ability(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -19984,9 +20416,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_peterpan_receive_notify_player_target(arg1);
+> 
+> push(return);
 
 
 
@@ -20006,9 +20440,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_peterpan_accept_notify_player_target(arg1);
 
 
 
@@ -20028,9 +20462,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_enable_inertia(arg1);
 
 
 
@@ -20050,9 +20484,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_disable_inertia(arg1);
 
 
 
@@ -20072,9 +20506,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_friend_use_item(arg1, arg2, arg3, arg4);
 
 
 
@@ -20094,9 +20528,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_finish_blow(arg1);
+> 
+> push(return);
 
 
 
@@ -20116,9 +20552,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sysobj_is_summon(arg1);
+> 
+> push(return);
 
 
 
@@ -20138,9 +20576,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_stitch_move_request(arg1, arg2);
 
 
 
@@ -20160,9 +20598,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_get_player_attacker(arg1);
+> 
+> push(return);
 
 
 
@@ -20182,9 +20622,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_friend_remove_player_attacker(arg1, arg2);
 
 
 
@@ -20204,9 +20644,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_friend_get_action_param(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -20226,9 +20668,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_is_control(arg1);
+> 
+> push(return);
 
 
 
@@ -20248,9 +20692,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_is_moveonly(arg1);
+> 
+> push(return);
 
 
 
@@ -20270,9 +20716,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_attack_is_finish(arg1);
+> 
+> push(return);
 
 
 
@@ -20292,9 +20740,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_action_clear(arg1);
 
 
 
@@ -20314,9 +20762,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_obj_is_motion_sync(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -20336,9 +20786,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_start_leave(arg1);
 
 
 
@@ -20358,9 +20808,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_friend_is_start_leave(arg1);
+> 
+> push(return);
 
 
 
@@ -20380,9 +20832,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_obj_set_use_mp(arg1, arg2);
 
 
 
@@ -20402,9 +20854,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_obj_is_tornado(arg1);
+> 
+> push(return);
 
 
 
@@ -20424,9 +20878,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sheet_get_drive_time(arg1);
+> 
+> push(return);
 
 
 
@@ -20446,9 +20902,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_disable_follow_enemy(arg1);
 
 
 
@@ -20468,9 +20924,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_enable_follow_enemy(arg1);
 
 
 
@@ -20490,9 +20946,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_disable_follow_player(arg1);
 
 
 
@@ -20512,9 +20968,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_enable_follow_player(arg1);
 
 
 
@@ -20534,9 +20990,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_sheet_get_mp(arg1);
+> 
+> push(return);
 
 
 
@@ -20556,9 +21014,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_chickenlittle_get_nearest_target(arg1, arg2, arg3, arg4);
 
 
 
@@ -20578,9 +21036,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> return = trap_btlobj_is_reflect_motion(arg1);
+> 
+> push(return);
 
 
 
@@ -20600,9 +21060,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_friend_add_watch_effect(arg1, arg2);
 
 
 
@@ -20622,9 +21082,11 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> return = trap_friend_is_effect_exist(arg1, arg2);
+> 
+> push(return);
 
 
 
@@ -20644,9 +21106,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_target_searcher_set_check_hide_from_friend(arg1, arg2);
 
 
 
@@ -20666,9 +21128,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_friend_invalidate_warp_point(arg1, arg2);
 
 
 
@@ -20688,9 +21150,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg1 = pop(); 
+> 
+> trap_friend_add_warp_point(arg1);
 
 
 
@@ -20710,9 +21172,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
+> 
+> trap_friend_link_magic(arg1, arg2, arg3);
 
 
 
@@ -20732,9 +21194,9 @@ _Format:_
 _Description:_
 
 
-> sp += ssub
->
-> gosub(_imm32_)
+> arg2 = pop(); arg1 = pop(); 
+> 
+> trap_chickenlittle_set_shoot_target(arg1, arg2);
 
 
 

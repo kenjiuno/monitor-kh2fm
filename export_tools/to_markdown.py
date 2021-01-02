@@ -80,8 +80,8 @@ def run() -> str:
                 syscall.funcIdx = funcIdx
                 syscall.name = func[0]
                 syscall.funcForm = syscall.name
-                syscall.doc = funcsDoc[instr.name] if instr.name in funcsDoc else makeStubDocFrom(
-                    instr, func)
+                syscall.doc = funcsDoc[syscall.name] if syscall.name in funcsDoc else makeStubDocFrom(
+                    syscall, func)
                 syscallList.append(syscall)
 
     env = Environment(
