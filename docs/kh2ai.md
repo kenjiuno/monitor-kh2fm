@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sat Jan  2 17:02:54 2021 UTC
+Update timestamp: Sat Jan  2 17:41:29 2021 UTC
 
 ## Credits
 
@@ -1356,7 +1356,7 @@ _Operations:_
 
 _Format:_
 
-`memcpy  imm16`
+`memcpy  ssub`
 
 _Description:_
 

@@ -79,7 +79,7 @@ table: List[OpDef] = [
     # 3 unk
     OpDef(3, None, None, "?", "fetchValue", 0, [OpArg('imm16', Arg16)]),
     # 4 unk
-    OpDef(4, None, None, "?", "memcpy", 0, [OpArg('imm16', Arg16)]),
+    OpDef(4, None, None, "?", "memcpy", 0, [OpArg('ssub', ArgSsub)]),
     # unary int
     OpDef(5, 0, 0, "CFTI", "cfti", 0, []),
     OpDef(5, 0, 2, "NEG", "neg", 0, []),
