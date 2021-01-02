@@ -122,10 +122,10 @@ table: List[OpDef] = [
     OpDef(6, 1, 3, "DIVF", "divf", 0, []),
     OpDef(6, 1, 4, "MODF", "modf", 0, []),
     # branch
-    OpDef(7, 0, 0, "J", "j", Jump, [OpArg('imm16', Arg16 | AiPos)]),
-    OpDef(7, 0, 1, "JNZ", "jnz", Conditional |
+    OpDef(7, None, 0, "J", "j", Jump, [OpArg('imm16', Arg16 | AiPos)]),
+    OpDef(7, None, 1, "JNZ", "jnz", Conditional |
           Jump, [OpArg('imm16', Arg16 | AiPos)]),
-    OpDef(7, 0, 2, "JZ", "jz",  Conditional |
+    OpDef(7, None, 2, "JZ", "jz",  Conditional |
           Jump, [OpArg('imm16', Arg16 | AiPos)]),
     # gosub
     OpDef(8, None, None, "GOSUB", "gosub", Gosub, [
@@ -144,6 +144,6 @@ table: List[OpDef] = [
     OpDef(10, None, None, "SYSCALL", "syscall",
           Syscall, [OpArg('imm16', Arg16)]),
     # 11 unk
-    OpDef(11, 0, 0, "?", "gosub32", Gosub, [
+    OpDef(11, None, None, "?", "gosub32", Gosub, [
           OpArg('ssub', ArgSsub), OpArg('imm32', Arg32 | AiPos)]),
 ]

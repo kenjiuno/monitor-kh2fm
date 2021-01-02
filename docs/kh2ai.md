@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sat Jan  2 10:32:18 2021 UTC
+Update timestamp: Sat Jan  2 13:00:25 2021 UTC
 
 ## Credits
 
@@ -109,9 +109,9 @@ Instrument list:
 | 6 | 1 | 2 | [mulf](#mulf) |
 | 6 | 1 | 3 | [divf](#divf) |
 | 6 | 1 | 4 | [modf](#modf) |
-| 7 | 0 | 0 | [j](#j) |
-| 7 | 0 | 1 | [jnz](#jnz) |
-| 7 | 0 | 2 | [jz](#jz) |
+| 7 | None | 0 | [j](#j) |
+| 7 | None | 1 | [jnz](#jnz) |
+| 7 | None | 2 | [jz](#jz) |
 | 8 | None | None | [gosub](#gosub) |
 | 9 | None | 0 | [halt](#halt) |
 | 9 | None | 1 | [exit](#exit) |
@@ -123,7 +123,7 @@ Instrument list:
 | 9 | None | 8 | [degr](#degr) |
 | 9 | None | 9 | [radd](#radd) |
 | 10 | None | None | [syscall](#syscall) |
-| 11 | 0 | 0 | [gosub32](#gosub32) |
+| 11 | None | None | [gosub32](#gosub32) |
 
 Syscall list:
 
