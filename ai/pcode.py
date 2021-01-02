@@ -122,7 +122,7 @@ table: List[OpDef] = [
     OpDef(6, 1, 3, "DIVF", "divf", 0, []),
     OpDef(6, 1, 4, "MODF", "modf", 0, []),
     # branch
-    OpDef(7, None, 0, "J", "j", Jump, [OpArg('imm16', Arg16 | AiPos)]),
+    OpDef(7, None, 0, "J", "jmp", Jump, [OpArg('imm16', Arg16 | AiPos)]),
     OpDef(7, None, 1, "JNZ", "jnz", Conditional |
           Jump, [OpArg('imm16', Arg16 | AiPos)]),
     OpDef(7, None, 2, "JZ", "jz",  Conditional |
