@@ -43,9 +43,9 @@ memcpyToSpAi:
 
 memcpy:
   help: |
-    > src = pop(); dst = pop(); memcpy(dst, src, imm16);
+    > src = pop(); dst = pop(); memcpy(dst, src, ssub);
 
-    Copy single word (4 bytes), if _imm16_ == 0.
+    Copy single word (4 bytes), if ssub == 0.
 
 popToSp:
   help: |
@@ -245,5 +245,5 @@ syscall:
 
     - tableIdx = _ssub_
     - funcIdx = _imm16_
-    
+
     > syscall(_ssub_, _imm16_)

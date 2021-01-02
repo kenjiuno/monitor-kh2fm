@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sat Jan  2 17:41:29 2021 UTC
+Update timestamp: Sat Jan  2 18:32:23 2021 UTC
 
 ## Credits
 
@@ -1361,9 +1361,9 @@ _Format:_
 _Description:_
 
 
-> src = pop(); dst = pop(); memcpy(dst, src, imm16);
+> src = pop(); dst = pop(); memcpy(dst, src, ssub);
 
-Copy single word (4 bytes), if _imm16_ == 0.
+Copy single word (4 bytes), if ssub == 0.
 
 
 
