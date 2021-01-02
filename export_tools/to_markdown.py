@@ -6,6 +6,14 @@ from typing import Union, Callable, List, Iterable, Tuple, Sequence, Dict
 import datetime
 
 
+class Syscall1:
+    tableIdx: int
+    funcIdx: int
+    name: str
+    doc: Dict
+    funcForm: str
+
+
 class Instr1:
     name: str
     part1: int
@@ -19,6 +27,7 @@ def run() -> str:
     funcsDoc = instr_docs.load()
 
     instrList: List[Instr1] = []
+    syscallList: List = []
 
     def formFunc(name, opDef: pcode.OpDef) -> str:
         args = []
@@ -54,36 +63,33 @@ def run() -> str:
     for opDef in pcode.table:
         behavior = opDef.behavior
 
-        def setFlagsTo(instr):
-            pass
+        instr = Instr1()
+        instr.part1 = opDef.opc
+        instr.part2 = opDef.sub
+        instr.part3 = opDef.ssub
+        instr.name = opDef.name
+        instr.funcForm = formFunc(instr.name, opDef)
+        instr.doc = funcsDoc[instr.name] if instr.name in funcsDoc else {}
+        instrList.append(instr)
 
-        if behavior & pcode.Syscall:
-            for tableIdx, table in enumerate(trap_table.tables):
-                for funcIdx, func in enumerate(table):
-                    if len(func[0]) != 0:
-                        instr = Instr1()
-                        instr.part1 = opDef.opc
-                        instr.part2 = tableIdx
-                        instr.part3 = funcIdx
-                        instr.name = func[0]
-                        instr.funcForm = instr.name
-                        instr.doc = funcsDoc[instr.name] if instr.name in funcsDoc else makeStubDocFrom(
-                            instr, func)
-                        instrList.append(instr)
-                        setFlagsTo(instr)
-        else:
-            instr = Instr1()
-            instr.part1 = opDef.opc
-            instr.part2 = opDef.sub
-            instr.part3 = opDef.ssub
-            instr.name = opDef.name
-            instr.funcForm = formFunc(instr.name, opDef)
-            instr.doc = funcsDoc[instr.name] if instr.name in funcsDoc else {}
-            instrList.append(instr)
-            setFlagsTo(instr)
+    for tableIdx, table in enumerate(trap_table.tables):
+        for funcIdx, func in enumerate(table):
+            if len(func[0]) != 0:
+                syscall = Syscall1()
+                syscall.tableIdx = tableIdx
+                syscall.funcIdx = funcIdx
+                syscall.name = func[0]
+                syscall.funcForm = syscall.name
+                syscall.doc = funcsDoc[instr.name] if instr.name in funcsDoc else makeStubDocFrom(
+                    instr, func)
+                syscallList.append(syscall)
 
     env = Environment(
         loader=PackageLoader("export_tools", 'templates'),
     )
     template = env.get_template('kh2ai.md.txt')
-    return template.render(instrList=instrList, when=datetime.datetime.utcnow().strftime("%c UTC"))
+    return template.render(
+        instrList=instrList,
+        syscallList=syscallList,
+        when=datetime.datetime.utcnow().strftime("%c UTC")
+    )

@@ -238,3 +238,12 @@ supzf:
     local tmp:4 = sp;
     pop(tmp);
     push((tmp f> 0));
+
+syscall:
+  help: |
+    Notes:
+
+    - tableIdx = _ssub_
+    - funcIdx = _imm16_
+    
+    > syscall(_ssub_, _imm16_)
