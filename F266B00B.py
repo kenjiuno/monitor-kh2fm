@@ -23,8 +23,8 @@ utils.redirectStdoutStderr()
 # config
 extractFiles = False
 recordReadMemFrm = False
-traceAiExec = True
-tracePax = False
+traceAiExec = False
+tracePax = True
 showTick = False
 
 # internal variables please do not change
@@ -54,7 +54,8 @@ recorder = recorders.recorder_repeater()
 if recordReadMemFrm:
     recorder.register(
         recorders.ee_load_store_recorder_try4(
-            Path('H:/Proj/khkh_xldM/MEMO/expSim/ardTrace')
+            Path('H:/Proj/khkh_xldM/MEMO/expSim/ardTrace'),
+            endsWith=".ard"
         )
     )
 
@@ -62,7 +63,7 @@ if recordReadMemFrm:
 
 if traceAiExec:
     # recorder.register(ai.trace_ai_exec_onload())
-    recorder.register(ai.trace_ai_exec_always())
+    # recorder.register(ai.trace_ai_exec_always())
     # ai.trap_all_funcs()
     # ai.install_at_trap_call()
     pass
@@ -71,6 +72,12 @@ if tracePax:
     # recorder.register(pax.trace_onload())
     # pax.install_access_to_pppProgTbl()
     # pax.install_call_ppp()
+    recorder.register(
+        recorders.ee_load_store_recorder_try4(
+            Path('H:/Proj/khkh_xldM/MEMO/expSim/paxTrace'),
+            endsWith="obj/WORLD_POINT.a.fm"
+        )
+    )
     pass
 
 

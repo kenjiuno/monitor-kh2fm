@@ -4,7 +4,7 @@ import utils
 from struct import *
 from pathlib import Path
 import time
-from typing import List, Type
+from typing import List, Type, Callable
 
 # This is non-volatile module. pcsx2 restart is required to reload this module.
 
@@ -133,13 +133,17 @@ class ee_load_store_recorder_try2(base_recorder):
 
 
 class ee_load_store_recorder_try3(base_recorder):
-    state = 0
-    numRead = 0
-    numReadHit = 0
-    logLines = []
+    state: int
+    numRead: int
+    numReadHit: int
+    logLines: List
 
     def __init__(self, saveTo):
+        self.state = 0
+        self.numRead = 0
+        self.numReadHit = 0
         self.saveTo = saveTo
+        self.logLines = []
 
     def end_file_load(self, file: str, addr: int, size: int):
         # 01c4d440  ard/eh18.ard
@@ -174,18 +178,27 @@ class ee_load_store_recorder_try3(base_recorder):
 
 
 class ee_load_store_recorder_try4(base_recorder):
-    state = 0
-    logLines = []
+    state: int
+    logLines: List
     saveDir: Path = None
     saveDirNow: Path = None
-    pcsx2Log = []
+    pcsx2Log: List
+    fileFilter: Callable[[str], bool]
 
-    def __init__(self, saveDir: Path):
+    def __init__(self, saveDir: Path, endsWith: str = None):
+        self.state = 0
+        self.logLines = []
         self.saveDir = saveDir
+        self.pcsx2Log = []
+
+        if endsWith != None:
+            self.fileFilter = lambda it: it.endswith(endsWith)
+        else:
+            self.fileFilter = lambda it: False
 
     def end_file_load(self, file: str, addr: int, size: int):
         # 01c4d440  ard/eh18.ard
-        if file.endswith(".ard"):
+        if self.fileFilter(file):
             self.state = 1
             self.write_down()
             self.pcsx2Log.append("# py.S_IEXPA: %08X  %s " % (addr, file))
