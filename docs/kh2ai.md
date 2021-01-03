@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sat Jan  2 18:32:23 2021 UTC
+Update timestamp: Sun Jan  3 07:04:05 2021 UTC
 
 ## Credits
 
@@ -1221,7 +1221,7 @@ _Format:_
 _Description:_
 
 
-> store(fetch(wp) + _imm16_, pop())
+> store(fetch(sp) + _imm16_, pop())
 
 
 

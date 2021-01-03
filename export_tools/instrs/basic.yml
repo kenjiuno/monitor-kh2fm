@@ -55,7 +55,7 @@ popToWp:
     > store(wp + _imm16_, pop())
 popToSpVal:
   help: |
-    > store(fetch(wp) + _imm16_, pop())
+    > store(fetch(sp) + _imm16_, pop())
 popToAi:
   help: |
     > store(ai + 16 + 2 * _imm16_, pop())
