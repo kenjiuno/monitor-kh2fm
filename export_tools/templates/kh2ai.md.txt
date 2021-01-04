@@ -29,7 +29,77 @@ struct header {
 };
 ```
 
-Instruments follow.
+## Memory space
+
+4 kinds:
+
+- work
+- stack
+- temp
+- ai
+
+### work
+
+Uninitialized memory space.
+
+It is like `.bss` [.bss - Wikipedia](https://en.wikipedia.org/wiki/.bss)
+
+```c
+char workmem[512];
+
+void main() {
+
+}
+```
+
+### stack
+
+The local work area belongs to function block against each call.
+
+- `gosub` can allocate this stack.
+- `ret` can release it.
+
+```c
+void func() {
+    int var1;
+}
+```
+
+### temp stack
+
+4 bytes per stack operation.
+
+It has limited access from script.
+
+It acts like real stack memory used by assembly language.
+
+For example: using for local mathematical operations (add, sub, etc), and in/out arguments against function call.
+
+The function block has implicit rule to declare how many in/out stack variables counts.
+
+```c
+// 2 stack in
+// 1 stack out
+int func(int a, int b) {
+    return a + b;
+}
+
+void main() {
+    int res = func(123, 456);
+}
+```
+
+### ai
+
+Referencing static data.
+
+```c
+static char text[] = "hello";
+
+void main() {
+    puts(text);
+}
+```
 
 ## Instrument format
 
@@ -56,12 +126,14 @@ Instrument list:
 | {{ instr.part1 }} | {{ instr.part2 }} | {{ instr.part3 }} | [{{ instr.name }}](#{{ instr.name|lower }}) |
 {%- endfor %}
 
-Syscall list:
+## Syscall
 
 Notes:
 
 - tableIdx = _ssub_
 - funcIdx = _imm16_
+
+Syscall list:
 
 | tableIdx | funcIdx | name |
 |--:|--:|---|
