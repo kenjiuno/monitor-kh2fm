@@ -24,7 +24,7 @@ utils.redirectStdoutStderr()
 extractFiles = False
 recordReadMemFrm = False
 traceAiExec = False
-tracePax = True
+tracePax = False
 showTick = False
 
 # internal variables please do not change

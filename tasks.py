@@ -2,6 +2,7 @@ from invoke import task
 from export_tools import to_xml
 from export_tools import to_sinc
 from export_tools import to_markdown
+from export_tools import to_cs
 import os
 
 
@@ -21,3 +22,14 @@ def sinc(c):
 def md(c, out_file="docs/kh2ai.md"):
     with open(out_file, 'wt') as f:
         print(to_markdown.run(), file=f)
+
+
+@task
+def cs_enum(c, out_file="out.cs"):
+    with open(out_file, 'wt') as f:
+        print(to_cs.enums(), file=f)
+
+@task
+def cs(c, out_file="out.cs"):
+    with open(out_file, 'wt') as f:
+        print(to_cs.descs(), file=f)

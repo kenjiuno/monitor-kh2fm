@@ -8,7 +8,8 @@ from typing import List, Optional
 ArgSsub = 1
 Arg16 = 2
 Arg32 = 4
-AiPos = 8
+NextRelative = 8
+AiPos = 16
 
 Syscall = 256
 Gosub = 512
@@ -122,14 +123,14 @@ table: List[OpDef] = [
     OpDef(6, 1, 3, "DIVF", "divf", 0, []),
     OpDef(6, 1, 4, "MODF", "modf", 0, []),
     # branch
-    OpDef(7, None, 0, "J", "jmp", Jump, [OpArg('imm16', Arg16 | AiPos)]),
+    OpDef(7, None, 0, "J", "jmp", Jump, [OpArg('imm16', Arg16 | NextRelative)]),
     OpDef(7, None, 1, "JNZ", "jnz", Conditional |
-          Jump, [OpArg('imm16', Arg16 | AiPos)]),
+          Jump, [OpArg('imm16', Arg16 | NextRelative)]),
     OpDef(7, None, 2, "JZ", "jz",  Conditional |
-          Jump, [OpArg('imm16', Arg16 | AiPos)]),
+          Jump, [OpArg('imm16', Arg16 | NextRelative)]),
     # gosub
     OpDef(8, None, None, "GOSUB", "gosub", Gosub, [
-          OpArg('ssub', ArgSsub), OpArg('imm16', Arg16 | AiPos)]),
+          OpArg('ssub', ArgSsub), OpArg('imm16', Arg16 | NextRelative)]),
     # other
     OpDef(9, None, 0, "EXIT", "halt", 0, []),
     OpDef(9, None, 1, "?", "exit", NeverReturn, []),
@@ -142,8 +143,8 @@ table: List[OpDef] = [
     OpDef(9, None, 9, "RADD", "radd", 0, []),
     # syscall
     OpDef(10, None, None, "SYSCALL", "syscall",
-          Syscall, [OpArg('imm16', Arg16)]),
+          Syscall, [OpArg('ssub', ArgSsub), OpArg('imm16', Arg16)]),
     # 11 unk
     OpDef(11, None, None, "?", "gosub32", Gosub, [
-          OpArg('ssub', ArgSsub), OpArg('imm32', Arg32 | AiPos)]),
+          OpArg('ssub', ArgSsub), OpArg('imm32', Arg32 | NextRelative)]),
 ]

@@ -39,6 +39,7 @@ def run() -> str:
                 arg.set("type", "imm32")
 
             arg.set("aiPos", boolToXml(pcode.AiPos & opArg.flags))
+            arg.set("nextRelative", boolToXml(pcode.NextRelative & opArg.flags))
 
     for tableIdx, table in enumerate(trap_table.tables):
         for funcIdx, func in enumerate(table):
