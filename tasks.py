@@ -33,3 +33,8 @@ def cs_enum(c, out_file="out.cs"):
 def cs(c, out_file="out.cs"):
     with open(out_file, 'wt') as f:
         print(to_cs.descs(), file=f)
+
+@task
+def cs_trap(c, out_file="trap.cs"):
+    with open(out_file, 'wt') as f:
+        print(to_cs.traps(), file=f)

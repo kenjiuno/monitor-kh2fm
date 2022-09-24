@@ -12,6 +12,22 @@ def enums() -> str:
     return body
 
 
+def traps() -> str:
+    lines = []
+    for tableIdx, table in enumerate(trap_table.tables):
+        for trapIdx, trap in enumerate(table):
+            if trap[0]:
+                assigns = []
+                assigns.append("TableIndex = %d" % (tableIdx,))
+                assigns.append("TrapIndex = %d" % (trapIdx,))
+                assigns.append("Name = \"%s\"" % (trap[0],))
+                assigns.append("Flags = 0x%08X" % (trap[2],))
+
+                lines.append("\t\t\tnew BdxTrap { %s }," % (
+                    ", ".join(assigns),))
+    return "\n".join(lines)
+
+
 def descs() -> str:
     body = ""
     lines = []
