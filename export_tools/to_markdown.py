@@ -4,6 +4,7 @@ from ai import trap_table
 from . import instr_docs
 from typing import Union, Callable, List, Iterable, Tuple, Sequence, Dict
 import datetime
+from dataclasses import dataclass
 
 
 class Syscall1:
@@ -60,6 +61,16 @@ def run() -> str:
             "help": toMarkdownQuotes(text.strip())
         }
 
+    @dataclass
+    class PerLine:
+        prefix: str
+        suffix: str
+
+    def mixup(prefix, suffixList) -> str:
+        for suffix in suffixList:
+            yield PerLine(prefix, suffix)
+            prefix = ' ' * len(prefix)
+
     def makeFormat(syscall, args, ret) -> str:
         text = ""
 
@@ -67,7 +78,8 @@ def run() -> str:
         hasReturn = (ret[0]["type"] != "void")
 
         for arg in args:
-            text += "push %s ; %s\n" % (arg["name"], arg["type"])
+            for pair in mixup("push %s" % (arg["name"]), ("(%s) %s" % (arg["type"], arg["desc"])).split('\n')):
+                text += "%s ; %s\n" % (pair.prefix, pair.suffix)
 
         text += "syscall %d, %d ; %s (%d in, %d out)\n" % (
             syscall.tableIdx,
@@ -78,7 +90,9 @@ def run() -> str:
         )
 
         if hasReturn:
-            text += "pop %s ; %s" % (ret[0]["name"], ret[0]["type"])
+            for arg in ret:
+                for pair in mixup("pop %s" % (arg["name"]), ("(%s) %s" % (arg["type"], arg["desc"])).split('\n')):
+                    text += "%s ; %s\n" % (pair.prefix, pair.suffix)
 
         return text
 
@@ -101,7 +115,8 @@ def run() -> str:
                 syscall.tableIdx = tableIdx
                 syscall.funcIdx = funcIdx
                 syscall.name = func["name"]
-                syscall.funcForm = makeFormat(syscall, func["args"], func["ret"])
+                syscall.funcForm = makeFormat(
+                    syscall, func["args"], func["ret"])
                 syscall.doc = funcsDoc[syscall.name] if syscall.name in funcsDoc else "Not yet described"
                 syscallList.append(syscall)
 

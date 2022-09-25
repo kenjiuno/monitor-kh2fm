@@ -43,4 +43,4 @@ def cs_trap(c, out_file="trap.cs"):
 @task
 def fixup(c, out_file="fixup.json"):
     with open(out_file, 'wt') as f:
-        print(fixup_module.ver2(), file=f)
+        print(fixup_module.ver3(), file=f)

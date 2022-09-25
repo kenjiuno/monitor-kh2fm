@@ -9,18 +9,21 @@ tables = [
     "flags": 2,
     "args": [
      {
-      "type": "unknown",
-      "name": "unk1"
+      "type": "int",
+      "name": "value",
+      "desc": ""
      },
      {
-      "type": "unknown",
-      "name": "unk2"
+      "type": "string",
+      "name": "value of what",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -32,17 +35,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -54,13 +60,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -73,7 +81,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -85,17 +94,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -107,17 +119,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -129,13 +144,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -147,13 +164,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -165,17 +184,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -187,25 +209,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -218,7 +245,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -231,7 +259,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -244,7 +273,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -256,17 +286,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -278,13 +311,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -296,13 +331,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -314,13 +351,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -332,13 +371,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -350,17 +391,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -372,13 +416,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -390,13 +436,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -408,17 +456,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -430,13 +481,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -448,13 +501,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -466,17 +521,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -488,17 +546,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -510,13 +571,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -527,14 +590,16 @@ tables = [
     "flags": 1,
     "args": [
      {
-      "type": "unknown",
-      "name": "unk1"
+      "type": "float",
+      "name": "scale",
+      "desc": "Set new game speed"
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -546,13 +611,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -564,13 +631,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -582,13 +651,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -600,13 +671,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -618,13 +691,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -637,7 +712,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -650,7 +726,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -662,17 +739,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -684,17 +764,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -706,17 +789,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -728,17 +814,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -750,17 +839,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -772,17 +864,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -794,17 +889,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -816,13 +914,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -834,13 +934,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -852,13 +954,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -870,21 +974,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -896,21 +1004,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -922,13 +1034,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -940,13 +1054,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -958,13 +1074,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -976,13 +1094,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -994,13 +1114,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1012,21 +1134,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1038,13 +1164,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1056,13 +1184,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1074,13 +1204,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1092,13 +1224,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1110,13 +1244,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1128,13 +1264,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1146,13 +1284,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1164,13 +1304,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1182,13 +1324,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1200,17 +1344,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1222,17 +1369,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1245,7 +1395,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1257,13 +1408,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1275,17 +1428,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1297,17 +1453,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1319,17 +1478,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1341,13 +1503,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1360,7 +1524,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1373,7 +1538,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1386,7 +1552,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1398,13 +1565,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1416,17 +1585,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1438,21 +1610,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1464,17 +1640,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1486,13 +1665,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1504,21 +1685,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1530,13 +1715,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1548,13 +1735,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1566,13 +1755,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1584,17 +1775,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1606,21 +1800,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1632,17 +1830,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1654,13 +1855,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1672,17 +1875,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1694,13 +1900,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1712,13 +1920,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1730,13 +1940,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1748,29 +1960,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1782,17 +2000,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -1804,17 +2025,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1826,17 +2050,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1848,17 +2075,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1870,17 +2100,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1892,17 +2125,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1914,17 +2150,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1936,17 +2175,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1958,21 +2200,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1985,7 +2231,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -1998,7 +2245,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2010,13 +2258,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2029,7 +2279,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2041,13 +2292,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    }
@@ -2064,13 +2317,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2082,17 +2337,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2104,21 +2362,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2131,7 +2393,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2143,17 +2406,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2165,13 +2431,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2183,57 +2451,70 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
+     },
+     {
+      "type": "string",
+      "name": "actName",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk3",
+      "desc": ""
+     },
+     {
+      "type": "int",
+      "name": "pc",
+      "desc": "routine to process this act"
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk6",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk7",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk8",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk7"
+      "name": "unk9",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk8"
+      "name": "unk10",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk9"
+      "name": "unk11",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk10"
-     },
-     {
-      "type": "unknown",
-      "name": "unk11"
-     },
-     {
-      "type": "unknown",
-      "name": "unk12"
+      "name": "unk12",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2245,17 +2526,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2267,17 +2551,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2289,17 +2576,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2311,13 +2601,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2329,21 +2621,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2355,21 +2651,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2381,21 +2681,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2407,13 +2711,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2425,13 +2731,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2444,7 +2752,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2456,13 +2765,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2474,33 +2785,40 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2512,17 +2830,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2534,17 +2855,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2556,25 +2880,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2586,29 +2915,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2621,7 +2956,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2634,7 +2970,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2647,7 +2984,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2660,7 +2998,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2673,7 +3012,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2685,13 +3025,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2703,25 +3045,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2733,21 +3080,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2759,17 +3110,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2781,17 +3135,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2803,13 +3160,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2822,7 +3181,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2834,21 +3194,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2860,13 +3224,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2878,13 +3244,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2896,17 +3264,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2918,17 +3289,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2940,13 +3314,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -2958,17 +3334,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2980,13 +3359,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -2998,13 +3379,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3017,7 +3400,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3029,13 +3413,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3048,7 +3434,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3061,7 +3448,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3073,13 +3461,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3091,21 +3481,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3117,21 +3511,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3143,21 +3541,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3169,17 +3571,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3191,17 +3596,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3213,17 +3621,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3235,29 +3646,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3269,13 +3686,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3287,13 +3706,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3305,21 +3726,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3331,13 +3756,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3349,13 +3776,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3367,25 +3796,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3397,13 +3831,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3415,13 +3851,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3433,13 +3871,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3451,13 +3891,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3469,13 +3911,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3487,17 +3931,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3509,17 +3956,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3531,13 +3981,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3549,17 +4001,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3571,17 +4026,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3593,17 +4051,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3615,21 +4076,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3641,13 +4106,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3659,17 +4126,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3681,13 +4151,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3699,13 +4171,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3717,13 +4191,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3735,17 +4211,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3757,21 +4236,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3783,17 +4266,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3805,29 +4291,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3839,21 +4331,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3865,13 +4361,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3883,17 +4381,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3905,17 +4406,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -3927,25 +4431,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3957,13 +4466,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -3975,21 +4486,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4001,21 +4516,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4027,17 +4546,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4049,17 +4571,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4071,13 +4596,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4089,13 +4616,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4107,13 +4636,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4125,13 +4656,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4143,13 +4676,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4161,13 +4696,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4179,13 +4716,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4197,13 +4736,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4215,13 +4756,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4233,13 +4776,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4251,21 +4796,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4277,13 +4826,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4295,13 +4846,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4313,25 +4866,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4343,17 +4901,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4365,17 +4926,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4387,17 +4951,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4409,13 +4976,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4427,21 +4996,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4453,21 +5026,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4479,13 +5056,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4497,17 +5076,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4519,17 +5101,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4542,7 +5127,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4555,7 +5141,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4568,7 +5155,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4580,25 +5168,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4610,13 +5203,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4628,21 +5223,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4654,13 +5253,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4672,17 +5273,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4694,13 +5298,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4712,25 +5318,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4742,17 +5353,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4764,13 +5378,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4782,17 +5398,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4804,17 +5423,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4826,17 +5448,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4848,13 +5473,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4866,13 +5493,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4884,13 +5513,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4902,13 +5533,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -4920,25 +5553,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4950,13 +5588,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4968,13 +5608,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -4986,25 +5628,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5016,29 +5663,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5050,13 +5703,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5068,21 +5723,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5094,21 +5753,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5120,17 +5783,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5142,13 +5808,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5160,13 +5828,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5178,21 +5848,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5204,13 +5878,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5222,17 +5898,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5244,29 +5923,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5278,17 +5963,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5300,17 +5988,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5323,7 +6014,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5335,17 +6027,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5358,7 +6053,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5370,25 +6066,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5400,37 +6101,45 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk7"
+      "name": "unk7",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5442,21 +6151,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5468,13 +6181,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5486,13 +6201,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5504,17 +6221,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5526,13 +6246,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5544,17 +6266,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5566,17 +6291,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5588,17 +6316,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5610,25 +6341,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5640,13 +6376,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5658,17 +6396,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5680,29 +6421,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5714,17 +6461,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5736,13 +6486,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5755,7 +6507,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5767,17 +6520,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5789,17 +6545,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5811,21 +6570,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5837,21 +6600,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5863,17 +6630,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5885,17 +6655,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5907,13 +6680,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5925,17 +6700,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5947,17 +6725,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -5969,13 +6750,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -5987,17 +6770,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6009,29 +6795,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6043,17 +6835,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6065,25 +6860,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6095,21 +6895,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6122,7 +6926,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6135,7 +6940,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6147,13 +6953,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6165,13 +6973,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6183,13 +6993,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6201,13 +7013,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6220,7 +7034,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6232,17 +7047,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6254,17 +7072,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6277,7 +7098,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6290,7 +7112,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6302,13 +7125,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6320,25 +7145,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6350,17 +7180,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6372,13 +7205,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6390,13 +7225,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6408,13 +7245,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6427,7 +7266,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6440,7 +7280,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6453,7 +7294,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6465,13 +7307,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6483,13 +7327,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6501,13 +7347,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6519,17 +7367,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6541,17 +7392,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6563,17 +7417,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6585,13 +7442,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6603,13 +7462,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6622,7 +7483,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6635,7 +7497,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6647,17 +7510,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6669,21 +7535,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6695,21 +7565,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6721,21 +7595,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6747,21 +7625,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6773,13 +7655,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6791,13 +7675,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6809,13 +7695,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6827,13 +7715,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6845,17 +7735,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6867,17 +7760,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6889,17 +7785,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6911,17 +7810,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6933,17 +7835,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -6955,21 +7860,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -6981,17 +7890,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7003,21 +7915,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7029,17 +7945,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7051,17 +7970,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7073,17 +7995,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7095,29 +8020,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7129,13 +8060,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7147,13 +8080,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7165,21 +8100,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7191,17 +8130,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7213,13 +8155,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7232,7 +8176,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7245,7 +8190,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7258,7 +8204,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7271,7 +8218,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7283,21 +8231,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7309,29 +8261,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7343,13 +8301,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7361,13 +8321,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7379,17 +8341,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7401,13 +8366,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7419,13 +8386,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7437,13 +8406,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7455,13 +8426,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7473,13 +8446,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7491,17 +8466,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7513,17 +8491,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7535,17 +8516,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7557,17 +8541,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7580,7 +8567,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7592,21 +8580,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7618,17 +8610,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7641,7 +8636,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7653,17 +8649,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7675,13 +8674,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7693,17 +8694,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7715,13 +8719,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7733,21 +8739,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7759,17 +8769,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7781,17 +8794,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7803,13 +8819,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7821,17 +8839,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7844,7 +8865,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7856,13 +8878,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7874,13 +8898,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7892,13 +8918,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7910,17 +8938,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7932,17 +8963,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7954,13 +8988,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -7972,17 +9008,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -7995,7 +9034,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8008,7 +9048,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8020,13 +9061,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8038,17 +9081,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8061,7 +9107,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8074,7 +9121,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8087,7 +9135,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8100,7 +9149,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8112,17 +9162,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8134,13 +9187,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8152,21 +9207,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8179,7 +9238,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8192,7 +9252,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8205,7 +9266,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8217,13 +9279,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8235,13 +9299,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8254,7 +9320,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8267,7 +9334,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8280,7 +9348,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8293,7 +9362,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8305,17 +9375,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8328,7 +9401,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8340,17 +9414,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8363,7 +9440,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8376,7 +9454,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8388,17 +9467,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8410,17 +9492,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8432,13 +9517,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8450,13 +9537,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8468,21 +9557,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8494,13 +9587,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8512,13 +9607,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8530,13 +9627,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8548,21 +9647,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8574,13 +9677,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8593,7 +9698,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8605,17 +9711,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8627,13 +9736,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8646,7 +9757,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8658,21 +9770,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8685,7 +9801,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8697,13 +9814,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8715,17 +9834,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8737,25 +9859,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8767,13 +9894,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8785,13 +9914,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8803,13 +9934,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8821,17 +9954,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8843,21 +9979,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8869,13 +10009,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8887,13 +10029,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -8905,29 +10049,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8940,7 +10090,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8952,17 +10103,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8974,17 +10128,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -8997,7 +10154,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9009,21 +10167,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9035,21 +10197,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9061,17 +10227,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9084,7 +10253,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9096,21 +10266,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9122,17 +10296,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9144,13 +10321,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9162,25 +10341,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9192,17 +10376,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9214,17 +10401,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9236,17 +10426,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9258,13 +10451,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9277,7 +10472,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9290,7 +10486,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9303,7 +10500,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9315,17 +10513,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9338,7 +10539,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9351,7 +10553,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9364,7 +10567,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9376,13 +10580,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9394,17 +10600,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9416,13 +10625,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9434,13 +10645,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9452,13 +10665,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9470,13 +10685,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9488,17 +10705,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9510,17 +10730,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9532,13 +10755,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9550,13 +10775,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9568,21 +10795,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    }
@@ -9599,17 +10830,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9621,33 +10855,40 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9659,21 +10900,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9685,21 +10930,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9711,13 +10960,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9729,13 +10980,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9747,13 +11000,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9765,13 +11020,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9783,13 +11040,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9801,21 +11060,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9827,25 +11090,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9857,21 +11125,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9883,17 +11155,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9905,13 +11180,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9923,13 +11200,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9941,13 +11220,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -9959,13 +11240,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -9977,25 +11260,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10007,17 +11295,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10029,21 +11320,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10055,17 +11350,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10077,17 +11375,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10099,17 +11400,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10121,13 +11425,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10139,13 +11445,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10157,13 +11465,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10175,13 +11485,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10193,29 +11505,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10227,13 +11545,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10245,13 +11565,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10263,17 +11585,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10285,17 +11610,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10307,13 +11635,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10325,13 +11655,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10343,13 +11675,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10361,13 +11695,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10379,17 +11715,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10401,17 +11740,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10423,21 +11765,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10449,13 +11795,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10467,13 +11815,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10485,13 +11835,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10503,13 +11855,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10521,13 +11875,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10539,13 +11895,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10557,13 +11915,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10575,13 +11935,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10593,25 +11955,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10623,13 +11990,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10641,17 +12010,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10663,25 +12035,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10693,29 +12070,35 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10727,13 +12110,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10746,7 +12131,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10758,17 +12144,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10780,13 +12169,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10798,13 +12189,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10816,21 +12209,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10842,25 +12239,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10872,25 +12274,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10902,13 +12309,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10920,17 +12329,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10942,25 +12354,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -10972,13 +12389,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -10990,13 +12409,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11009,7 +12430,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11021,13 +12443,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11040,7 +12464,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11052,17 +12477,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11074,13 +12502,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11092,13 +12522,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11110,17 +12542,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11132,13 +12567,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11150,13 +12587,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11168,21 +12607,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11195,7 +12638,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11207,17 +12651,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11229,17 +12676,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11251,13 +12701,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11269,17 +12721,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11291,17 +12746,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11313,25 +12771,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11343,17 +12806,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11365,17 +12831,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11387,17 +12856,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11409,13 +12881,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11427,13 +12901,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11445,21 +12921,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11471,13 +12951,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11489,13 +12971,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11507,13 +12991,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11525,13 +13011,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11543,13 +13031,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11561,13 +13051,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11579,13 +13071,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11597,17 +13091,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11619,13 +13116,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11637,17 +13136,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    }
@@ -11669,7 +13171,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11682,7 +13185,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11695,7 +13199,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11707,13 +13212,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11725,13 +13232,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11743,17 +13252,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11765,13 +13277,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11783,17 +13297,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11805,17 +13322,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11827,17 +13347,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11849,17 +13372,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11872,7 +13398,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11884,13 +13411,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -11903,7 +13432,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11916,7 +13446,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11929,7 +13460,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11941,13 +13473,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11959,25 +13493,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -11989,25 +13528,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12019,25 +13563,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12049,13 +13598,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12068,7 +13619,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12080,13 +13632,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12099,7 +13653,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12112,7 +13667,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12124,13 +13680,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12142,13 +13700,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12161,7 +13721,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12173,13 +13734,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12191,13 +13754,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12210,7 +13775,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12223,7 +13789,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12236,7 +13803,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12248,17 +13816,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12270,13 +13841,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12288,13 +13861,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12306,13 +13881,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12324,21 +13901,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12350,13 +13931,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12368,17 +13951,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12390,13 +13976,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12408,17 +13996,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12430,17 +14021,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12452,17 +14046,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12474,13 +14071,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12492,13 +14091,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12510,17 +14111,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12532,13 +14136,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12550,21 +14156,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12576,13 +14186,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12594,13 +14206,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12612,25 +14226,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12642,13 +14261,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12660,17 +14281,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12683,7 +14307,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12696,7 +14321,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12709,7 +14335,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12721,17 +14348,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12743,13 +14373,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    }
@@ -12766,13 +14398,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12784,17 +14418,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12806,13 +14443,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12824,17 +14463,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12846,13 +14488,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12864,13 +14508,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12882,13 +14528,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12900,13 +14548,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12918,17 +14568,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12940,21 +14593,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -12966,17 +14623,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -12988,13 +14648,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13006,13 +14668,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13024,17 +14688,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13046,17 +14713,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13068,13 +14738,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13086,17 +14758,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13108,17 +14783,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13130,13 +14808,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13148,13 +14828,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13166,13 +14848,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13184,13 +14868,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13202,13 +14888,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13220,17 +14908,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13242,17 +14933,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13264,21 +14958,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13290,17 +14988,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13312,17 +15013,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13334,13 +15038,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13352,13 +15058,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13370,13 +15078,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13388,13 +15098,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13406,21 +15118,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13432,17 +15148,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13454,13 +15173,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    }
@@ -13477,37 +15198,45 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk7"
+      "name": "unk7",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13519,17 +15248,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13542,7 +15274,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13554,17 +15287,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13576,13 +15312,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13594,37 +15332,45 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk7"
+      "name": "unk7",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13636,21 +15382,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13662,17 +15412,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13684,17 +15437,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13706,17 +15462,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13728,13 +15487,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13746,21 +15507,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13772,21 +15537,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13798,13 +15567,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13816,13 +15587,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13834,13 +15607,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13852,13 +15627,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13871,7 +15648,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13884,7 +15662,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13897,7 +15676,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13910,7 +15690,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13922,17 +15703,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -13944,25 +15728,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13974,17 +15763,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -13996,13 +15788,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14014,25 +15808,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14044,25 +15843,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14075,7 +15879,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14087,25 +15892,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14118,7 +15928,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14130,37 +15941,45 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk7"
+      "name": "unk7",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14173,7 +15992,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14185,17 +16005,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14207,21 +16030,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14233,21 +16060,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14259,13 +16090,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14277,13 +16110,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14295,13 +16130,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14313,13 +16150,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14331,13 +16170,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14349,13 +16190,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14367,21 +16210,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14393,25 +16240,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14423,13 +16275,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14441,13 +16295,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14459,13 +16315,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14477,25 +16335,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14507,13 +16370,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14525,17 +16390,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14547,13 +16415,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14565,17 +16435,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14587,25 +16460,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14617,13 +16495,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14635,13 +16515,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14653,13 +16535,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14671,13 +16555,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14689,17 +16575,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14711,13 +16600,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14729,17 +16620,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14751,13 +16645,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14769,25 +16665,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14799,13 +16700,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14817,13 +16720,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14835,13 +16740,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14853,13 +16760,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14871,17 +16780,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14893,13 +16805,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14911,17 +16825,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14933,17 +16850,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14955,13 +16875,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -14973,17 +16895,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -14995,17 +16920,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    }
@@ -15022,13 +16950,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15040,13 +16970,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15058,13 +16990,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15077,7 +17011,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15090,7 +17025,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15102,13 +17038,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15120,17 +17058,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15142,21 +17083,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15168,17 +17113,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15190,17 +17138,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15212,13 +17163,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15231,7 +17184,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15243,13 +17197,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15261,25 +17217,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15291,17 +17252,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15313,13 +17277,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15331,13 +17297,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15349,17 +17317,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15371,13 +17342,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15389,17 +17362,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15412,7 +17388,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15424,13 +17401,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15443,7 +17422,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15456,7 +17436,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15468,13 +17449,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15486,13 +17469,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15504,17 +17489,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15527,7 +17515,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15540,7 +17529,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15552,25 +17542,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15583,7 +17578,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15595,17 +17591,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15617,17 +17616,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15639,13 +17641,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15657,17 +17661,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15680,7 +17687,8 @@ tables = [
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15692,13 +17700,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    }
@@ -15715,13 +17725,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15733,13 +17745,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15751,17 +17765,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15773,13 +17790,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15792,7 +17811,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15805,7 +17825,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15818,7 +17839,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15831,7 +17853,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15843,13 +17866,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    }
@@ -15871,7 +17896,8 @@ tables = [
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15883,17 +17909,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15905,13 +17934,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15923,13 +17954,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15941,13 +17974,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15959,13 +17994,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -15977,17 +18014,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -15999,13 +18039,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16017,13 +18059,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16035,17 +18079,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16057,13 +18104,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16075,21 +18124,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16101,41 +18154,50 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk5"
+      "name": "unk5",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk6"
+      "name": "unk6",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk7"
+      "name": "unk7",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk8"
+      "name": "unk8",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16147,17 +18209,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16169,21 +18234,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16195,21 +18264,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16221,17 +18294,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16243,13 +18319,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16261,13 +18339,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16279,13 +18359,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16297,13 +18379,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16315,13 +18399,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16333,13 +18419,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16351,17 +18439,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16373,17 +18464,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16395,13 +18489,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16413,13 +18509,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16431,13 +18529,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16449,13 +18549,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16467,25 +18569,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16497,13 +18604,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16515,13 +18624,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16533,17 +18644,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16555,13 +18669,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16573,17 +18689,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16595,17 +18714,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16617,13 +18739,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16635,13 +18759,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16653,13 +18779,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16671,13 +18799,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16689,17 +18819,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16711,13 +18844,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16729,13 +18864,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16747,17 +18884,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16769,13 +18909,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16787,13 +18929,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16805,13 +18949,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16823,13 +18969,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16841,13 +18989,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16859,13 +19009,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16877,13 +19029,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16895,25 +19049,30 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk4"
+      "name": "unk4",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16925,13 +19084,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16943,17 +19104,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -16965,17 +19129,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "unknown",
-      "name": "unk"
+      "name": "unk",
+      "desc": ""
      }
     ]
    },
@@ -16987,17 +19154,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -17009,17 +19179,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -17031,13 +19204,15 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -17049,21 +19224,25 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk3"
+      "name": "unk3",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    },
@@ -17075,17 +19254,20 @@ tables = [
     "args": [
      {
       "type": "unknown",
-      "name": "unk1"
+      "name": "unk1",
+      "desc": ""
      },
      {
       "type": "unknown",
-      "name": "unk2"
+      "name": "unk2",
+      "desc": ""
      }
     ],
     "ret": [
      {
       "type": "void",
-      "name": "x"
+      "name": "x",
+      "desc": ""
      }
     ]
    }

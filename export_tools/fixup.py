@@ -1,4 +1,5 @@
 from ai import trap_table_legacy
+from ai import trap_table
 import json
 
 
@@ -26,3 +27,13 @@ def ver2() -> str:
 
         newTables.append(newTable)
     return json.dumps(newTables, indent=1)
+
+def ver3() -> str:
+    for table in trap_table.tables:
+        for func in table["funcs"]:
+            for arg in func["args"]:
+                arg["desc"] = ""
+            for arg in func["ret"]:
+                arg["desc"] = ""
+
+    return json.dumps(trap_table.tables, indent=1)
