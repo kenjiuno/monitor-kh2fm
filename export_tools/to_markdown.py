@@ -60,6 +60,28 @@ def run() -> str:
             "help": toMarkdownQuotes(text.strip())
         }
 
+    def makeFormat(syscall, args, ret) -> str:
+        text = ""
+
+        argc = len(args)
+        hasReturn = (ret[0]["type"] != "void")
+
+        for arg in args:
+            text += "push %s ; %s\n" % (arg["name"], arg["type"])
+
+        text += "syscall %d, %d ; %s (%d in, %d out)\n" % (
+            syscall.tableIdx,
+            syscall.funcIdx,
+            syscall.name,
+            argc,
+            1 if hasReturn else 0
+        )
+
+        if hasReturn:
+            text += "pop %s ; %s" % (ret[0]["name"], ret[0]["type"])
+
+        return text
+
     for opDef in pcode.table:
         behavior = opDef.behavior
 
@@ -73,15 +95,14 @@ def run() -> str:
         instrList.append(instr)
 
     for tableIdx, table in enumerate(trap_table.tables):
-        for funcIdx, func in enumerate(table):
-            if len(func[0]) != 0:
+        for funcIdx, func in enumerate(table["funcs"]):
+            if len(func["name"]) != 0:
                 syscall = Syscall1()
                 syscall.tableIdx = tableIdx
                 syscall.funcIdx = funcIdx
-                syscall.name = func[0]
-                syscall.funcForm = syscall.name
-                syscall.doc = funcsDoc[syscall.name] if syscall.name in funcsDoc else makeStubDocFrom(
-                    syscall, func)
+                syscall.name = func["name"]
+                syscall.funcForm = makeFormat(syscall, func["args"], func["ret"])
+                syscall.doc = funcsDoc[syscall.name] if syscall.name in funcsDoc else "Not yet described"
                 syscallList.append(syscall)
 
     env = Environment(

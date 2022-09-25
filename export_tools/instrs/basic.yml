@@ -1,11 +1,18 @@
 pushImm:
-  body: |
-    push(full_ext:4);
   help: |
     > push(_imm32_);
+  example: |
+    > pushImm -123
+    > pushImm 123
+    > push -2147483648
+    > push 2147483647
+  body: |
+    push(full_ext:4);
 pushFromPSp:
   help: |
     > push(sp + _imm16_)
+  example: |
+    > pushFromPSp -1
 pushFromPWp:
   help: |
     > push(wp + _imm16_)

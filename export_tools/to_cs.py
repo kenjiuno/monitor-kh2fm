@@ -15,13 +15,13 @@ def enums() -> str:
 def traps() -> str:
     lines = []
     for tableIdx, table in enumerate(trap_table.tables):
-        for trapIdx, trap in enumerate(table):
-            if trap[0]:
+        for trapIdx, trap in enumerate(table["funcs"]):
+            if trap["name"]:
                 assigns = []
                 assigns.append("TableIndex = %d" % (tableIdx,))
                 assigns.append("TrapIndex = %d" % (trapIdx,))
-                assigns.append("Name = \"%s\"" % (trap[0],))
-                assigns.append("Flags = 0x%08X" % (trap[2],))
+                assigns.append("Name = \"%s\"" % (trap["name"],))
+                assigns.append("Flags = 0x%08X" % (trap["flags"],))
 
                 lines.append("\t\t\tnew BdxTrap { %s }," % (
                     ", ".join(assigns),))

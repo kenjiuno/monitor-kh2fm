@@ -51,7 +51,7 @@ class ai_disasm:
                         if pcode.Syscall & opDef.behavior:
                             try:
                                 funcIdx = args.pop()
-                                name = trap_table.tables[ssub][funcIdx][0]
+                                name = trap_table.tables[ssub]["funcs"][funcIdx]["name"]
                             except IndexError:
                                 # fallback
                                 name = "syscall"
@@ -118,11 +118,11 @@ class trace_ai_exec_always(trace_ai_exec):
 def trap_all_funcs():
     # this won't work well.
     for table in trap_table.tables:
-        for entry in table:
+        for entry in table["func"]:
             if entry[1]:
-                @utils.bp(entry[1])
+                @utils.bp(entry["addr"])
                 def disp():
-                    pcsx2.WriteLn("@ " + entry[0])
+                    pcsx2.WriteLn("@ " + entry["addr"])
 
 
 def install_at_trap_call():
@@ -138,6 +138,6 @@ def install_at_trap_call():
         pcsx2.WriteLn("@ %s %08X" % (resolveFuncName(t7), a0, ))
 
     for table in trap_table.tables:
-        for entry in table:
-            if entry[1]:
-                addr2Name[entry[1]] = entry[0]
+        for entry in table["funcs"]:
+            if entry["addr"]:
+                addr2Name[entry["addr"]] = entry["name"]

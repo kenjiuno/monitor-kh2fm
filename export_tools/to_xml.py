@@ -42,11 +42,11 @@ def run() -> str:
             arg.set("nextRelative", boolToXml(pcode.NextRelative & opArg.flags))
 
     for tableIdx, table in enumerate(trap_table.tables):
-        for funcIdx, func in enumerate(table):
-            if len(func[0]) != 0:
+        for funcIdx, func in enumerate(table["funcs"]):
+            if len(func["name"]) != 0:
                 syscall = SubElement(root, 'Syscall')
                 syscall.set("tableIdx", partToStr(tableIdx))
                 syscall.set("funcIdx", partToStr(funcIdx))
-                syscall.set("name", func[0])
+                syscall.set("name", func["name"])
 
     return tostring(root, "unicode")

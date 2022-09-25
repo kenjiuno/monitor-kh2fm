@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Mon Jan  4 08:36:33 2021 UTC
+Update timestamp: Sun Sep 25 08:10:01 2022 UTC
 
 ## Credits
 
@@ -1051,6 +1051,17 @@ _Description:_
 
 
 
+
+
+_Example:_
+
+> pushImm -123
+> pushImm 123
+> push -2147483648
+> push 2147483647
+
+
+
 _Operations:_
 
 
@@ -1071,6 +1082,17 @@ _Description:_
 
 
 > push(_imm32_);
+
+
+
+
+
+_Example:_
+
+> pushImm -123
+> pushImm 123
+> push -2147483648
+> push 2147483647
 
 
 
@@ -1097,6 +1119,14 @@ _Description:_
 
 
 
+
+
+_Example:_
+
+> pushFromPSp -1
+
+
+
 _Operations:_
 
 
@@ -1114,6 +1144,8 @@ _Description:_
 
 
 > push(wp + _imm16_)
+
+
 
 
 
@@ -1137,6 +1169,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1154,6 +1188,8 @@ _Description:_
 
 
 > push(ai + 16 + 2 * _imm16_)
+
+
 
 
 
@@ -1177,6 +1213,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1194,6 +1232,8 @@ _Description:_
 
 
 > push(fetch(wp + _imm16_))
+
+
 
 
 
@@ -1217,6 +1257,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1234,6 +1276,8 @@ _Description:_
 
 
 > push(fetch(ai + 16 + 2 * imm16));
+
+
 
 
 
@@ -1257,6 +1301,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1274,6 +1320,8 @@ _Description:_
 
 
 > store(wp + _imm16_, pop())
+
+
 
 
 
@@ -1297,6 +1345,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1314,6 +1364,8 @@ _Description:_
 
 
 > store(ai + 16 + 2 * _imm16_, pop())
+
+
 
 
 
@@ -1337,6 +1389,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1354,6 +1408,8 @@ _Description:_
 
 
 > memcpy(wp + _imm16_2_, pop(), _imm16_);
+
+
 
 
 
@@ -1377,6 +1433,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1397,6 +1455,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -1414,6 +1474,8 @@ _Description:_
 
 
 > push(fetch(pop() + _imm16_))
+
+
 
 
 
@@ -1439,6 +1501,8 @@ Copy single word (4 bytes), if ssub == 0.
 
 
 
+
+
 _Operations:_
 
 
@@ -1458,6 +1522,8 @@ _Description:_
 > push(popf())
 
 Retrieves the last value pushed on to the stack and converts it from a signed integer to a floating point value, pushing back the result to the stack.
+
+
 
 
 
@@ -1489,6 +1555,8 @@ Retrieves the last value pushed on to the stack and converts it to a negative nu
 
 
 
+
+
 _Operations:_
 
 
@@ -1514,6 +1582,8 @@ _Description:_
 > push(~pop())
 
 Retrieves the last value pushed on to the stack and inverts it, pushing back the result to the stack.
+
+
 
 
 
@@ -1545,6 +1615,8 @@ Retrieves the last value pushed on to the stack and compares it to zero, pushing
 
 
 
+
+
 _Operations:_
 
 
@@ -1570,6 +1642,8 @@ _Description:_
 > push(abs(pop()))
 
 Retrieves the last value pushed on to the stack and converts it to an absolute value, pushing back the result to the stack.
+
+
 
 
 
@@ -1605,6 +1679,8 @@ Retrieves the last value pushed on to the stack and gets back its most significa
 
 
 
+
+
 _Operations:_
 
 
@@ -1633,6 +1709,8 @@ Retrieves the last value pushed on to the stack and compares it to one, pushing 
 
 
 
+
+
 _Operations:_
 
 
@@ -1657,6 +1735,8 @@ _Description:_
 > push(pop() == 0)
 
 Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+
+
 
 
 
@@ -1688,6 +1768,8 @@ Retrieves the last value pushed on to the stack and compares it to zero, pushing
 
 
 
+
+
 _Operations:_
 
 
@@ -1712,6 +1794,8 @@ _Description:_
 > push(srl(nor(0, pop()), 31))
 
 Retrieves the last value pushed on to the stack and gets back its most significant bit and inverts it, pushing back the result to the stack.
+
+
 
 
 
@@ -1743,6 +1827,8 @@ Retrieves the last value pushed on to the stack and compares it to zero, pushing
 
 
 
+
+
 _Operations:_
 
 
@@ -1765,6 +1851,8 @@ _Description:_
 
 
 Retrieves the last value pushed on to the stack and converts it from a signed integer to a floating point value, pushing back the result to the stack.
+
+
 
 
 
@@ -1794,6 +1882,8 @@ Retrieves the last value pushed on to the stack and converts it to a negative va
 
 
 
+
+
 _Operations:_
 
 
@@ -1811,6 +1901,8 @@ _Description:_
 
 
 Retrieves the last value pushed on to the stack and converts it to an absolute value, pushing back the result to the stack.
+
+
 
 
 
@@ -1840,6 +1932,8 @@ Retrieves the last value pushed on to the stack and compares it to zero, pushing
 
 
 
+
+
 _Operations:_
 
 
@@ -1862,6 +1956,8 @@ _Description:_
 
 
 Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+
+
 
 
 
@@ -1890,6 +1986,8 @@ Retrieves the last value pushed on to the stack and compares it to zero, pushing
 
 
 
+
+
 _Operations:_
 
 
@@ -1912,6 +2010,8 @@ _Description:_
 
 
 Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+
+
 
 
 
@@ -1940,6 +2040,8 @@ Retrieves the last value pushed on to the stack and compares it to zero, pushing
 
 
 
+
+
 _Operations:_
 
 
@@ -1962,6 +2064,8 @@ _Description:_
 
 
 Retrieves the last value pushed on to the stack and compares it to zero, pushing back the result to the stack.
+
+
 
 
 
@@ -1989,6 +2093,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2006,6 +2112,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2027,6 +2135,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2044,6 +2154,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2065,6 +2177,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2082,6 +2196,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2103,6 +2219,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2120,6 +2238,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2141,6 +2261,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2158,6 +2280,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2179,6 +2303,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2196,6 +2322,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2217,6 +2345,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2234,6 +2364,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2255,6 +2387,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2272,6 +2406,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2293,6 +2429,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2310,6 +2448,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2331,6 +2471,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2348,6 +2490,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2372,6 +2516,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -2389,6 +2535,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2410,6 +2558,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2427,6 +2577,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2448,6 +2600,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2465,6 +2619,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2486,6 +2642,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2503,6 +2661,8 @@ _Description:_
 
 
 > Not yet described.
+
+
 
 
 _Operations:_
@@ -2524,6 +2684,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2543,6 +2705,8 @@ _Description:_
 > Not yet described.
 
 
+
+
 _Operations:_
 
 
@@ -2554,7 +2718,7 @@ _Operations:_
 
 _Format:_
 
-`syscall  imm16`
+`syscall  ssub,imm16`
 
 _Description:_
 
@@ -2565,6 +2729,8 @@ Notes:
 - funcIdx = _imm16_
 
 > syscall(_ssub_, _imm16_)
+
+
 
 
 
@@ -2590,6 +2756,8 @@ _Description:_
 
 
 
+
+
 _Operations:_
 
 
@@ -2605,15 +2773,17 @@ _Operations:_
 
 _Format:_
 
-`trap_puti`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 0 ; trap_puti (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_puti(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2627,15 +2797,17 @@ _Operations:_
 
 _Format:_
 
-`trap_putf`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 1 ; trap_putf (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_putf(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2649,15 +2821,16 @@ _Operations:_
 
 _Format:_
 
-`trap_puts`
+```
+push unk1 ; unknown
+syscall 0, 2 ; trap_puts (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_puts(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2671,15 +2844,15 @@ _Operations:_
 
 _Format:_
 
-`trap_frametime`
+```
+syscall 0, 3 ; trap_frametime (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_frametime();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2693,17 +2866,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_add`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_add(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2717,17 +2890,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_sub`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_sub(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2741,17 +2914,16 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_len`
+```
+push unk1 ; unknown
+syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_vector_len(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2765,17 +2937,16 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_normalize`
+```
+push unk1 ; unknown
+syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_vector_normalize(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2789,15 +2960,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_dump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 8 ; trap_vector_dump (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vector_dump(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2811,17 +2984,19 @@ _Operations:_
 
 _Format:_
 
-`trap_thread_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_thread_start(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2835,15 +3010,15 @@ _Operations:_
 
 _Format:_
 
-`trap_file_is_reading`
+```
+syscall 0, 11 ; trap_file_is_reading (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_file_is_reading();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2857,13 +3032,15 @@ _Operations:_
 
 _Format:_
 
-`trap_file_flush`
+```
+syscall 0, 12 ; trap_file_flush (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_file_flush();
-
+> Not yet described.
 
 
 _Operations:_
@@ -2877,17 +3054,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_roty`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_roty(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2901,15 +3078,16 @@ _Operations:_
 
 _Format:_
 
-`trap_progress_set_flag`
+```
+push unk1 ; unknown
+syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_progress_set_flag(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2923,17 +3101,16 @@ _Operations:_
 
 _Format:_
 
-`trap_progress_check_flag`
+```
+push unk1 ; unknown
+syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_progress_check_flag(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2947,17 +3124,16 @@ _Operations:_
 
 _Format:_
 
-`trap_random_get`
+```
+push unk1 ; unknown
+syscall 0, 16 ; trap_random_get (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_random_get(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2971,17 +3147,16 @@ _Operations:_
 
 _Format:_
 
-`trap_random_getf`
+```
+push unk1 ; unknown
+syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_random_getf(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -2995,17 +3170,17 @@ _Operations:_
 
 _Format:_
 
-`trap_random_range`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 18 ; trap_random_range (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_random_range(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3019,15 +3194,16 @@ _Operations:_
 
 _Format:_
 
-`trap_worldflag_set`
+```
+push unk1 ; unknown
+syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_worldflag_set(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3041,17 +3217,16 @@ _Operations:_
 
 _Format:_
 
-`trap_worldflag_check`
+```
+push unk1 ; unknown
+syscall 0, 20 ; trap_worldflag_check (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_worldflag_check(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3065,17 +3240,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_get_rot_xz`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_get_rot_xz(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3089,17 +3264,16 @@ _Operations:_
 
 _Format:_
 
-`trap_abs`
+```
+push unk1 ; unknown
+syscall 0, 22 ; trap_abs (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_abs(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3113,17 +3287,16 @@ _Operations:_
 
 _Format:_
 
-`trap_absf`
+```
+push unk1 ; unknown
+syscall 0, 23 ; trap_absf (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_absf(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3137,15 +3310,17 @@ _Operations:_
 
 _Format:_
 
-`trap_stputi`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 24 ; trap_stputi (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_stputi(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3159,15 +3334,17 @@ _Operations:_
 
 _Format:_
 
-`trap_stputf`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 25 ; trap_stputf (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_stputf(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3181,15 +3358,16 @@ _Operations:_
 
 _Format:_
 
-`trap_stputs`
+```
+push unk1 ; unknown
+syscall 0, 26 ; trap_stputs (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_stputs(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3203,15 +3381,16 @@ _Operations:_
 
 _Format:_
 
-`func_system_set_game_speed`
+```
+push unk1 ; unknown
+syscall 0, 27 ; func_system_set_game_speed (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> func_system_set_game_speed(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3225,15 +3404,16 @@ _Operations:_
 
 _Format:_
 
-`method_blur_init`
+```
+push unk1 ; unknown
+syscall 0, 28 ; method_blur_init (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> method_blur_init(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3247,15 +3427,16 @@ _Operations:_
 
 _Format:_
 
-`method_blur_start`
+```
+push unk1 ; unknown
+syscall 0, 29 ; method_blur_start (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> method_blur_start(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3269,15 +3450,16 @@ _Operations:_
 
 _Format:_
 
-`method_blur_stop`
+```
+push unk1 ; unknown
+syscall 0, 30 ; method_blur_stop (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> method_blur_stop(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3291,15 +3473,16 @@ _Operations:_
 
 _Format:_
 
-`func_screen_whiteout`
+```
+push unk1 ; unknown
+syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> func_screen_whiteout(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3313,15 +3496,16 @@ _Operations:_
 
 _Format:_
 
-`func_screen_whitein`
+```
+push unk1 ; unknown
+syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> func_screen_whitein(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3335,15 +3519,17 @@ _Operations:_
 
 _Format:_
 
-`method_vector_scale`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 35 ; method_vector_scale (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> method_vector_scale(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3357,17 +3543,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_mul`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_mul(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3381,17 +3567,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_div`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 37 ; trap_vector_div (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_div(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3405,15 +3591,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_set_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_set_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3427,15 +3615,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_set_scale`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_set_scale(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3449,15 +3639,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_set_rot`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 40 ; trap_effect_set_rot (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_set_rot(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3471,15 +3663,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_set_dir`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_set_dir(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3493,17 +3687,16 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_atan_xz`
+```
+push unk1 ; unknown
+syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_vector_atan_xz(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3517,17 +3710,16 @@ _Operations:_
 
 _Format:_
 
-`trap_fixrad`
+```
+push unk1 ; unknown
+syscall 0, 43 ; trap_fixrad (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_fixrad(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3541,15 +3733,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_loop_end`
+```
+push unk1 ; unknown
+syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_effect_loop_end(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3563,15 +3756,18 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_addf`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vector_addf(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3585,15 +3781,18 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_homing`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vector_homing(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3607,17 +3806,16 @@ _Operations:_
 
 _Format:_
 
-`trap_memory_alloc`
+```
+push unk1 ; unknown
+syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_memory_alloc(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3631,15 +3829,16 @@ _Operations:_
 
 _Format:_
 
-`trap_memory_free`
+```
+push unk1 ; unknown
+syscall 0, 48 ; trap_memory_free (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_memory_free(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3653,17 +3852,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_is_alive`
+```
+push unk1 ; unknown
+syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_effect_is_alive(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3677,17 +3875,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_is_active`
+```
+push unk1 ; unknown
+syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_effect_is_active(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3701,15 +3898,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_kill`
+```
+push unk1 ; unknown
+syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_effect_kill(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3723,15 +3921,18 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_fadeout`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_fadeout(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3745,17 +3946,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_pos`
+```
+push unk1 ; unknown
+syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_effect_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3769,17 +3969,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_dir`
+```
+push unk1 ; unknown
+syscall 0, 54 ; trap_effect_dir (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_effect_dir(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3793,15 +3992,16 @@ _Operations:_
 
 _Format:_
 
-`trap_timer_count_down`
+```
+push unk1 ; unknown
+syscall 0, 55 ; trap_timer_count_down (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_timer_count_down(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3815,15 +4015,16 @@ _Operations:_
 
 _Format:_
 
-`trap_timer_count_up`
+```
+push unk1 ; unknown
+syscall 0, 56 ; trap_timer_count_up (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_timer_count_up(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3837,15 +4038,16 @@ _Operations:_
 
 _Format:_
 
-`trap_saveflag_set`
+```
+push unk1 ; unknown
+syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_saveflag_set(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3859,15 +4061,16 @@ _Operations:_
 
 _Format:_
 
-`trap_saveflag_reset`
+```
+push unk1 ; unknown
+syscall 0, 58 ; trap_saveflag_reset (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_saveflag_reset(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3881,17 +4084,16 @@ _Operations:_
 
 _Format:_
 
-`trap_saveflag_check`
+```
+push unk1 ; unknown
+syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_saveflag_check(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3905,15 +4107,16 @@ _Operations:_
 
 _Format:_
 
-`trap_assert`
+```
+push unk1 ; unknown
+syscall 0, 60 ; trap_assert (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_assert(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3927,17 +4130,16 @@ _Operations:_
 
 _Format:_
 
-`trap_saveram_get_partram`
+```
+push unk1 ; unknown
+syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_saveram_get_partram(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3951,15 +4153,17 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_set_item_max`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 62 ; trap_partram_set_item_max (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_set_item_max(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3973,17 +4177,17 @@ _Operations:_
 
 _Format:_
 
-`trap_item_get`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 63 ; trap_item_get (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_item_get(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -3997,13 +4201,15 @@ _Operations:_
 
 _Format:_
 
-`trap_sound_disable`
+```
+syscall 0, 64 ; trap_sound_disable (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_sound_disable();
-
+> Not yet described.
 
 
 _Operations:_
@@ -4017,15 +4223,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sound_play_system`
+```
+push unk1 ; unknown
+syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_sound_play_system(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4039,15 +4246,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_pause`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 66 ; trap_effect_pause (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_pause(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4061,15 +4270,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_set_color`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 67 ; trap_effect_set_color (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_set_color(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4083,17 +4294,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_rotx`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 68 ; trap_vector_rotx (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_rotx(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4107,15 +4318,16 @@ _Operations:_
 
 _Format:_
 
-`trap_menuflag_set`
+```
+push unk1 ; unknown
+syscall 0, 69 ; trap_menuflag_set (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_menuflag_set(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4129,15 +4341,15 @@ _Operations:_
 
 _Format:_
 
-`trap_progress_is_second`
+```
+syscall 0, 70 ; trap_progress_is_second (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_progress_is_second();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4151,15 +4363,16 @@ _Operations:_
 
 _Format:_
 
-`trap_menuflag_reset`
+```
+push unk1 ; unknown
+syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_menuflag_reset(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4173,15 +4386,17 @@ _Operations:_
 
 _Format:_
 
-`trap_screen_show_picture`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 74 ; trap_screen_show_picture (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_screen_show_picture(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4195,15 +4410,18 @@ _Operations:_
 
 _Format:_
 
-`trap_saveram_set_weapon`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_saveram_set_weapon(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4217,15 +4435,17 @@ _Operations:_
 
 _Format:_
 
-`trap_saveram_set_form_weapon`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_saveram_set_form_weapon(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4239,15 +4459,16 @@ _Operations:_
 
 _Format:_
 
-`trap_screen_cross_fade`
+```
+push unk1 ; unknown
+syscall 0, 77 ; trap_screen_cross_fade (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_screen_cross_fade(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4261,17 +4482,18 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_inter`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 78 ; trap_vector_inter (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_inter(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4285,15 +4507,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_add_dead_block`
+```
+push unk1 ; unknown
+syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_effect_add_dead_block(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4307,17 +4530,16 @@ _Operations:_
 
 _Format:_
 
-`trap_pad_is_button`
+```
+push unk1 ; unknown
+syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_pad_is_button(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4331,17 +4553,16 @@ _Operations:_
 
 _Format:_
 
-`trap_pad_is_trigger`
+```
+push unk1 ; unknown
+syscall 0, 81 ; trap_pad_is_trigger (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_pad_is_trigger(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4355,17 +4576,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_outer_product`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 82 ; trap_vector_outer_product (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_outer_product(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4379,17 +4600,18 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_rot`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 83 ; trap_vector_rot (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_rot(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4403,17 +4625,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_angle`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 84 ; trap_vector_angle (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_angle(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4427,15 +4649,16 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_loop_end_kill`
+```
+push unk1 ; unknown
+syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_effect_loop_end_kill(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4449,15 +4672,17 @@ _Operations:_
 
 _Format:_
 
-`trap_effect_set_type`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 86 ; trap_effect_set_type (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_effect_set_type(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4471,15 +4696,16 @@ _Operations:_
 
 _Format:_
 
-`trap_screen_fadeout`
+```
+push unk1 ; unknown
+syscall 0, 87 ; trap_screen_fadeout (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_screen_fadeout(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4493,15 +4719,16 @@ _Operations:_
 
 _Format:_
 
-`trap_screen_fadein`
+```
+push unk1 ; unknown
+syscall 0, 88 ; trap_screen_fadein (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_screen_fadein(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4515,17 +4742,16 @@ _Operations:_
 
 _Format:_
 
-`trap_menuflag_check`
+```
+push unk1 ; unknown
+syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_menuflag_check(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4539,15 +4765,20 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_draw`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 0, 90 ; trap_vector_draw (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vector_draw(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4561,17 +4792,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_inner_prodcut`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 91 ; trap_vector_inner_prodcut (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vector_inner_prodcut(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4585,15 +4816,17 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_add_attack`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_add_attack(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4607,15 +4840,17 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_add_wisdom`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_add_wisdom(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4629,15 +4864,17 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_add_defence`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 94 ; trap_partram_add_defence (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_add_defence(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4651,15 +4888,17 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_set_levelup_type`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 95 ; trap_partram_set_levelup_type (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_set_levelup_type(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4673,15 +4912,17 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_add_ap`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_add_ap(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4695,15 +4936,17 @@ _Operations:_
 
 _Format:_
 
-`trap_item_reduce`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_item_reduce(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4717,15 +4960,17 @@ _Operations:_
 
 _Format:_
 
-`trap_saveram_set_form_ability`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_saveram_set_form_ability(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4739,15 +4984,18 @@ _Operations:_
 
 _Format:_
 
-`trap_partram_add_ability`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_partram_add_ability(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4761,13 +5009,15 @@ _Operations:_
 
 _Format:_
 
-`trap_saveram_increment_friend_recov`
+```
+syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_saveram_increment_friend_recov();
-
+> Not yet described.
 
 
 _Operations:_
@@ -4781,15 +5031,15 @@ _Operations:_
 
 _Format:_
 
-`trap_progress_is_secret_movie`
+```
+syscall 0, 101 ; trap_progress_is_secret_movie (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_progress_is_secret_movie();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4803,17 +5053,16 @@ _Operations:_
 
 _Format:_
 
-`trap_vector_to_angle`
+```
+push unk1 ; unknown
+syscall 0, 102 ; trap_vector_to_angle (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_vector_to_angle(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4827,15 +5076,15 @@ _Operations:_
 
 _Format:_
 
-`trap_progress_is_fm_secret_movie`
+```
+syscall 0, 103 ; trap_progress_is_fm_secret_movie (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_progress_is_fm_secret_movie();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4849,15 +5098,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sound_set_bgse_volume`
+```
+push unk1 ; unknown
+syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_sound_set_bgse_volume(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4871,17 +5121,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_appear`
+```
+push unk1 ; unknown
+syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_appear(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4895,15 +5144,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_rot`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_rot(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4917,17 +5168,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_moveto`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 2 ; trap_sysobj_moveto (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_sysobj_moveto(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4941,15 +5193,15 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_player`
+```
+syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_sysobj_player();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4963,15 +5215,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_wish_dir`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_wish_dir(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -4985,15 +5239,16 @@ _Operations:_
 
 _Format:_
 
-`trap_act_table_init`
+```
+push unk1 ; unknown
+syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_act_table_init(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5007,15 +5262,27 @@ _Operations:_
 
 _Format:_
 
-`trap_act_table_add`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+push unk7 ; unknown
+push unk8 ; unknown
+push unk9 ; unknown
+push unk10 ; unknown
+push unk11 ; unknown
+push unk12 ; unknown
+syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg12 = pop(); arg11 = pop(); arg10 = pop(); arg9 = pop(); arg8 = pop(); arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_act_table_add(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5029,15 +5296,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_act_table`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 7 ; trap_obj_set_act_table (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_act_table(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5051,15 +5320,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_act_start(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5073,15 +5344,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_push`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_act_push(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5095,17 +5368,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_act_exec`
+```
+push unk1 ; unknown
+syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_act_exec(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5119,15 +5391,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_motion_start(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5141,15 +5416,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_change`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_motion_change(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5163,15 +5441,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_push`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_motion_push(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5185,17 +5466,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_is_end`
+```
+push unk1 ; unknown
+syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_motion_is_end(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5209,17 +5489,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_id`
+```
+push unk1 ; unknown
+syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_motion_id(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5233,15 +5512,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_leave_force`
+```
+push unk1 ; unknown
+syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_leave_force(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5255,15 +5535,21 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_attach`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_attach(arg1, arg2, arg3, arg4, arg5, arg6);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5277,15 +5563,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_fadeout`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_fadeout(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5299,15 +5587,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_fadein`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_fadein(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5321,17 +5611,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_effect_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_effect_start(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5345,17 +5637,20 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_effect_start_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_effect_start_pos(arg1, arg2, arg3, arg4, arg5);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5369,15 +5664,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_world`
+```
+syscall 1, 23 ; trap_area_world (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_world();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5391,15 +5686,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_area`
+```
+syscall 1, 24 ; trap_area_area (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_area();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5413,15 +5708,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_map_set`
+```
+syscall 1, 25 ; trap_area_map_set (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_map_set();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5435,15 +5730,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_battle_set`
+```
+syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_battle_set();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5457,15 +5752,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_event_set`
+```
+syscall 1, 27 ; trap_area_event_set (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_event_set();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5479,15 +5774,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_leave`
+```
+push unk1 ; unknown
+syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_leave(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5501,17 +5797,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_capture`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_motion_capture(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5525,15 +5823,18 @@ _Operations:_
 
 _Format:_
 
-`trap_area_jump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 30 ; trap_area_jump (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_area_jump(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5547,15 +5848,17 @@ _Operations:_
 
 _Format:_
 
-`trap_area_setjump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 31 ; trap_area_setjump (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_area_setjump(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5569,17 +5872,17 @@ _Operations:_
 
 _Format:_
 
-`trap_message_open`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 32 ; trap_message_open (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_message_open(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5593,15 +5896,16 @@ _Operations:_
 
 _Format:_
 
-`trap_message_close`
+```
+push unk1 ; unknown
+syscall 1, 33 ; trap_message_close (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_message_close(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5615,15 +5919,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_is_exec`
+```
+syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_event_is_exec();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5637,15 +5941,18 @@ _Operations:_
 
 _Format:_
 
-`trap_area_init`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 35 ; trap_area_init (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_area_init(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5659,15 +5966,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_hide`
+```
+push unk1 ; unknown
+syscall 1, 36 ; trap_bg_hide (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_bg_hide(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5681,15 +5989,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_show`
+```
+push unk1 ; unknown
+syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_bg_show(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5703,15 +6012,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_team`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_team(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5725,17 +6036,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_unit_arg`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_unit_arg(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5749,17 +6060,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_pirate_shade`
+```
+push unk1 ; unknown
+syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_pirate_shade(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5773,15 +6083,17 @@ _Operations:_
 
 _Format:_
 
-`trap_signal_call`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_signal_call(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5795,15 +6107,16 @@ _Operations:_
 
 _Format:_
 
-`func_obj_control_off`
+```
+push unk1 ; unknown
+syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> func_obj_control_off(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5817,15 +6130,16 @@ _Operations:_
 
 _Format:_
 
-`func_obj_control_on`
+```
+push unk1 ; unknown
+syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> func_obj_control_on(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5839,13 +6153,15 @@ _Operations:_
 
 _Format:_
 
-`func_history_clear_enemy`
+```
+syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> func_history_clear_enemy();
-
+> Not yet described.
 
 
 _Operations:_
@@ -5859,15 +6175,16 @@ _Operations:_
 
 _Format:_
 
-`func_area_activate_unit`
+```
+push unk1 ; unknown
+syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> func_area_activate_unit(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5881,13 +6198,15 @@ _Operations:_
 
 _Format:_
 
-`func_bg_barrier_on`
+```
+syscall 1, 46 ; func_bg_barrier_on (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> func_bg_barrier_on();
-
+> Not yet described.
 
 
 _Operations:_
@@ -5901,13 +6220,15 @@ _Operations:_
 
 _Format:_
 
-`func_bg_barrier_off`
+```
+syscall 1, 47 ; func_bg_barrier_off (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> func_bg_barrier_off();
-
+> Not yet described.
 
 
 _Operations:_
@@ -5921,17 +6242,16 @@ _Operations:_
 
 _Format:_
 
-`method_message_is_end`
+```
+push unk1 ; unknown
+syscall 1, 48 ; method_message_is_end (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = method_message_is_end(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5945,15 +6265,18 @@ _Operations:_
 
 _Format:_
 
-`method_obj_enable_reaction_command`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 49 ; method_obj_enable_reaction_command (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_enable_reaction_command(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5967,15 +6290,18 @@ _Operations:_
 
 _Format:_
 
-`method_obj_disable_reaction_command`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 50 ; method_obj_disable_reaction_command (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_disable_reaction_command(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -5989,15 +6315,18 @@ _Operations:_
 
 _Format:_
 
-`method_obj_reset_reaction_command`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 51 ; method_obj_reset_reaction_command (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_reset_reaction_command(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6011,15 +6340,17 @@ _Operations:_
 
 _Format:_
 
-`method_obj_enable_collision`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_enable_collision(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6033,15 +6364,17 @@ _Operations:_
 
 _Format:_
 
-`method_obj_disable_collision`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_disable_collision(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6055,15 +6388,17 @@ _Operations:_
 
 _Format:_
 
-`method_obj_reset_collision`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_reset_collision(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6077,15 +6412,20 @@ _Operations:_
 
 _Format:_
 
-`method_obj_jump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 55 ; method_obj_jump (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> method_obj_jump(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6099,17 +6439,16 @@ _Operations:_
 
 _Format:_
 
-`method_obj_is_culling`
+```
+push unk1 ; unknown
+syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = method_obj_is_culling(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6123,17 +6462,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_jump`
+```
+push unk1 ; unknown
+syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_jump(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6147,15 +6485,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_fly`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_fly(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6169,17 +6510,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_fly`
+```
+push unk1 ; unknown
+syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_fly(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6193,17 +6533,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_air`
+```
+push unk1 ; unknown
+syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_air(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6217,15 +6556,19 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_frame_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_motion_frame_start(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6239,17 +6582,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_moved`
+```
+push unk1 ; unknown
+syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_moved(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6263,17 +6605,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_motion_in_loop`
+```
+push unk1 ; unknown
+syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_motion_in_loop(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6287,17 +6628,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_wish_movement`
+```
+push unk1 ; unknown
+syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_wish_movement(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6311,15 +6651,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_exec_fall`
+```
+push unk1 ; unknown
+syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_exec_fall(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6333,15 +6674,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_exec_land`
+```
+push unk1 ; unknown
+syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_exec_land(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6355,17 +6697,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_get_length`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_motion_get_length(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6379,17 +6721,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_get_loop_top`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 68 ; trap_obj_motion_get_loop_top (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_motion_get_loop_top(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6403,17 +6745,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_get_time`
+```
+push unk1 ; unknown
+syscall 1, 69 ; trap_obj_motion_get_time (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_motion_get_time(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6427,15 +6768,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_flag`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_flag(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6449,15 +6792,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reset_flag`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_reset_flag(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6471,17 +6816,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_check_flag`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 72 ; trap_obj_check_flag (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_check_flag(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6495,15 +6840,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hover`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 73 ; trap_obj_hover (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_hover(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6517,15 +6865,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_idle`
+```
+push unk1 ; unknown
+syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_idle(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6539,15 +6888,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_hook`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_motion_hook(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6561,15 +6912,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_unhook`
+```
+push unk1 ; unknown
+syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_motion_unhook(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6583,17 +6935,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_is_hook`
+```
+push unk1 ; unknown
+syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_motion_is_hook(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6607,17 +6958,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_is_no_control`
+```
+push unk1 ; unknown
+syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_motion_is_no_control(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6631,15 +6981,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_dir`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_dir(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6653,17 +7005,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_turn_dir`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_turn_dir(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6677,15 +7030,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_wedge`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 81 ; trap_obj_act_wedge (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_act_wedge(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6699,17 +7054,20 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_thread_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_thread_start(arg1, arg2, arg3, arg4, arg5);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6723,17 +7081,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_apply_bone_matrix`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_apply_bone_matrix(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6747,17 +7106,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_sheet`
+```
+push unk1 ; unknown
+syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_sheet(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6771,15 +7129,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_texanm_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 85 ; trap_obj_texanm_start (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_texanm_start(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6793,15 +7153,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_texanm_stop`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 86 ; trap_obj_texanm_stop (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_texanm_stop(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6815,17 +7177,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_effect_start_bind`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_effect_start_bind(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6839,17 +7203,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_target_pos`
+```
+push unk1 ; unknown
+syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_target_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6863,15 +7226,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_move_request`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_move_request(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6885,15 +7251,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_shout`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_act_shout(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6907,15 +7276,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_star`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 91 ; trap_obj_star (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_star(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6929,15 +7300,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_scatter_prize`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_scatter_prize(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6951,17 +7324,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_party`
+```
+push unk1 ; unknown
+syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_party(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6975,17 +7347,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_exist`
+```
+push unk1 ; unknown
+syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_exist(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -6999,15 +7370,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_fly_to_jump`
+```
+push unk1 ; unknown
+syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_fly_to_jump(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7021,17 +7393,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_action`
+```
+push unk1 ; unknown
+syscall 1, 96 ; trap_obj_get_action (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_action(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7045,17 +7416,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_spec`
+```
+push unk1 ; unknown
+syscall 1, 97 ; trap_obj_spec (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_spec(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7069,17 +7439,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_step_pos`
+```
+push unk1 ; unknown
+syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_step_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7093,17 +7462,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_float_height`
+```
+push unk1 ; unknown
+syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_float_height(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7117,17 +7485,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_jump_height_to_uptime`
+```
+push unk1 ; unknown
+syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_jump_height_to_uptime(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7141,17 +7508,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_is_capture`
+```
+push unk1 ; unknown
+syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_motion_is_capture(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7165,15 +7531,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_detach`
+```
+push unk1 ; unknown
+syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_detach(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7187,15 +7554,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_detach_callback`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 103 ; trap_obj_set_detach_callback (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_detach_callback(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7209,15 +7579,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_shadow_move_start`
+```
+push unk1 ; unknown
+syscall 1, 104 ; trap_obj_shadow_move_start (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_shadow_move_start(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7231,15 +7602,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_shadow_move_end`
+```
+push unk1 ; unknown
+syscall 1, 105 ; trap_obj_shadow_move_end (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_shadow_move_end(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7253,15 +7625,19 @@ _Operations:_
 
 _Format:_
 
-`trap_signal_reserve_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 106 ; trap_signal_reserve_hp (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_signal_reserve_hp(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7275,15 +7651,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_speed`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_motion_speed(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7297,15 +7675,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_show_part`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_show_part(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7319,15 +7699,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hide_part`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_hide_part(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7341,17 +7723,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_appear_way`
+```
+push unk1 ; unknown
+syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_appear_way(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7365,15 +7746,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_movement`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_movement(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7387,15 +7771,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hook`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_hook(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7409,17 +7796,16 @@ _Operations:_
 
 _Format:_
 
-`trap_player_get_movement`
+```
+push unk1 ; unknown
+syscall 1, 113 ; trap_player_get_movement (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_player_get_movement(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7433,15 +7819,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_search_by_entry`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_search_by_entry(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7455,15 +7843,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_jump_motion`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 115 ; trap_obj_set_jump_motion (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_jump_motion(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7477,13 +7867,15 @@ _Operations:_
 
 _Format:_
 
-`trap_command_cage_on`
+```
+syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_command_cage_on();
-
+> Not yet described.
 
 
 _Operations:_
@@ -7497,13 +7889,15 @@ _Operations:_
 
 _Format:_
 
-`trap_command_cage_off`
+```
+syscall 1, 118 ; trap_command_cage_off (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_command_cage_off();
-
+> Not yet described.
 
 
 _Operations:_
@@ -7517,17 +7911,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_check_step`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_check_step(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7541,17 +7937,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_pos`
+```
+push unk1 ; unknown
+syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_target_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7565,15 +7960,18 @@ _Operations:_
 
 _Format:_
 
-`trap_target_search`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 121 ; trap_target_search (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_search(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7587,15 +7985,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_dump`
+```
+push unk1 ; unknown
+syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_dump(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7609,15 +8008,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_tex_fade_set`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 123 ; trap_obj_tex_fade_set (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_tex_fade_set(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7631,17 +8032,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_entry_fly`
+```
+push unk1 ; unknown
+syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_entry_fly(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7655,15 +8055,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_tex_fade_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 125 ; trap_obj_tex_fade_start (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_tex_fade_start(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7677,15 +8081,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_sync`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_motion_sync(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7699,15 +8105,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_clear`
+```
+push unk1 ; unknown
+syscall 1, 127 ; trap_obj_act_clear (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_act_clear(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7721,15 +8128,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_sysjump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_sysjump(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7743,15 +8152,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_blow`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 129 ; trap_obj_blow (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_blow(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7765,17 +8176,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_cmp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_cmp(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7789,17 +8200,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_dup`
+```
+push unk1 ; unknown
+syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_target_dup(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7813,15 +8223,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_free`
+```
+push unk1 ; unknown
+syscall 1, 132 ; trap_target_free (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_target_free(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7835,15 +8246,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hide`
+```
+push unk1 ; unknown
+syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_hide(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7857,15 +8269,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_show`
+```
+push unk1 ; unknown
+syscall 1, 134 ; trap_obj_show (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_show(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7879,17 +8292,19 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_cross_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 135 ; trap_bg_cross_pos (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_bg_cross_pos(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7903,17 +8318,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_is_floor`
+```
+push unk1 ; unknown
+syscall 1, 136 ; trap_bg_is_floor (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_bg_is_floor(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7927,17 +8341,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_get_normal`
+```
+push unk1 ; unknown
+syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_bg_get_normal(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7951,17 +8364,19 @@ _Operations:_
 
 _Format:_
 
-`trap_pax_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 138 ; trap_pax_start (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_pax_start(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7975,17 +8390,20 @@ _Operations:_
 
 _Format:_
 
-`trap_pax_start_bind`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_pax_start_bind(arg1, arg2, arg3, arg4, arg5);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -7999,17 +8417,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_is_exist`
+```
+push unk1 ; unknown
+syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_target_is_exist(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8023,17 +8440,18 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_ground_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_bg_ground_pos(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8047,15 +8465,18 @@ _Operations:_
 
 _Format:_
 
-`trap_signal_reserve_min_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_signal_reserve_min_hp(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8069,15 +8490,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_search_by_serial`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_search_by_serial(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8091,17 +8514,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_serial`
+```
+push unk1 ; unknown
+syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_serial(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8115,17 +8537,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_touch_zone`
+```
+push unk1 ; unknown
+syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_touch_zone(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8139,15 +8560,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hitback`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 146 ; trap_obj_hitback (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_hitback(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8161,17 +8585,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_pos`
+```
+push unk1 ; unknown
+syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8185,15 +8608,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8207,17 +8632,20 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_effect_start_bind_other`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_effect_start_bind_other(arg1, arg2, arg3, arg4, arg5);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8231,17 +8659,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_check_range`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_motion_check_range(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8255,17 +8683,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_check_trigger`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_motion_check_trigger(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8279,15 +8707,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_is_mission`
+```
+syscall 1, 152 ; trap_status_is_mission (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_status_is_mission();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8301,15 +8729,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reset_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 153 ; trap_obj_reset_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_reset_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8323,13 +8753,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_secure_mode_start`
+```
+syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_secure_mode_start();
-
+> Not yet described.
 
 
 _Operations:_
@@ -8343,17 +8775,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_add_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_add_hp(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8367,15 +8801,22 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hop`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+push unk7 ; unknown
+syscall 1, 156 ; trap_obj_hop (7 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_hop(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8389,15 +8830,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_camera_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_camera_start(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8411,15 +8855,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_set_belt_conveyor`
+```
+push unk1 ; unknown
+syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_bg_set_belt_conveyor(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8433,15 +8878,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_set_uvscroll_speed`
+```
+push unk1 ; unknown
+syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_bg_set_uvscroll_speed(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8455,15 +8901,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_set_obj`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_set_obj(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8477,17 +8925,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_attach`
+```
+push unk1 ; unknown
+syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_attach(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8501,15 +8948,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_set_before_player`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_set_before_player(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8523,15 +8972,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_set_after_player`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 163 ; trap_target_set_after_player (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_set_after_player(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8545,15 +8996,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_camera_start_global`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_camera_start_global(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8567,15 +9020,19 @@ _Operations:_
 
 _Format:_
 
-`trap_command_override`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 165 ; trap_command_override (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_command_override(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8589,17 +9046,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_attack`
+```
+push unk1 ; unknown
+syscall 1, 166 ; trap_target_attack (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_target_attack(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8613,15 +9069,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_start_pri`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_act_start_pri(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8635,15 +9093,20 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_flyjump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_flyjump(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8657,15 +9120,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_effect_unbind`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_effect_unbind(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8679,17 +9144,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_unit_group`
+```
+push unk1 ; unknown
+syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_unit_group(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8703,15 +9167,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_no_leave`
+```
+syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_status_no_leave();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8725,17 +9189,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_can_look`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 172 ; trap_obj_can_look (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_can_look(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8749,17 +9213,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_can_look_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 173 ; trap_obj_can_look_pos (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_can_look_pos(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8773,15 +9237,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_look_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_look_start(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8795,15 +9262,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_look_start_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 175 ; trap_obj_look_start_pos (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_look_start_pos(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8817,15 +9287,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_look_end`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_look_end(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8839,17 +9311,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_path`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_set_path(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8863,17 +9335,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_path_movement`
+```
+push unk1 ; unknown
+syscall 1, 178 ; trap_obj_get_path_movement (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_path_movement(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8887,15 +9358,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_fall_motion`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_fall_motion(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8909,15 +9382,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_land_motion`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_land_motion(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8931,17 +9406,16 @@ _Operations:_
 
 _Format:_
 
-`trap_light_create`
+```
+push unk1 ; unknown
+syscall 1, 181 ; trap_light_create (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_light_create(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8955,15 +9429,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_set_flag`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_set_flag(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8977,15 +9453,20 @@ _Operations:_
 
 _Format:_
 
-`trap_light_set_color`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_set_color(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -8999,15 +9480,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_fadeout`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_fadeout(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9021,15 +9504,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_parts_color`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 185 ; trap_obj_set_parts_color (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_parts_color(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9043,15 +9530,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reset_parts_color`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 186 ; trap_obj_reset_parts_color (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_reset_parts_color(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9065,13 +9555,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_prize_drain_start`
+```
+syscall 1, 187 ; trap_status_prize_drain_start (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_prize_drain_start();
-
+> Not yet described.
 
 
 _Operations:_
@@ -9085,13 +9577,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_prize_drain_end`
+```
+syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_prize_drain_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -9105,15 +9599,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_history_mark`
+```
+push unk1 ; unknown
+syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_history_mark(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9127,17 +9622,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_history_mark`
+```
+push unk1 ; unknown
+syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_history_mark(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9151,17 +9645,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_lockon_target`
+```
+push unk1 ; unknown
+syscall 1, 191 ; trap_obj_lockon_target (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_lockon_target(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9175,17 +9668,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_motion_cancel`
+```
+push unk1 ; unknown
+syscall 1, 192 ; trap_obj_is_motion_cancel (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_motion_cancel(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9199,13 +9691,15 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_warp`
+```
+syscall 1, 193 ; trap_camera_warp (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_camera_warp();
-
+> Not yet described.
 
 
 _Operations:_
@@ -9219,15 +9713,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_stealth`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_stealth(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9241,15 +9737,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reset_stealth`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 195 ; trap_obj_reset_stealth (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_reset_stealth(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9263,15 +9761,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_entrance`
+```
+syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_entrance();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9285,15 +9783,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_cost_rest`
+```
+syscall 1, 197 ; trap_area_cost_rest (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_cost_rest();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9307,15 +9805,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_player_random_pos`
+```
+push unk1 ; unknown
+syscall 1, 198 ; trap_obj_set_player_random_pos (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_set_player_random_pos(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9329,15 +9828,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_random_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_random_pos(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9351,15 +9854,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_bg_collision_type`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 200 ; trap_obj_set_bg_collision_type (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_bg_collision_type(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9373,17 +9878,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_dir`
+```
+push unk1 ; unknown
+syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_dir(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9397,15 +9901,16 @@ _Operations:_
 
 _Format:_
 
-`trap_unit_disable`
+```
+push unk1 ; unknown
+syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_unit_disable(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9419,15 +9924,16 @@ _Operations:_
 
 _Format:_
 
-`trap_unit_enable`
+```
+push unk1 ; unknown
+syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_unit_enable(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9441,13 +9947,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_force_leave_start`
+```
+syscall 1, 204 ; trap_status_force_leave_start (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_force_leave_start();
-
+> Not yet described.
 
 
 _Operations:_
@@ -9461,13 +9969,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_force_leave_end`
+```
+syscall 1, 205 ; trap_status_force_leave_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_force_leave_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -9481,15 +9991,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_is_force_leave`
+```
+syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_status_is_force_leave();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9503,15 +10013,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_watch`
+```
+push unk1 ; unknown
+syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_camera_watch(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9525,17 +10036,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_hover`
+```
+push unk1 ; unknown
+syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_hover(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9549,15 +10059,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_dead`
+```
+push unk1 ; unknown
+syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_dead(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9571,15 +10082,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_search_by_part`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_search_by_part(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9593,15 +10106,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_pattern_enable`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_pattern_enable(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9615,15 +10130,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_pattern_disable`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_pattern_disable(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9637,17 +10154,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_part`
+```
+push unk1 ; unknown
+syscall 1, 213 ; trap_obj_part (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_part(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9661,15 +10177,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hook_stop`
+```
+push unk1 ; unknown
+syscall 1, 214 ; trap_obj_hook_stop (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_hook_stop(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9683,15 +10200,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_pos_trans`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 217 ; trap_obj_set_pos_trans (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_pos_trans(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9705,15 +10224,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_unit_arg`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_unit_arg(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9727,15 +10249,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_camera_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 219 ; trap_obj_camera_start (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_camera_start(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9749,15 +10274,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_move_to_space`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_move_to_space(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9771,17 +10299,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_can_decide_command`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_can_decide_command(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9795,17 +10324,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_entry_id`
+```
+push unk1 ; unknown
+syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_entry_id(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9819,15 +10347,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_cancel`
+```
+push unk1 ; unknown
+syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_camera_cancel(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9841,17 +10370,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_action_air`
+```
+push unk1 ; unknown
+syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_action_air(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9865,17 +10393,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_star`
+```
+push unk1 ; unknown
+syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_star(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9889,15 +10416,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_scatter_prize_mu`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_scatter_prize_mu(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9911,15 +10440,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_jump_direct`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_jump_direct(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9933,17 +10464,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_sheet_hp(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9957,17 +10488,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_max_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_sheet_max_hp(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -9981,17 +10512,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_hp_rate`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_sheet_hp_rate(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10005,15 +10536,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_set_min_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sheet_set_min_hp(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10027,17 +10561,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_min_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_sheet_min_hp(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10051,15 +10585,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_set_hp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sheet_set_hp(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10073,17 +10610,17 @@ _Operations:_
 
 _Format:_
 
-`trap_party_get_weapon`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_party_get_weapon(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10097,17 +10634,17 @@ _Operations:_
 
 _Format:_
 
-`trap_party_hand_to_bone`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_party_hand_to_bone(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10121,15 +10658,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_unsync`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_motion_unsync(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10143,15 +10682,20 @@ _Operations:_
 
 _Format:_
 
-`trap_command_override_top`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 237 ; trap_command_override_top (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_command_override_top(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10165,17 +10709,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_capture_id`
+```
+push unk1 ; unknown
+syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_motion_capture_id(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10189,17 +10732,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_unit_active`
+```
+push unk1 ; unknown
+syscall 1, 239 ; trap_obj_is_unit_active (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_unit_active(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10213,15 +10755,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_scatter_prize_tt`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 240 ; trap_obj_scatter_prize_tt (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_scatter_prize_tt(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10235,15 +10780,17 @@ _Operations:_
 
 _Format:_
 
-`trap_act_shout`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 241 ; trap_act_shout (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_act_shout(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10257,15 +10804,16 @@ _Operations:_
 
 _Format:_
 
-`trap_player_capture_form`
+```
+push unk1 ; unknown
+syscall 1, 242 ; trap_player_capture_form (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_player_capture_form(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10279,13 +10827,15 @@ _Operations:_
 
 _Format:_
 
-`trap_player_capture_form_end`
+```
+syscall 1, 243 ; trap_player_capture_form_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_player_capture_form_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -10299,15 +10849,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_is_battle`
+```
+syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_status_is_battle();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10321,13 +10871,15 @@ _Operations:_
 
 _Format:_
 
-`trap_target_clear_before_player`
+```
+syscall 1, 245 ; trap_target_clear_before_player (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_target_clear_before_player();
-
+> Not yet described.
 
 
 _Operations:_
@@ -10341,13 +10893,15 @@ _Operations:_
 
 _Format:_
 
-`trap_target_clear_after_player`
+```
+syscall 1, 246 ; trap_target_clear_after_player (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_target_clear_after_player();
-
+> Not yet described.
 
 
 _Operations:_
@@ -10361,17 +10915,18 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_get_random_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_bg_get_random_pos(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10385,17 +10940,20 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_get_random_pos_air`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_bg_get_random_pos_air(arg1, arg2, arg3, arg4, arg5);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10409,15 +10967,16 @@ _Operations:_
 
 _Format:_
 
-`trap_status_set_prize_ratio`
+```
+push unk1 ; unknown
+syscall 1, 249 ; trap_status_set_prize_ratio (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_status_set_prize_ratio(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10431,15 +10990,16 @@ _Operations:_
 
 _Format:_
 
-`trap_status_set_lockon_ratio`
+```
+push unk1 ; unknown
+syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_status_set_lockon_ratio(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10453,15 +11013,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_fadein`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 251 ; trap_light_fadein (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_fadein(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10475,17 +11037,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_apply_pos`
+```
+push unk1 ; unknown
+syscall 1, 252 ; trap_camera_apply_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_camera_apply_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10499,17 +11060,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_can_capture_control`
+```
+push unk1 ; unknown
+syscall 1, 253 ; trap_obj_can_capture_control (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_can_capture_control(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10523,17 +11083,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_ride`
+```
+push unk1 ; unknown
+syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_ride(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10547,15 +11106,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_disable_occ`
+```
+push unk1 ; unknown
+syscall 1, 255 ; trap_obj_disable_occ (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_disable_occ(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10569,15 +11129,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_enable_occ`
+```
+push unk1 ; unknown
+syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_enable_occ(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10591,15 +11152,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_set_fog_near`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 257 ; trap_light_set_fog_near (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_set_fog_near(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10613,15 +11176,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_set_fog_far`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 258 ; trap_light_set_fog_far (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_set_fog_far(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10635,15 +11200,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_set_fog_min`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 259 ; trap_light_set_fog_min (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_set_fog_min(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10657,15 +11224,17 @@ _Operations:_
 
 _Format:_
 
-`trap_light_set_fog_max`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 260 ; trap_light_set_fog_max (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_light_set_fog_max(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10679,15 +11248,15 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_munny`
+```
+syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_sheet_munny();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10701,15 +11270,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_voice`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_voice(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10723,15 +11295,17 @@ _Operations:_
 
 _Format:_
 
-`trap_player_set_exec_rc`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_player_set_exec_rc(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10745,13 +11319,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_secure_mode_end`
+```
+syscall 1, 264 ; trap_status_secure_mode_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_secure_mode_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -10765,15 +11341,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_medal`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 265 ; trap_obj_set_medal (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_medal(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10787,17 +11365,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_medal`
+```
+push unk1 ; unknown
+syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_medal(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10811,15 +11388,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_scatter_medal`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_scatter_medal(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10833,15 +11412,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_action_lightcycle`
+```
+push unk1 ; unknown
+syscall 1, 268 ; trap_obj_action_lightcycle (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_action_lightcycle(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10855,17 +11435,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_lightcycle_movement`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_get_lightcycle_movement(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10879,15 +11460,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_disable_anmatr_effect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 270 ; trap_obj_motion_disable_anmatr_effect (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_motion_disable_anmatr_effect(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10901,15 +11484,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_motion_enable_anmatr_effect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 271 ; trap_obj_motion_enable_anmatr_effect (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_motion_enable_anmatr_effect(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10923,17 +11508,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_dead`
+```
+push unk1 ; unknown
+syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_dead(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10947,15 +11531,17 @@ _Operations:_
 
 _Format:_
 
-`trap_signal_hook`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 273 ; trap_signal_hook (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_signal_hook(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10969,15 +11555,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_get_rest_time`
+```
+syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_event_get_rest_time();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -10991,15 +11577,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_recov_holylight`
+```
+push unk1 ; unknown
+syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_recov_holylight(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11013,15 +11600,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_use_mp`
+```
+push unk1 ; unknown
+syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_use_mp(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11035,15 +11623,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reraise`
+```
+push unk1 ; unknown
+syscall 1, 277 ; trap_obj_reraise (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_reraise(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11057,15 +11646,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_scatter_prize_tr`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_scatter_prize_tr(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11079,15 +11670,17 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_appear_tr`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_prize_appear_tr(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11101,17 +11694,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_add_munny`
+```
+push unk1 ; unknown
+syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sheet_add_munny(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11125,15 +11717,17 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_begin_scope`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 281 ; trap_camera_begin_scope (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_camera_begin_scope(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11147,13 +11741,15 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_end_scope`
+```
+syscall 1, 283 ; trap_camera_end_scope (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_camera_end_scope();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11167,15 +11763,16 @@ _Operations:_
 
 _Format:_
 
-`trap_tutorial_pause`
+```
+push unk1 ; unknown
+syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_tutorial_pause(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11189,17 +11786,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_show_picture`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 285 ; trap_obj_show_picture (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_show_picture(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11213,13 +11810,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_hide_shadow`
+```
+syscall 1, 286 ; trap_status_hide_shadow (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_hide_shadow();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11233,13 +11832,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_show_shadow`
+```
+syscall 1, 287 ; trap_status_show_shadow (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_show_shadow();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11253,13 +11854,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_begin_free_ability`
+```
+syscall 1, 288 ; trap_status_begin_free_ability (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_begin_free_ability();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11273,13 +11876,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_end_free_ability`
+```
+syscall 1, 289 ; trap_status_end_free_ability (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_end_free_ability();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11293,15 +11898,17 @@ _Operations:_
 
 _Format:_
 
-`trap_picture_change`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 290 ; trap_picture_change (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_picture_change(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11315,15 +11922,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_levelup_unit`
+```
+push unk1 ; unknown
+syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_levelup_unit(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11337,15 +11945,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_search_by_unit_arg`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_search_by_unit_arg(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11359,13 +11970,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_control_off`
+```
+syscall 1, 293 ; trap_event_control_off (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_event_control_off();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11379,13 +11992,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_control_on`
+```
+syscall 1, 294 ; trap_event_control_on (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_event_control_on();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11399,13 +12014,15 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_reset`
+```
+syscall 1, 295 ; trap_camera_reset (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_camera_reset();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11419,15 +12036,16 @@ _Operations:_
 
 _Format:_
 
-`trap_tutorial_open`
+```
+push unk1 ; unknown
+syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_tutorial_open(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11441,17 +12059,16 @@ _Operations:_
 
 _Format:_
 
-`trap_player_get_rc`
+```
+push unk1 ; unknown
+syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_player_get_rc(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11465,15 +12082,15 @@ _Operations:_
 
 _Format:_
 
-`trap_worldwork_get`
+```
+syscall 1, 298 ; trap_worldwork_get (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_worldwork_get();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11487,13 +12104,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_set_next_entrance`
+```
+syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_area_set_next_entrance();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11507,15 +12126,15 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_num`
+```
+syscall 1, 300 ; trap_prize_num (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_prize_num();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11529,15 +12148,15 @@ _Operations:_
 
 _Format:_
 
-`trap_tutorial_is_open`
+```
+syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_tutorial_is_open();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11551,15 +12170,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_skateboard_mode`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 302 ; trap_obj_set_skateboard_mode (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_skateboard_mode(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11573,15 +12194,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_cost_ratio`
+```
+syscall 1, 303 ; trap_area_cost_ratio (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_area_cost_ratio();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11595,15 +12216,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_search_by_glance`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 304 ; trap_obj_search_by_glance (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_search_by_glance(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11617,15 +12240,15 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_eye`
+```
+syscall 1, 305 ; trap_camera_eye (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_camera_eye();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11639,15 +12262,15 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_at`
+```
+syscall 1, 306 ; trap_camera_at (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_camera_at();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11661,15 +12284,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_search_by_camera`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 307 ; trap_obj_search_by_camera (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_search_by_camera(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11683,15 +12308,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_capture_command`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 308 ; trap_obj_capture_command (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_capture_command(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11705,17 +12332,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_player`
+```
+push unk1 ; unknown
+syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_player(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11729,17 +12355,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_weight`
+```
+push unk1 ; unknown
+syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_weight(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11753,15 +12378,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_set_element_rate`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sheet_set_element_rate(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11775,15 +12403,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_set_scope_zoom`
+```
+push unk1 ; unknown
+syscall 1, 312 ; trap_camera_set_scope_zoom (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_camera_set_scope_zoom(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11797,15 +12426,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_set_scope_closeup_distance`
+```
+push unk1 ; unknown
+syscall 1, 313 ; trap_camera_set_scope_closeup_distance (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_camera_set_scope_closeup_distance(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11819,15 +12449,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_set_scope_target_pos`
+```
+push unk1 ; unknown
+syscall 1, 314 ; trap_camera_set_scope_target_pos (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_camera_set_scope_target_pos(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11841,15 +12472,18 @@ _Operations:_
 
 _Format:_
 
-`trap_picture_set_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 315 ; trap_picture_set_pos (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_picture_set_pos(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11863,17 +12497,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_get_projection_pos`
+```
+push unk1 ; unknown
+syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_camera_get_projection_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11887,13 +12520,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_no_gameover`
+```
+syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_no_gameover();
-
+> Not yet described.
 
 
 _Operations:_
@@ -11907,15 +12542,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_play_se`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_play_se(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11929,17 +12566,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_sora`
+```
+push unk1 ; unknown
+syscall 1, 319 ; trap_sysobj_is_sora (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_sora(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11953,15 +12589,15 @@ _Operations:_
 
 _Format:_
 
-`trap_unit_get_enemy_num`
+```
+syscall 1, 320 ; trap_unit_get_enemy_num (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_unit_get_enemy_num();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11975,15 +12611,18 @@ _Operations:_
 
 _Format:_
 
-`trap_player_lockon`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_player_lockon(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -11997,13 +12636,15 @@ _Operations:_
 
 _Format:_
 
-`trap_command_enable_item`
+```
+syscall 1, 322 ; trap_command_enable_item (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_command_enable_item();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12017,17 +12658,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_count_entry`
+```
+push unk1 ; unknown
+syscall 1, 323 ; trap_obj_count_entry (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_count_entry(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12041,15 +12681,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_pattern_reset`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 324 ; trap_obj_pattern_reset (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_pattern_reset(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12063,15 +12705,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reaction_callback`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_reaction_callback(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12085,15 +12731,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bg_set_animation_speed`
+```
+push unk1 ; unknown
+syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_bg_set_animation_speed(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12107,15 +12754,16 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_get_all_tr`
+```
+push unk1 ; unknown
+syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_prize_get_all_tr(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12129,15 +12777,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_dead_mark`
+```
+push unk1 ; unknown
+syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_dead_mark(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12151,15 +12800,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_set_prize_range`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 329 ; trap_sheet_set_prize_range (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sheet_set_prize_range(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12173,15 +12824,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_cannon_camera_offset`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 330 ; trap_obj_set_cannon_camera_offset (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_cannon_camera_offset(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12195,17 +12849,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_each_all`
+```
+push unk1 ; unknown
+syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_each_all(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12219,17 +12872,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_btlnpc`
+```
+push unk1 ; unknown
+syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_btlnpc(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12243,15 +12895,20 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_cannon_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_cannon_param(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12265,13 +12922,15 @@ _Operations:_
 
 _Format:_
 
-`trap_command_enable`
+```
+syscall 1, 334 ; trap_command_enable (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_command_enable();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12285,15 +12944,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_disable_occ_bone`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_disable_occ_bone(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12307,15 +12968,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_enable_occ_bone`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_enable_occ_bone(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12329,13 +12992,15 @@ _Operations:_
 
 _Format:_
 
-`trap_command_set_side_b`
+```
+syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_command_set_side_b();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12349,17 +13014,18 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_return_ca`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_prize_return_ca(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12373,17 +13039,18 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_vacuum_ca`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_prize_vacuum_ca(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12397,15 +13064,17 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_vacuum_range_ca`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_prize_vacuum_range_ca(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12419,15 +13088,15 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_num_ca`
+```
+syscall 1, 341 ; trap_prize_num_ca (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_prize_num_ca();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12441,15 +13110,18 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_appear_num`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_prize_appear_num(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12463,17 +13135,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_equip_ability`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_is_equip_ability(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12487,15 +13159,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_clear_occ`
+```
+push unk1 ; unknown
+syscall 1, 344 ; trap_obj_clear_occ (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_clear_occ(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12509,17 +13182,19 @@ _Operations:_
 
 _Format:_
 
-`trap_command_override_slot`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 1, 345 ; trap_command_override_slot (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_command_override_slot(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12533,15 +13208,17 @@ _Operations:_
 
 _Format:_
 
-`trap_command_slot_set_status`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 346 ; trap_command_slot_set_status (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_command_slot_set_status(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12555,17 +13232,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_can_see`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_can_see(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12579,15 +13256,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_set_hitback_addition`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sheet_set_hitback_addition(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12601,15 +13280,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_effect_kill_all`
+```
+push unk1 ; unknown
+syscall 1, 349 ; trap_obj_effect_kill_all (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_effect_kill_all(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12623,13 +13303,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_close_pete_curtain`
+```
+syscall 1, 350 ; trap_status_close_pete_curtain (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_close_pete_curtain();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12643,13 +13325,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_open_pete_curtain`
+```
+syscall 1, 351 ; trap_status_open_pete_curtain (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_open_pete_curtain();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12663,13 +13347,15 @@ _Operations:_
 
 _Format:_
 
-`trap_area_set_return_tr`
+```
+syscall 1, 352 ; trap_area_set_return_tr (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_area_set_return_tr();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12683,15 +13369,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_start_mpdrive`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_start_mpdrive(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12705,13 +13393,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_layer_off`
+```
+syscall 1, 354 ; trap_event_layer_off (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_event_layer_off();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12725,15 +13415,15 @@ _Operations:_
 
 _Format:_
 
-`trap_player_can_capture_form`
+```
+syscall 1, 355 ; trap_player_can_capture_form (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_player_can_capture_form();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12747,13 +13437,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_layer_on`
+```
+syscall 1, 356 ; trap_event_layer_on (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_event_layer_on();
-
+> Not yet described.
 
 
 _Operations:_
@@ -12767,17 +13459,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_attack_level`
+```
+push unk1 ; unknown
+syscall 1, 357 ; trap_sheet_attack_level (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sheet_attack_level(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12791,15 +13482,17 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_set_attack_level`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 358 ; trap_sheet_set_attack_level (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sheet_set_attack_level(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12813,15 +13506,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hook_command_image`
+```
+push unk1 ; unknown
+syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_hook_command_image(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12835,15 +13529,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reset_command_image`
+```
+push unk1 ; unknown
+syscall 1, 360 ; trap_obj_reset_command_image (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_reset_command_image(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12857,17 +13552,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_level`
+```
+push unk1 ; unknown
+syscall 1, 361 ; trap_sheet_level (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sheet_level(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12881,15 +13575,16 @@ _Operations:_
 
 _Format:_
 
-`trap_treasure_get`
+```
+push unk1 ; unknown
+syscall 1, 362 ; trap_treasure_get (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_treasure_get(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12903,15 +13598,17 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_appear_xaldin`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_prize_appear_xaldin(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12925,15 +13622,17 @@ _Operations:_
 
 _Format:_
 
-`trap_jigsaw_get`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_jigsaw_get(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12947,15 +13646,16 @@ _Operations:_
 
 _Format:_
 
-`trap_command_disable_group`
+```
+push unk1 ; unknown
+syscall 1, 365 ; trap_command_disable_group (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_command_disable_group(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12969,15 +13669,16 @@ _Operations:_
 
 _Format:_
 
-`trap_command_enable_group`
+```
+push unk1 ; unknown
+syscall 1, 366 ; trap_command_enable_group (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_command_enable_group(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -12991,17 +13692,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_move_to_space_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_get_move_to_space_pos(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13015,15 +13717,17 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_exec_damage`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 0 ; trap_enemy_exec_damage (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_exec_damage(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13037,15 +13741,21 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_exec_damage_blow`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+syscall 2, 1 ; trap_enemy_exec_damage_blow (6 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_exec_damage_blow(arg1, arg2, arg3, arg4, arg5, arg6);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13059,15 +13769,18 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_exec_damage_small`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_exec_damage_small(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13081,15 +13794,18 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_exec_damage_hitback`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_exec_damage_hitback(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13103,17 +13819,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_each`
+```
+push unk1 ; unknown
+syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_enemy_each(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13127,17 +13842,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_is_no_control`
+```
+push unk1 ; unknown
+syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_enemy_is_no_control(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13151,17 +13865,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_is_damage_motion`
+```
+push unk1 ; unknown
+syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_enemy_is_damage_motion(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13175,17 +13888,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_reaction`
+```
+push unk1 ; unknown
+syscall 2, 7 ; trap_damage_reaction (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_reaction(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13199,17 +13911,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_is_reaction`
+```
+push unk1 ; unknown
+syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_is_reaction(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13223,15 +13934,18 @@ _Operations:_
 
 _Format:_
 
-`trap_btlobj_set_sheet`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 9 ; trap_btlobj_set_sheet (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_btlobj_set_sheet(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13245,17 +13959,19 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_new`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_attack_new(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13269,15 +13985,18 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_radius`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_radius(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13291,15 +14010,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13313,15 +14034,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_free`
+```
+push unk1 ; unknown
+syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_attack_free(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13335,17 +14057,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_hit`
+```
+push unk1 ; unknown
+syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_hit(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13359,15 +14080,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_exec_reaction`
+```
+push unk1 ; unknown
+syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_damage_exec_reaction(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13381,17 +14103,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_is_exec_reaction`
+```
+push unk1 ; unknown
+syscall 2, 16 ; trap_damage_is_exec_reaction (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_is_exec_reaction(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13405,15 +14126,19 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_strike`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_strike(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13427,17 +14152,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_strike`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_attack_is_strike(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13451,15 +14176,18 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_line`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_line(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13473,17 +14201,17 @@ _Operations:_
 
 _Format:_
 
-`trap_magic_start_thread`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_magic_start_thread(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13497,17 +14225,17 @@ _Operations:_
 
 _Format:_
 
-`trap_teamwork_alloc`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_teamwork_alloc(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13521,15 +14249,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_obj_pax`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_obj_pax(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13543,17 +14273,16 @@ _Operations:_
 
 _Format:_
 
-`trap_btlobj_target`
+```
+push unk1 ; unknown
+syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_btlobj_target(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13567,17 +14296,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_get_owner`
+```
+push unk1 ; unknown
+syscall 2, 24 ; trap_attack_get_owner (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_get_owner(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13591,17 +14319,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_get_param_id`
+```
+push unk1 ; unknown
+syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_get_param_id(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13615,15 +14342,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_exec_reflect`
+```
+push unk1 ; unknown
+syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_attack_exec_reflect(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13637,15 +14365,20 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_exec_reflect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 2, 27 ; trap_enemy_exec_reflect (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_exec_reflect(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13659,15 +14392,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_refresh`
+```
+push unk1 ; unknown
+syscall 2, 28 ; trap_attack_refresh (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_attack_refresh(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13681,17 +14415,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_hit_bg`
+```
+push unk1 ; unknown
+syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_hit_bg(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13705,15 +14438,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_pax`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_pax(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13727,17 +14462,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_dup`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 31 ; trap_attack_dup (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_attack_dup(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13751,17 +14486,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_blow_up`
+```
+push unk1 ; unknown
+syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_blow_up(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13775,17 +14509,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_blow_speed`
+```
+push unk1 ; unknown
+syscall 2, 33 ; trap_damage_blow_speed (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_blow_speed(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13799,17 +14532,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_get_type`
+```
+push unk1 ; unknown
+syscall 2, 34 ; trap_attack_get_type (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_get_type(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13823,17 +14555,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_attack_type`
+```
+push unk1 ; unknown
+syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_attack_type(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13847,15 +14578,17 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_add_damage`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 36 ; trap_enemy_add_damage (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_add_damage(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13869,15 +14602,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_team`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 37 ; trap_attack_set_team (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_team(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13891,15 +14626,18 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_hit_callback`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_hit_callback(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13913,17 +14651,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_reflect`
+```
+push unk1 ; unknown
+syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_reflect(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13937,17 +14674,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_hit_wall`
+```
+push unk1 ; unknown
+syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_hit_wall(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13961,17 +14697,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_hit_floor`
+```
+push unk1 ; unknown
+syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_hit_floor(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -13985,17 +14720,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_hit_bg_pos`
+```
+push unk1 ; unknown
+syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_hit_bg_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14009,17 +14743,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_get_reflect_vector`
+```
+push unk1 ; unknown
+syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_get_reflect_vector(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14033,17 +14766,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_reflecter`
+```
+push unk1 ; unknown
+syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_reflecter(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14057,17 +14789,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_attack_param_id`
+```
+push unk1 ; unknown
+syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_attack_param_id(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14081,17 +14812,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_damage`
+```
+push unk1 ; unknown
+syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_damage(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14105,17 +14835,19 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_motion_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_limit_motion_start(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14129,17 +14861,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_player`
+```
+push unk1 ; unknown
+syscall 2, 48 ; trap_limit_player (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_limit_player(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14153,17 +14884,17 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_friend`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 49 ; trap_limit_friend (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_limit_friend(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14177,15 +14908,19 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_camera_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_limit_camera_start(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14199,15 +14934,20 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_rc`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_rc(arg1, arg2, arg3, arg4, arg5);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14221,17 +14961,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_rc_receiver`
+```
+push unk1 ; unknown
+syscall 2, 52 ; trap_attack_rc_receiver (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_rc_receiver(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14245,15 +14984,15 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_last_dead`
+```
+syscall 2, 53 ; trap_enemy_last_dead (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_enemy_last_dead();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14267,15 +15006,17 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_start_thread`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_limit_start_thread(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14289,17 +15030,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_light`
+```
+push unk1 ; unknown
+syscall 2, 55 ; trap_limit_light (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_limit_light(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14313,17 +15053,16 @@ _Operations:_
 
 _Format:_
 
-`trap_btlobj_lockon_target`
+```
+push unk1 ; unknown
+syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_btlobj_lockon_target(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14337,17 +15076,18 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_effect_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_limit_effect_start(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14361,17 +15101,19 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_effect_start_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 58 ; trap_limit_effect_start_pos (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_limit_effect_start_pos(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14385,17 +15127,19 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_effect_start_bind`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_limit_effect_start_bind(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14409,17 +15153,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_time`
+```
+push unk1 ; unknown
+syscall 2, 60 ; trap_limit_time (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_limit_time(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14433,15 +15176,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_effect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_effect(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14455,15 +15200,19 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_time`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_time(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14477,17 +15226,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_reference`
+```
+push unk1 ; unknown
+syscall 2, 63 ; trap_limit_reference (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_limit_reference(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14501,17 +15249,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_orig_reaction`
+```
+push unk1 ; unknown
+syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_orig_reaction(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14525,15 +15272,15 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_count_damager`
+```
+syscall 2, 65 ; trap_enemy_count_damager (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_enemy_count_damager();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14547,17 +15294,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_get_reflect_count`
+```
+push unk1 ; unknown
+syscall 2, 66 ; trap_attack_get_reflect_count (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_get_reflect_count(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14571,15 +15317,15 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_new_combo_group`
+```
+syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_attack_new_combo_group();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14593,15 +15339,17 @@ _Operations:_
 
 _Format:_
 
-`trap_magic_set_cost`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 68 ; trap_magic_set_cost (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_magic_set_cost(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14615,17 +15363,16 @@ _Operations:_
 
 _Format:_
 
-`trap_magic_can_add_cost`
+```
+push unk1 ; unknown
+syscall 2, 69 ; trap_magic_can_add_cost (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_magic_can_add_cost(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14639,17 +15386,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_parts`
+```
+push unk1 ; unknown
+syscall 2, 70 ; trap_damage_parts (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_parts(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14663,15 +15409,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_hitmark_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 71 ; trap_attack_set_hitmark_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_hitmark_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14685,17 +15433,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_is_cure`
+```
+push unk1 ; unknown
+syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_is_cure(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14709,15 +15456,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bonuslevel_up`
+```
+push unk1 ; unknown
+syscall 2, 73 ; trap_bonuslevel_up (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_bonuslevel_up(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14731,15 +15479,18 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_reflect_callback`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 74 ; trap_attack_set_reflect_callback (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_reflect_callback(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14753,15 +15504,15 @@ _Operations:_
 
 _Format:_
 
-`trap_summon_is_tink_exist`
+```
+syscall 2, 75 ; trap_summon_is_tink_exist (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_summon_is_tink_exist();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14775,15 +15526,17 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_set_karma_limit`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_set_karma_limit(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14797,17 +15550,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_create`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_vacuum_create(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14821,15 +15574,16 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_destroy`
+```
+push unk1 ; unknown
+syscall 2, 78 ; trap_vacuum_destroy (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_vacuum_destroy(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14843,15 +15597,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_ignore_type`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 79 ; trap_vacuum_set_ignore_type (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_ignore_type(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14865,15 +15621,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 80 ; trap_vacuum_set_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14887,15 +15645,19 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_speed`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 2, 81 ; trap_vacuum_set_speed (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_speed(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14909,15 +15671,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_rot_speed`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 82 ; trap_vacuum_set_rot_speed (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_rot_speed(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14931,15 +15695,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_near_range`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 83 ; trap_vacuum_set_near_range (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_near_range(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14953,15 +15719,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_dist_rate`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 84 ; trap_vacuum_set_dist_rate (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_dist_rate(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14975,17 +15743,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_element`
+```
+push unk1 ; unknown
+syscall 2, 85 ; trap_damage_element (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_element(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -14999,17 +15766,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_get_hitback`
+```
+push unk1 ; unknown
+syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_get_hitback(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15023,15 +15789,18 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_exec_damage_large`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_exec_damage_large(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15045,17 +15814,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_get_attacker`
+```
+push unk1 ; unknown
+syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_enemy_get_attacker(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15069,15 +15837,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_reset_special_command`
+```
+push unk1 ; unknown
+syscall 2, 89 ; trap_limit_reset_special_command (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_limit_reset_special_command(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15091,15 +15860,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_close_gauge`
+```
+push unk1 ; unknown
+syscall 2, 90 ; trap_limit_close_gauge (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_limit_close_gauge(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15113,17 +15883,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_get_reaction_type`
+```
+push unk1 ; unknown
+syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_get_reaction_type(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15137,17 +15906,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_is_finish`
+```
+push unk1 ; unknown
+syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_is_finish(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15161,17 +15929,16 @@ _Operations:_
 
 _Format:_
 
-`trap_damage_is_normal`
+```
+push unk1 ; unknown
+syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_damage_is_normal(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15185,15 +15952,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_system_pax`
+```
+push unk1 ; unknown
+syscall 2, 94 ; trap_attack_set_system_pax (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_attack_set_system_pax(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15207,15 +15975,17 @@ _Operations:_
 
 _Format:_
 
-`trap_btlobj_dup_sheet`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 95 ; trap_btlobj_dup_sheet (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_btlobj_dup_sheet(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15229,17 +15999,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_valid`
+```
+push unk1 ; unknown
+syscall 2, 96 ; trap_attack_is_valid (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_valid(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15253,15 +16022,17 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_set_attacker`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 2, 97 ; trap_enemy_set_attacker (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_enemy_set_attacker(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15275,15 +16046,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_is_exec`
+```
+syscall 4, 2 ; trap_event_is_exec (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_event_is_exec();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15297,15 +16068,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_complete`
+```
+push unk1 ; unknown
+syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_complete(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15319,15 +16091,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_information`
+```
+push unk1 ; unknown
+syscall 4, 4 ; trap_mission_information (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_information(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15341,15 +16114,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_count`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_count(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15363,15 +16138,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_increment_count`
+```
+push unk1 ; unknown
+syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_increment_count(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15385,15 +16161,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_restart_timer`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_restart_timer(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15407,15 +16185,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_gauge`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_gauge(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15429,15 +16209,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_add_gauge`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_add_gauge(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15451,15 +16233,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_gauge_ratio`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_gauge_ratio(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15473,13 +16257,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_failed`
+```
+syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_failed();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15493,17 +16279,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_gauge_ratio`
+```
+push unk1 ; unknown
+syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_mission_get_gauge_ratio(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15517,13 +16302,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_pause_timer`
+```
+syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_pause_timer();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15537,13 +16324,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_activate2d`
+```
+syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_activate2d();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15557,13 +16346,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_deactivate2d`
+```
+syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_deactivate2d();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15577,15 +16368,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_dead_boss`
+```
+push unk1 ; unknown
+syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_dead_boss(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15599,15 +16391,19 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_timer_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_timer_param(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15621,15 +16417,19 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_count_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_count_param(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15643,15 +16443,19 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_gauge_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 4, 19 ; trap_mission_set_gauge_param (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_gauge_param(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15665,15 +16469,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_decrement_count`
+```
+push unk1 ; unknown
+syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_decrement_count(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15687,15 +16492,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_is_activate2d`
+```
+syscall 4, 21 ; trap_mission_is_activate2d (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_mission_is_activate2d();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15709,15 +16514,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_exit`
+```
+push unk1 ; unknown
+syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_exit(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15731,13 +16537,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_reset_pause_mode`
+```
+syscall 4, 23 ; trap_mission_reset_pause_mode (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_reset_pause_mode();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15751,13 +16559,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_cancel_pause_timer`
+```
+syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_cancel_pause_timer();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15771,15 +16581,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_start_combo_counter`
+```
+push unk1 ; unknown
+syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_start_combo_counter(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15793,17 +16604,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_timer`
+```
+push unk1 ; unknown
+syscall 4, 26 ; trap_mission_get_timer (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_mission_get_timer(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15817,13 +16627,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_stop_combo_counter`
+```
+syscall 4, 27 ; trap_mission_stop_combo_counter (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_stop_combo_counter();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15837,17 +16649,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_gauge_warning_ratio`
+```
+push unk1 ; unknown
+syscall 4, 28 ; trap_mission_get_gauge_warning_ratio (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_mission_get_gauge_warning_ratio(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15861,17 +16672,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_count`
+```
+push unk1 ; unknown
+syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_mission_get_count(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15885,15 +16695,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_max_combo_counter`
+```
+syscall 4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_mission_get_max_combo_counter();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15907,15 +16717,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_combo_counter`
+```
+syscall 4, 31 ; trap_mission_get_combo_counter (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_mission_get_combo_counter();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15929,13 +16739,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_return`
+```
+syscall 4, 32 ; trap_mission_return (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_return();
-
+> Not yet described.
 
 
 _Operations:_
@@ -15949,15 +16761,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_add_combo_counter`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_add_combo_counter(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15971,17 +16785,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_is_gauge_warning`
+```
+push unk1 ; unknown
+syscall 4, 34 ; trap_mission_is_gauge_warning (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_mission_is_gauge_warning(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -15995,17 +16808,16 @@ _Operations:_
 
 _Format:_
 
-`trap_score_type`
+```
+push unk1 ; unknown
+syscall 4, 35 ; trap_score_type (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_score_type(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16019,17 +16831,16 @@ _Operations:_
 
 _Format:_
 
-`trap_score_score`
+```
+push unk1 ; unknown
+syscall 4, 36 ; trap_score_score (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_score_score(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16043,17 +16854,18 @@ _Operations:_
 
 _Format:_
 
-`trap_score_update`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 4, 37 ; trap_score_update (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_score_update(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16067,17 +16879,16 @@ _Operations:_
 
 _Format:_
 
-`trap_score_get`
+```
+push unk1 ; unknown
+syscall 4, 38 ; trap_score_get (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_score_get(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16091,15 +16902,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_watch`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_watch(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16113,17 +16926,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_get_timer_second`
+```
+push unk1 ; unknown
+syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_mission_get_timer_second(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16137,15 +16949,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_add_count`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_add_count(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16159,17 +16973,17 @@ _Operations:_
 
 _Format:_
 
-`trap_struggle_increment`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 42 ; trap_struggle_increment (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_struggle_increment(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16183,15 +16997,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_max_combo_counter`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_max_combo_counter(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16205,15 +17021,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_disable_count`
+```
+push unk1 ; unknown
+syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_disable_count(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16227,15 +17044,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_disable_watch`
+```
+push unk1 ; unknown
+syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_disable_watch(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16249,15 +17067,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_warning_se`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_warning_se(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16271,15 +17091,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_warning_timer`
+```
+push unk1 ; unknown
+syscall 4, 47 ; trap_mission_warning_timer (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_warning_timer(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16293,15 +17114,18 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_count_figure_num`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_count_figure_num(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16315,15 +17139,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_disable_timer`
+```
+push unk1 ; unknown
+syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_disable_timer(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16337,15 +17162,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_warning_count`
+```
+push unk1 ; unknown
+syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_warning_count(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16359,15 +17185,19 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_combo_counter_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_combo_counter_param(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16381,15 +17211,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_warning_combo_counter`
+```
+push unk1 ; unknown
+syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_warning_combo_counter(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16403,15 +17234,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_set_combo_counter_warning_se`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 53 ; trap_mission_set_combo_counter_warning_se (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_set_combo_counter_warning_se(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16425,13 +17258,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_lock`
+```
+syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_mission_lock();
-
+> Not yet described.
 
 
 _Operations:_
@@ -16445,15 +17280,15 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_is_lock`
+```
+syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_mission_is_lock();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16467,13 +17302,15 @@ _Operations:_
 
 _Format:_
 
-`trap_event_continue_control_off`
+```
+syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_event_continue_control_off();
-
+> Not yet described.
 
 
 _Operations:_
@@ -16487,15 +17324,17 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_warning_gauge`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 4, 57 ; trap_mission_warning_gauge (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_mission_warning_gauge(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16509,15 +17348,16 @@ _Operations:_
 
 _Format:_
 
-`trap_mission_reset_warning_count`
+```
+push unk1 ; unknown
+syscall 4, 58 ; trap_mission_reset_warning_count (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_mission_reset_warning_count(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16531,17 +17371,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_start_rtn_action`
+```
+push unk1 ; unknown
+syscall 5, 0 ; trap_get_start_rtn_action (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_start_rtn_action(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16555,15 +17394,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_path_way`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 1 ; trap_set_path_way (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_set_path_way(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16577,17 +17418,16 @@ _Operations:_
 
 _Format:_
 
-`trap_reverse_path_way`
+```
+push unk1 ; unknown
+syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_reverse_path_way(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16601,17 +17441,17 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_dir`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_get_path_dir(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16625,15 +17465,16 @@ _Operations:_
 
 _Format:_
 
-`trap_end_rtn_action`
+```
+push unk1 ; unknown
+syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_end_rtn_action(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16647,17 +17488,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_rtn_action`
+```
+push unk1 ; unknown
+syscall 5, 5 ; trap_get_rtn_action (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_rtn_action(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16671,17 +17511,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_rtn_action_dir`
+```
+push unk1 ; unknown
+syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_rtn_action_dir(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16695,17 +17534,16 @@ _Operations:_
 
 _Format:_
 
-`trap_is_rtn_change_dir`
+```
+push unk1 ; unknown
+syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_is_rtn_change_dir(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16719,15 +17557,17 @@ _Operations:_
 
 _Format:_
 
-`trap_create_active_path`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 8 ; trap_create_active_path (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_create_active_path(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16741,17 +17581,18 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_dir_from_obj`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 5, 9 ; trap_get_path_dir_from_obj (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_get_path_dir_from_obj(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16765,15 +17606,17 @@ _Operations:_
 
 _Format:_
 
-`trap_forward_path_current_pointer`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 10 ; trap_forward_path_current_pointer (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_forward_path_current_pointer(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16787,17 +17630,16 @@ _Operations:_
 
 _Format:_
 
-`trap_is_end_rtn_action`
+```
+push unk1 ; unknown
+syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_is_end_rtn_action(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16811,15 +17653,16 @@ _Operations:_
 
 _Format:_
 
-`trap_reset_active_path`
+```
+push unk1 ; unknown
+syscall 5, 12 ; trap_reset_active_path (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_reset_active_path(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16833,15 +17676,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_path_target_point`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 13 ; trap_set_path_target_point (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_set_path_target_point(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16855,17 +17700,17 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_point_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 14 ; trap_get_path_point_pos (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_get_path_point_pos(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16879,15 +17724,16 @@ _Operations:_
 
 _Format:_
 
-`trap_clear_active_path`
+```
+push unk1 ; unknown
+syscall 5, 15 ; trap_clear_active_path (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_clear_active_path(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16901,15 +17747,17 @@ _Operations:_
 
 _Format:_
 
-`trap_reset_leave_way`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_reset_leave_way(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16923,17 +17771,17 @@ _Operations:_
 
 _Format:_
 
-`trap_check_rtn_option_flag`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_check_rtn_option_flag(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16947,15 +17795,16 @@ _Operations:_
 
 _Format:_
 
-`trap_reset_path_current_pointer`
+```
+push unk1 ; unknown
+syscall 5, 18 ; trap_reset_path_current_pointer (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_reset_path_current_pointer(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16969,17 +17818,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_current_pos`
+```
+push unk1 ; unknown
+syscall 5, 19 ; trap_get_path_current_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_path_current_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -16993,17 +17841,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_current_dir`
+```
+push unk1 ; unknown
+syscall 5, 20 ; trap_get_path_current_dir (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_path_current_dir(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17017,17 +17864,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_first_point_pos`
+```
+push unk1 ; unknown
+syscall 5, 21 ; trap_get_path_first_point_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_path_first_point_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17041,17 +17887,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_last_point_pos`
+```
+push unk1 ; unknown
+syscall 5, 22 ; trap_get_path_last_point_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_path_last_point_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17065,17 +17910,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_path_by_id`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_set_path_by_id(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17089,17 +17934,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_path_by_group`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 24 ; trap_set_path_by_group (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_set_path_by_group(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17113,17 +17958,18 @@ _Operations:_
 
 _Format:_
 
-`trap_get_path_dir_r`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 5, 25 ; trap_get_path_dir_r (3 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_get_path_dir_r(arg1, arg2, arg3);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17137,15 +17983,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_rtn_partner`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_set_rtn_partner(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17159,15 +18007,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_rtn_option_flag`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_set_rtn_option_flag(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17181,15 +18031,16 @@ _Operations:_
 
 _Format:_
 
-`trap_eh22_path_move_next`
+```
+push unk1 ; unknown
+syscall 5, 28 ; trap_eh22_path_move_next (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_eh22_path_move_next(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17203,15 +18054,16 @@ _Operations:_
 
 _Format:_
 
-`trap_eh22_path_move_before`
+```
+push unk1 ; unknown
+syscall 5, 29 ; trap_eh22_path_move_before (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_eh22_path_move_before(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17225,17 +18077,16 @@ _Operations:_
 
 _Format:_
 
-`trap_eh22_path_is_moving`
+```
+push unk1 ; unknown
+syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_eh22_path_is_moving(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17249,17 +18100,16 @@ _Operations:_
 
 _Format:_
 
-`trap_eh22_path_get_point`
+```
+push unk1 ; unknown
+syscall 5, 31 ; trap_eh22_path_get_point (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_eh22_path_get_point(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17273,15 +18123,18 @@ _Operations:_
 
 _Format:_
 
-`trap_eh22_path_play`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 5, 32 ; trap_eh22_path_play (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_eh22_path_play(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17295,15 +18148,17 @@ _Operations:_
 
 _Format:_
 
-`trap_set_rtn_time_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 5, 33 ; trap_set_rtn_time_param (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_set_rtn_time_param(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17317,17 +18172,16 @@ _Operations:_
 
 _Format:_
 
-`trap_get_obj_head_pos`
+```
+push unk1 ; unknown
+syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_get_obj_head_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17341,15 +18195,22 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_shake`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+push unk7 ; unknown
+syscall 6, 0 ; trap_camera_shake (7 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_camera_shake(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17363,15 +18224,17 @@ _Operations:_
 
 _Format:_
 
-`trap_prize_appear`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_prize_appear(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17385,15 +18248,15 @@ _Operations:_
 
 _Format:_
 
-`trap_player_get_form`
+```
+syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_player_get_form();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17407,15 +18270,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_init`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_searcher_init(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17429,15 +18294,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_reset`
+```
+push unk1 ; unknown
+syscall 6, 4 ; trap_target_searcher_reset (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_target_searcher_reset(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17451,15 +18317,22 @@ _Operations:_
 
 _Format:_
 
-`trap_target_seracher_search`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+push unk7 ; unknown
+syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_seracher_search(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17473,15 +18346,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_stop`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_stop(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17495,15 +18371,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_restart`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 7 ; trap_obj_restart (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_restart(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17517,15 +18395,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_add`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_searcher_add(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17539,17 +18419,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_dist`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 9 ; trap_target_dist (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_target_dist(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17563,17 +18443,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_hit_attack`
+```
+push unk1 ; unknown
+syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_hit_attack(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17587,15 +18466,18 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_search_obj`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_searcher_search_obj(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17609,15 +18491,18 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_get_old`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_searcher_get_old(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17631,15 +18516,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_force_warp`
+```
+push unk1 ; unknown
+syscall 6, 13 ; trap_friend_force_warp (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_force_warp(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17653,17 +18539,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get`
+```
+push unk1 ; unknown
+syscall 6, 14 ; trap_friend_get (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_get(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17677,15 +18562,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_set_warp_level`
+```
+push unk1 ; unknown
+syscall 6, 15 ; trap_friend_set_warp_level (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_set_warp_level(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17699,15 +18585,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_clear`
+```
+push unk1 ; unknown
+syscall 6, 16 ; trap_target_clear (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_target_clear(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17721,13 +18608,15 @@ _Operations:_
 
 _Format:_
 
-`trap_lockon_show`
+```
+syscall 6, 17 ; trap_lockon_show (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_lockon_show();
-
+> Not yet described.
 
 
 _Operations:_
@@ -17741,13 +18630,15 @@ _Operations:_
 
 _Format:_
 
-`trap_lockon_hide`
+```
+syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_lockon_hide();
-
+> Not yet described.
 
 
 _Operations:_
@@ -17761,13 +18652,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_peterpan_prize_drain_start`
+```
+syscall 6, 19 ; trap_status_peterpan_prize_drain_start (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_peterpan_prize_drain_start();
-
+> Not yet described.
 
 
 _Operations:_
@@ -17781,13 +18674,15 @@ _Operations:_
 
 _Format:_
 
-`trap_status_peterpan_prize_drain_end`
+```
+syscall 6, 20 ; trap_status_peterpan_prize_drain_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_status_peterpan_prize_drain_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -17801,15 +18696,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_add_target`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_searcher_add_target(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17823,17 +18720,19 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_get_target_num`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 22 ; trap_target_searcher_get_target_num (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_target_searcher_get_target_num(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17847,17 +18746,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_near_parts`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 23 ; trap_obj_near_parts (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_near_parts(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17871,17 +18770,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_get_bg_press`
+```
+push unk1 ; unknown
+syscall 6, 24 ; trap_obj_get_bg_press (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_get_bg_press(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17895,15 +18793,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_tt_ball_blow`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_tt_ball_blow(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17917,15 +18819,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_limit_hover`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_limit_hover(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17939,13 +18845,15 @@ _Operations:_
 
 _Format:_
 
-`trap_player_dice`
+```
+syscall 6, 27 ; trap_player_dice (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_player_dice();
-
+> Not yet described.
 
 
 _Operations:_
@@ -17959,15 +18867,19 @@ _Operations:_
 
 _Format:_
 
-`trap_dice_set_spec`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 28 ; trap_dice_set_spec (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_dice_set_spec(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -17981,13 +18893,15 @@ _Operations:_
 
 _Format:_
 
-`trap_player_card`
+```
+syscall 6, 29 ; trap_player_card (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_player_card();
-
+> Not yet described.
 
 
 _Operations:_
@@ -18001,15 +18915,22 @@ _Operations:_
 
 _Format:_
 
-`trap_card_set_spec`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+push unk7 ; unknown
+syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_card_set_spec(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18023,13 +18944,15 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_aladdin_prize_drain`
+```
+syscall 6, 31 ; trap_limit_aladdin_prize_drain (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_limit_aladdin_prize_drain();
-
+> Not yet described.
 
 
 _Operations:_
@@ -18043,15 +18966,17 @@ _Operations:_
 
 _Format:_
 
-`trap_skateboard_ride`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 32 ; trap_skateboard_ride (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_skateboard_ride(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18065,15 +18990,18 @@ _Operations:_
 
 _Format:_
 
-`trap_skateboard_trick`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_skateboard_trick(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18087,15 +19015,18 @@ _Operations:_
 
 _Format:_
 
-`trap_skateboard_trick_motion_push`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_skateboard_trick_motion_push(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18109,15 +19040,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_attach_camera`
+```
+push unk1 ; unknown
+syscall 6, 35 ; trap_obj_attach_camera (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_attach_camera(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18131,15 +19063,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_detach_camera`
+```
+push unk1 ; unknown
+syscall 6, 36 ; trap_obj_detach_camera (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_detach_camera(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18153,17 +19086,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_attach_camera`
+```
+push unk1 ; unknown
+syscall 6, 37 ; trap_obj_is_attach_camera (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_attach_camera(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18177,15 +19109,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_limit_mulan_idle`
+```
+push unk1 ; unknown
+syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_limit_mulan_idle(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18199,15 +19132,16 @@ _Operations:_
 
 _Format:_
 
-`trap_skateboard_ride_edge`
+```
+push unk1 ; unknown
+syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_skateboard_ride_edge(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18221,15 +19155,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_limit_peterpan_idle`
+```
+push unk1 ; unknown
+syscall 6, 40 ; trap_obj_limit_peterpan_idle (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_limit_peterpan_idle(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18243,15 +19178,18 @@ _Operations:_
 
 _Format:_
 
-`trap_skateboard_edge_jump`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 6, 41 ; trap_skateboard_edge_jump (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_skateboard_edge_jump(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18265,15 +19203,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hop_direct`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_hop_direct(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18287,15 +19229,16 @@ _Operations:_
 
 _Format:_
 
-`trap_command_limit_trinity_commbo_start`
+```
+push unk1 ; unknown
+syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_command_limit_trinity_commbo_start(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18309,15 +19252,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_limit_riku_idle`
+```
+push unk1 ; unknown
+syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_limit_riku_idle(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18331,15 +19275,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_hide_shadow`
+```
+push unk1 ; unknown
+syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_hide_shadow(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18353,15 +19298,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_rc_stop_all`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 46 ; trap_obj_rc_stop_all (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_rc_stop_all(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18375,15 +19324,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_stop_end_all`
+```
+push unk1 ; unknown
+syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_stop_end_all(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18397,15 +19347,17 @@ _Operations:_
 
 _Format:_
 
-`trap_skateboardscore_add_count`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 48 ; trap_skateboardscore_add_count (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_skateboardscore_add_count(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18419,17 +19371,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_stop`
+```
+push unk1 ; unknown
+syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_stop(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18443,15 +19394,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_stop_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 50 ; trap_obj_stop_start (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_stop_start(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18465,17 +19418,19 @@ _Operations:_
 
 _Format:_
 
-`trap_bghit_check_line`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_bghit_check_line(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18489,17 +19444,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bghit_get_normal`
+```
+push unk1 ; unknown
+syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_bghit_get_normal(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18513,17 +19467,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bghit_is_hit`
+```
+push unk1 ; unknown
+syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_bghit_is_hit(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18537,17 +19490,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bghit_get_cross_pos`
+```
+push unk1 ; unknown
+syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_bghit_get_cross_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18561,17 +19513,16 @@ _Operations:_
 
 _Format:_
 
-`trap_bghit_get_kind`
+```
+push unk1 ; unknown
+syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_bghit_get_kind(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18585,15 +19536,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_set_group`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 56 ; trap_target_set_group (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_set_group(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18607,17 +19560,16 @@ _Operations:_
 
 _Format:_
 
-`trap_target_get_group`
+```
+push unk1 ; unknown
+syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_target_get_group(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18631,15 +19583,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_act_child_push`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 58 ; trap_obj_act_child_push (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_act_child_push(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18653,17 +19607,16 @@ _Operations:_
 
 _Format:_
 
-`trap_xemnas_get_obj`
+```
+push unk1 ; unknown
+syscall 6, 59 ; trap_xemnas_get_obj (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_xemnas_get_obj(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18677,15 +19630,19 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_stealth_color`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 6, 60 ; trap_obj_set_stealth_color (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_stealth_color(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18699,17 +19656,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_hook`
+```
+push unk1 ; unknown
+syscall 6, 61 ; trap_obj_is_hook (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_hook(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18723,15 +19679,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_carpet_obj_idle`
+```
+push unk1 ; unknown
+syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_carpet_obj_idle(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18745,17 +19702,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_damage_motion`
+```
+push unk1 ; unknown
+syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_damage_motion(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18769,15 +19725,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_show_shadow`
+```
+push unk1 ; unknown
+syscall 6, 64 ; trap_obj_show_shadow (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_show_shadow(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18791,15 +19748,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_scissoring`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 65 ; trap_obj_set_scissoring (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_scissoring(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18813,15 +19772,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_clear_hitback`
+```
+push unk1 ; unknown
+syscall 6, 66 ; trap_obj_clear_hitback (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_clear_hitback(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18835,15 +19795,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_party_attack`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_party_attack(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18857,17 +19819,17 @@ _Operations:_
 
 _Format:_
 
-`trap_strike_raid_calc_xyzrot`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 68 ; trap_strike_raid_calc_xyzrot (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_strike_raid_calc_xyzrot(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18881,15 +19843,16 @@ _Operations:_
 
 _Format:_
 
-`trap_larxene_dead`
+```
+push unk1 ; unknown
+syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_larxene_dead(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18903,17 +19866,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_play_se_loop`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_play_se_loop(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18927,15 +19890,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_fadeout_se`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_fadeout_se(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18949,15 +19914,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_stop_all_start`
+```
+push unk1 ; unknown
+syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_enemy_stop_all_start(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18971,15 +19937,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_stop_all_end`
+```
+push unk1 ; unknown
+syscall 7, 1 ; trap_enemy_stop_all_end (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_enemy_stop_all_end(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -18993,17 +19960,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_hit_mark_pos`
+```
+push unk1 ; unknown
+syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_hit_mark_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19017,13 +19983,15 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_init`
+```
+syscall 7, 3 ; trap_flare_init (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_flare_init();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19037,15 +20005,15 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_new`
+```
+syscall 7, 4 ; trap_flare_new (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_flare_new();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19059,15 +20027,16 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_free`
+```
+push unk1 ; unknown
+syscall 7, 5 ; trap_flare_free (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_flare_free(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19081,15 +20050,17 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_set_pos`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_flare_set_pos(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19103,15 +20074,18 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_set_radius`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 7, 7 ; trap_flare_set_radius (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_flare_set_radius(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19125,15 +20099,17 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_set_effect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 8 ; trap_flare_set_effect (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_flare_set_effect(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19147,15 +20123,17 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_set_target`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 9 ; trap_flare_set_target (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_flare_set_target(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19169,17 +20147,16 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_get_pos`
+```
+push unk1 ; unknown
+syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_flare_get_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19193,15 +20170,15 @@ _Operations:_
 
 _Format:_
 
-`trap_flare_is_empty`
+```
+syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_flare_is_empty();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19215,17 +20192,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_aladdin_exclamation_mark_pos`
+```
+push unk1 ; unknown
+syscall 7, 12 ; trap_limit_aladdin_exclamation_mark_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_limit_aladdin_exclamation_mark_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19239,17 +20215,19 @@ _Operations:_
 
 _Format:_
 
-`trap_magic_calc_speed`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 7, 13 ; trap_magic_calc_speed (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_magic_calc_speed(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19263,15 +20241,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_reaction_offset`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 14 ; trap_attack_set_reaction_offset (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_reaction_offset(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19285,17 +20265,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get_target_size`
+```
+push unk1 ; unknown
+syscall 7, 15 ; trap_friend_get_target_size (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_get_target_size(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19309,17 +20288,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get_current_action`
+```
+push unk1 ; unknown
+syscall 7, 16 ; trap_friend_get_current_action (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_get_current_action(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19333,17 +20311,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_set_script_status`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 17 ; trap_friend_set_script_status (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_friend_set_script_status(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19357,17 +20335,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get_main_status`
+```
+push unk1 ; unknown
+syscall 7, 18 ; trap_friend_get_main_status (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_get_main_status(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19381,17 +20358,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_update_target`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 19 ; trap_friend_update_target (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_friend_update_target(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19405,15 +20382,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_limit_hover_set_spec`
+```
+push unk1 ; unknown
+syscall 7, 21 ; trap_obj_limit_hover_set_spec (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_limit_hover_set_spec(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19427,15 +20405,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_enable_system_wishdir`
+```
+push unk1 ; unknown
+syscall 7, 24 ; trap_friend_enable_system_wishdir (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_enable_system_wishdir(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19449,15 +20428,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_disable_system_wishdir`
+```
+push unk1 ; unknown
+syscall 7, 25 ; trap_friend_disable_system_wishdir (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_disable_system_wishdir(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19471,17 +20451,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_call`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 26 ; trap_friend_call (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_friend_call(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19495,15 +20475,15 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_start_command`
+```
+syscall 7, 27 ; trap_limit_start_command (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_limit_start_command();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19517,13 +20497,15 @@ _Operations:_
 
 _Format:_
 
-`trap_trinity_shot_init`
+```
+syscall 7, 28 ; trap_trinity_shot_init (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_trinity_shot_init();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19537,17 +20519,19 @@ _Operations:_
 
 _Format:_
 
-`trap_trinity_shot_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 7, 29 ; trap_trinity_shot_start (4 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_trinity_shot_start(arg1, arg2, arg3, arg4);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19561,13 +20545,15 @@ _Operations:_
 
 _Format:_
 
-`trap_trinity_shot_ensure`
+```
+syscall 7, 30 ; trap_trinity_shot_ensure (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_trinity_shot_ensure();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19581,15 +20567,17 @@ _Operations:_
 
 _Format:_
 
-`trap_trinity_shot_set_effect_id`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 31 ; trap_trinity_shot_set_effect_id (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_trinity_shot_set_effect_id(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19603,15 +20591,17 @@ _Operations:_
 
 _Format:_
 
-`trap_vacuum_set_effective_range`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 32 ; trap_vacuum_set_effective_range (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_vacuum_set_effective_range(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19625,17 +20615,16 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_summon_entry`
+```
+push unk1 ; unknown
+syscall 7, 33 ; trap_enemy_summon_entry (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_enemy_summon_entry(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19649,15 +20638,17 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_set_rc_owner`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_attack_set_rc_owner(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19671,15 +20662,15 @@ _Operations:_
 
 _Format:_
 
-`trap_summon_is_exec`
+```
+syscall 7, 35 ; trap_summon_is_exec (0 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> return = trap_summon_is_exec();
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19693,17 +20684,16 @@ _Operations:_
 
 _Format:_
 
-`trap_limit_reset_hit_counter`
+```
+push unk1 ; unknown
+syscall 7, 36 ; trap_limit_reset_hit_counter (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_limit_reset_hit_counter(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19717,17 +20707,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_target_radius`
+```
+push unk1 ; unknown
+syscall 8, 0 ; trap_obj_target_radius (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_target_radius(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19741,17 +20730,16 @@ _Operations:_
 
 _Format:_
 
-`trap_player_push_ability_button`
+```
+push unk1 ; unknown
+syscall 8, 1 ; trap_player_push_ability_button (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_player_push_ability_button(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19765,15 +20753,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_xyzrot`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_xyzrot(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19787,15 +20777,16 @@ _Operations:_
 
 _Format:_
 
-`trap_special_last_xemnus_laser_start`
+```
+push unk1 ; unknown
+syscall 8, 3 ; trap_special_last_xemnus_laser_start (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_special_last_xemnus_laser_start(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19809,13 +20800,15 @@ _Operations:_
 
 _Format:_
 
-`trap_special_last_xemnus_laser_attack`
+```
+syscall 8, 4 ; trap_special_last_xemnus_laser_attack (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_special_last_xemnus_laser_attack();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19829,13 +20822,15 @@ _Operations:_
 
 _Format:_
 
-`trap_special_last_xemnus_laser_end`
+```
+syscall 8, 5 ; trap_special_last_xemnus_laser_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_special_last_xemnus_laser_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19849,13 +20844,15 @@ _Operations:_
 
 _Format:_
 
-`trap_special_last_xemnus_laser_optimize`
+```
+syscall 8, 6 ; trap_special_last_xemnus_laser_optimize (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_special_last_xemnus_laser_optimize();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19869,13 +20866,15 @@ _Operations:_
 
 _Format:_
 
-`trap_special_last_xemnus_laser_optimize_end`
+```
+syscall 8, 7 ; trap_special_last_xemnus_laser_optimize_end (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_special_last_xemnus_laser_optimize_end();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19889,17 +20888,16 @@ _Operations:_
 
 _Format:_
 
-`trap_camera_apply_inverse_pos`
+```
+push unk1 ; unknown
+syscall 8, 8 ; trap_camera_apply_inverse_pos (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_camera_apply_inverse_pos(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19913,13 +20911,15 @@ _Operations:_
 
 _Format:_
 
-`trap_empty_func`
+```
+syscall 10, 0 ; trap_empty_func (0 in, 0 out)
+
+```
 
 _Description:_
 
 
-> trap_empty_func();
-
+> Not yet described.
 
 
 _Operations:_
@@ -19933,15 +20933,17 @@ _Operations:_
 
 _Format:_
 
-`trap_stitch_set_screen_position`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 1 ; trap_stitch_set_screen_position (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_stitch_set_screen_position(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19955,17 +20957,16 @@ _Operations:_
 
 _Format:_
 
-`trap_stitch_get_screen_position`
+```
+push unk1 ; unknown
+syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_stitch_get_screen_position(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -19979,15 +20980,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_start_limit`
+```
+push unk1 ; unknown
+syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_start_limit(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20001,15 +21003,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_end_limit`
+```
+push unk1 ; unknown
+syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_end_limit(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20023,17 +21026,16 @@ _Operations:_
 
 _Format:_
 
-`trap_chickenlittle_get_shoot_target`
+```
+push unk1 ; unknown
+syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_chickenlittle_get_shoot_target(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20047,15 +21049,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_special_command`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 6 ; trap_obj_set_special_command (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_special_command(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20069,15 +21073,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_reset_special_command`
+```
+push unk1 ; unknown
+syscall 10, 7 ; trap_obj_reset_special_command (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_obj_reset_special_command(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20091,17 +21096,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get_target_last_position`
+```
+push unk1 ; unknown
+syscall 10, 8 ; trap_friend_get_target_last_position (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_get_target_last_position(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20115,15 +21119,17 @@ _Operations:_
 
 _Format:_
 
-`trap_genie_change_form`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 9 ; trap_genie_change_form (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_genie_change_form(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20137,17 +21143,16 @@ _Operations:_
 
 _Format:_
 
-`trap_genie_get_limit_command`
+```
+push unk1 ; unknown
+syscall 10, 10 ; trap_genie_get_limit_command (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_genie_get_limit_command(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20161,15 +21166,18 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_stop_timer`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 10, 11 ; trap_obj_set_stop_timer (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_stop_timer(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20183,17 +21191,23 @@ _Operations:_
 
 _Format:_
 
-`trap_stitch_effect_start`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+push unk5 ; unknown
+push unk6 ; unknown
+push unk7 ; unknown
+push unk8 ; unknown
+syscall 10, 12 ; trap_stitch_effect_start (8 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg8 = pop(); arg7 = pop(); arg6 = pop(); arg5 = pop(); arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_stitch_effect_start(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20207,15 +21221,17 @@ _Operations:_
 
 _Format:_
 
-`trap_stitch_shot_effect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_stitch_shot_effect(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20229,15 +21245,18 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_set_target`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_friend_set_target(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20251,15 +21270,18 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_motion_cont_push`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 10, 15 ; trap_sysobj_motion_cont_push (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_sysobj_motion_cont_push(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20273,15 +21295,17 @@ _Operations:_
 
 _Format:_
 
-`trap_stitch_effect_kill`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_stitch_effect_kill(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20295,17 +21319,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_zako`
+```
+push unk1 ; unknown
+syscall 10, 17 ; trap_sysobj_is_zako (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_zako(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20319,17 +21342,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_boss`
+```
+push unk1 ; unknown
+syscall 10, 18 ; trap_sysobj_is_boss (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_boss(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20343,17 +21365,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_limit`
+```
+push unk1 ; unknown
+syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_limit(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20367,15 +21388,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_follow_player`
+```
+push unk1 ; unknown
+syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_follow_player(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20389,15 +21411,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_follow_enemy`
+```
+push unk1 ; unknown
+syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_follow_enemy(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20411,17 +21434,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_blow`
+```
+push unk1 ; unknown
+syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_blow(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20435,17 +21457,17 @@ _Operations:_
 
 _Format:_
 
-`trap_enemy_is_attacked_from`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 23 ; trap_enemy_is_attacked_from (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_enemy_is_attacked_from(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20459,17 +21481,17 @@ _Operations:_
 
 _Format:_
 
-`tarp_friend_is_equiped_ability`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = tarp_friend_is_equiped_ability(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20483,17 +21505,16 @@ _Operations:_
 
 _Format:_
 
-`trap_peterpan_receive_notify_player_target`
+```
+push unk1 ; unknown
+syscall 10, 25 ; trap_peterpan_receive_notify_player_target (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_peterpan_receive_notify_player_target(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20507,15 +21528,16 @@ _Operations:_
 
 _Format:_
 
-`trap_peterpan_accept_notify_player_target`
+```
+push unk1 ; unknown
+syscall 10, 26 ; trap_peterpan_accept_notify_player_target (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_peterpan_accept_notify_player_target(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20529,15 +21551,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_enable_inertia`
+```
+push unk1 ; unknown
+syscall 10, 27 ; trap_friend_enable_inertia (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_enable_inertia(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20551,15 +21574,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_disable_inertia`
+```
+push unk1 ; unknown
+syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_disable_inertia(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20573,15 +21597,19 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_use_item`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_friend_use_item(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20595,17 +21623,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_finish_blow`
+```
+push unk1 ; unknown
+syscall 10, 30 ; trap_sysobj_is_finish_blow (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_finish_blow(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20619,17 +21646,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sysobj_is_summon`
+```
+push unk1 ; unknown
+syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sysobj_is_summon(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20643,15 +21669,17 @@ _Operations:_
 
 _Format:_
 
-`trap_stitch_move_request`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 32 ; trap_stitch_move_request (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_stitch_move_request(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20665,17 +21693,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get_player_attacker`
+```
+push unk1 ; unknown
+syscall 10, 33 ; trap_friend_get_player_attacker (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_get_player_attacker(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20689,15 +21716,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_remove_player_attacker`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_friend_remove_player_attacker(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20711,17 +21740,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_get_action_param`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 35 ; trap_friend_get_action_param (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_friend_get_action_param(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20735,17 +21764,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_is_control`
+```
+push unk1 ; unknown
+syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_is_control(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20759,17 +21787,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_is_moveonly`
+```
+push unk1 ; unknown
+syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_is_moveonly(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20783,17 +21810,16 @@ _Operations:_
 
 _Format:_
 
-`trap_attack_is_finish`
+```
+push unk1 ; unknown
+syscall 10, 38 ; trap_attack_is_finish (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_attack_is_finish(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20807,15 +21833,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_action_clear`
+```
+push unk1 ; unknown
+syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_action_clear(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20829,17 +21856,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_motion_sync`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_obj_is_motion_sync(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20853,15 +21880,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_start_leave`
+```
+push unk1 ; unknown
+syscall 10, 41 ; trap_friend_start_leave (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_start_leave(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20875,17 +21903,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_is_start_leave`
+```
+push unk1 ; unknown
+syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_friend_is_start_leave(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20899,15 +21926,17 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_set_use_mp`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_obj_set_use_mp(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20921,17 +21950,16 @@ _Operations:_
 
 _Format:_
 
-`trap_obj_is_tornado`
+```
+push unk1 ; unknown
+syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_obj_is_tornado(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20945,17 +21973,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_get_drive_time`
+```
+push unk1 ; unknown
+syscall 10, 45 ; trap_sheet_get_drive_time (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sheet_get_drive_time(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20969,15 +21996,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_disable_follow_enemy`
+```
+push unk1 ; unknown
+syscall 10, 46 ; trap_friend_disable_follow_enemy (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_disable_follow_enemy(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -20991,15 +22019,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_enable_follow_enemy`
+```
+push unk1 ; unknown
+syscall 10, 47 ; trap_friend_enable_follow_enemy (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_enable_follow_enemy(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21013,15 +22042,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_disable_follow_player`
+```
+push unk1 ; unknown
+syscall 10, 48 ; trap_friend_disable_follow_player (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_disable_follow_player(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21035,15 +22065,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_enable_follow_player`
+```
+push unk1 ; unknown
+syscall 10, 49 ; trap_friend_enable_follow_player (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_enable_follow_player(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21057,17 +22088,16 @@ _Operations:_
 
 _Format:_
 
-`trap_sheet_get_mp`
+```
+push unk1 ; unknown
+syscall 10, 50 ; trap_sheet_get_mp (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_sheet_get_mp(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21081,15 +22111,19 @@ _Operations:_
 
 _Format:_
 
-`trap_chickenlittle_get_nearest_target`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+push unk4 ; unknown
+syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg4 = pop(); arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_chickenlittle_get_nearest_target(arg1, arg2, arg3, arg4);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21103,17 +22137,16 @@ _Operations:_
 
 _Format:_
 
-`trap_btlobj_is_reflect_motion`
+```
+push unk1 ; unknown
+syscall 10, 52 ; trap_btlobj_is_reflect_motion (1 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> return = trap_btlobj_is_reflect_motion(arg1);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21127,15 +22160,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_add_watch_effect`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_friend_add_watch_effect(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21149,17 +22184,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_is_effect_exist`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
+pop unk ; unknown
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> return = trap_friend_is_effect_exist(arg1, arg2);
-> 
-> push(return);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21173,15 +22208,17 @@ _Operations:_
 
 _Format:_
 
-`trap_target_searcher_set_check_hide_from_friend`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 55 ; trap_target_searcher_set_check_hide_from_friend (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_target_searcher_set_check_hide_from_friend(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21195,15 +22232,17 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_invalidate_warp_point`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_friend_invalidate_warp_point(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21217,15 +22256,16 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_add_warp_point`
+```
+push unk1 ; unknown
+syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg1 = pop(); 
-> 
-> trap_friend_add_warp_point(arg1);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21239,15 +22279,18 @@ _Operations:_
 
 _Format:_
 
-`trap_friend_link_magic`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+push unk3 ; unknown
+syscall 10, 58 ; trap_friend_link_magic (3 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg3 = pop(); arg2 = pop(); arg1 = pop(); 
-> 
-> trap_friend_link_magic(arg1, arg2, arg3);
-
+> Not yet described.
 
 
 _Operations:_
@@ -21261,15 +22304,17 @@ _Operations:_
 
 _Format:_
 
-`trap_chickenlittle_set_shoot_target`
+```
+push unk1 ; unknown
+push unk2 ; unknown
+syscall 10, 59 ; trap_chickenlittle_set_shoot_target (2 in, 0 out)
+
+```
 
 _Description:_
 
 
-> arg2 = pop(); arg1 = pop(); 
-> 
-> trap_chickenlittle_set_shoot_target(arg1, arg2);
-
+> Not yet described.
 
 
 _Operations:_

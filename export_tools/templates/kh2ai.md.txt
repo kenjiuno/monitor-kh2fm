@@ -158,6 +158,13 @@ _Description:_
 > Not yet described.
 {% endif %}
 
+{% if instr.doc.example %}
+
+_Example:_
+
+{{ instr.doc.example }}
+{% endif %}
+
 _Operations:_
 
 {% if instr.doc.body %}
@@ -177,7 +184,9 @@ _Operations:_
 
 _Format:_
 
-`{{ syscall.funcForm }}`
+```
+{{ syscall.funcForm }}
+```
 
 _Description:_
 

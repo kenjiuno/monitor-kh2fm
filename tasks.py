@@ -3,6 +3,7 @@ from export_tools import to_xml
 from export_tools import to_sinc
 from export_tools import to_markdown
 from export_tools import to_cs
+from export_tools import fixup as fixup_module
 import os
 
 
@@ -38,3 +39,8 @@ def cs(c, out_file="out.cs"):
 def cs_trap(c, out_file="trap.cs"):
     with open(out_file, 'wt') as f:
         print(to_cs.traps(), file=f)
+
+@task
+def fixup(c, out_file="fixup.json"):
+    with open(out_file, 'wt') as f:
+        print(fixup_module.ver2(), file=f)

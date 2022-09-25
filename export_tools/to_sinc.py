@@ -114,10 +114,10 @@ def run() -> str:
 
         if flags & pcode.Syscall:
             for tableIdx, table in enumerate(trap_table.tables):
-                for funcIdx, func in enumerate(table):
-                    if len(func[0]) != 0:
+                for funcIdx, func in enumerate(table["funcs"]):
+                    if len(func["name"]) != 0:
                         instr = SingleInstrument()
-                        instr.name = func[0]
+                        instr.name = func["name"]
                         buildInstr(instr, opDef.opc,
                                    None, tableIdx, funcIdx, pcode.Syscall, [])
                         instrList.append(instr)
