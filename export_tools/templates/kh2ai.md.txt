@@ -188,22 +188,18 @@ _Format:_
 {{ syscall.funcForm }}
 ```
 
+{% if syscall.doc.help %}
 _Description:_
 
-{% if syscall.doc.help %}
 {{ syscall.doc.help }}
-{% else %}
-> Not yet described.
 {% endif %}
 
+{% if syscall.doc.body %}
 _Operations:_
 
-{% if syscall.doc.body %}
 ```
 {{ syscall.doc.body }}
 ```
-{% else %}
-> Not yet operated.
 {% endif %}
 
 {% endfor %}

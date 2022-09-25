@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sun Sep 25 08:10:01 2022 UTC
+Update timestamp: Sun Sep 25 08:17:23 2022 UTC
 
 ## Credits
 
@@ -2780,16 +2780,8 @@ syscall 0, 0 ; trap_puti (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2804,16 +2796,8 @@ syscall 0, 1 ; trap_putf (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2827,16 +2811,8 @@ syscall 0, 2 ; trap_puts (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2849,16 +2825,8 @@ syscall 0, 3 ; trap_frametime (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2873,16 +2841,8 @@ syscall 0, 4 ; trap_vector_add (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2897,16 +2857,8 @@ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2920,16 +2872,8 @@ syscall 0, 6 ; trap_vector_len (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2943,16 +2887,8 @@ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2967,16 +2903,8 @@ syscall 0, 8 ; trap_vector_dump (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -2993,16 +2921,8 @@ syscall 0, 9 ; trap_thread_start (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3015,16 +2935,8 @@ syscall 0, 11 ; trap_file_is_reading (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3037,16 +2949,8 @@ syscall 0, 12 ; trap_file_flush (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3061,16 +2965,8 @@ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3084,16 +2980,8 @@ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3107,16 +2995,8 @@ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3130,16 +3010,8 @@ syscall 0, 16 ; trap_random_get (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3153,16 +3025,8 @@ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3177,16 +3041,8 @@ syscall 0, 18 ; trap_random_range (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3200,16 +3056,8 @@ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3223,16 +3071,8 @@ syscall 0, 20 ; trap_worldflag_check (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3247,16 +3087,8 @@ syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3270,16 +3102,8 @@ syscall 0, 22 ; trap_abs (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3293,16 +3117,8 @@ syscall 0, 23 ; trap_absf (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3317,16 +3133,8 @@ syscall 0, 24 ; trap_stputi (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3341,16 +3149,8 @@ syscall 0, 25 ; trap_stputf (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3364,16 +3164,8 @@ syscall 0, 26 ; trap_stputs (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3387,16 +3179,8 @@ syscall 0, 27 ; func_system_set_game_speed (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3410,16 +3194,8 @@ syscall 0, 28 ; method_blur_init (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3433,16 +3209,8 @@ syscall 0, 29 ; method_blur_start (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3456,16 +3224,8 @@ syscall 0, 30 ; method_blur_stop (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3479,16 +3239,8 @@ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3502,16 +3254,8 @@ syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3526,16 +3270,8 @@ syscall 0, 35 ; method_vector_scale (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3550,16 +3286,8 @@ syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3574,16 +3302,8 @@ syscall 0, 37 ; trap_vector_div (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3598,16 +3318,8 @@ syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3622,16 +3334,8 @@ syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3646,16 +3350,8 @@ syscall 0, 40 ; trap_effect_set_rot (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3670,16 +3366,8 @@ syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3693,16 +3381,8 @@ syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3716,16 +3396,8 @@ syscall 0, 43 ; trap_fixrad (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3739,16 +3411,8 @@ syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3764,16 +3428,8 @@ syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3789,16 +3445,8 @@ syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3812,16 +3460,8 @@ syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3835,16 +3475,8 @@ syscall 0, 48 ; trap_memory_free (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3858,16 +3490,8 @@ syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3881,16 +3505,8 @@ syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3904,16 +3520,8 @@ syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3929,16 +3537,8 @@ syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3952,16 +3552,8 @@ syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3975,16 +3567,8 @@ syscall 0, 54 ; trap_effect_dir (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -3998,16 +3582,8 @@ syscall 0, 55 ; trap_timer_count_down (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4021,16 +3597,8 @@ syscall 0, 56 ; trap_timer_count_up (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4044,16 +3612,8 @@ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4067,16 +3627,8 @@ syscall 0, 58 ; trap_saveflag_reset (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4090,16 +3642,8 @@ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4113,16 +3657,8 @@ syscall 0, 60 ; trap_assert (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4136,16 +3672,8 @@ syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4160,16 +3688,8 @@ syscall 0, 62 ; trap_partram_set_item_max (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4184,16 +3704,8 @@ syscall 0, 63 ; trap_item_get (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4206,16 +3718,8 @@ syscall 0, 64 ; trap_sound_disable (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4229,16 +3733,8 @@ syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4253,16 +3749,8 @@ syscall 0, 66 ; trap_effect_pause (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4277,16 +3765,8 @@ syscall 0, 67 ; trap_effect_set_color (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4301,16 +3781,8 @@ syscall 0, 68 ; trap_vector_rotx (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4324,16 +3796,8 @@ syscall 0, 69 ; trap_menuflag_set (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4346,16 +3810,8 @@ syscall 0, 70 ; trap_progress_is_second (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4369,16 +3825,8 @@ syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4393,16 +3841,8 @@ syscall 0, 74 ; trap_screen_show_picture (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4418,16 +3858,8 @@ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4442,16 +3874,8 @@ syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4465,16 +3889,8 @@ syscall 0, 77 ; trap_screen_cross_fade (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4490,16 +3906,8 @@ syscall 0, 78 ; trap_vector_inter (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4513,16 +3921,8 @@ syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4536,16 +3936,8 @@ syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4559,16 +3951,8 @@ syscall 0, 81 ; trap_pad_is_trigger (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4583,16 +3967,8 @@ syscall 0, 82 ; trap_vector_outer_product (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4608,16 +3984,8 @@ syscall 0, 83 ; trap_vector_rot (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4632,16 +4000,8 @@ syscall 0, 84 ; trap_vector_angle (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4655,16 +4015,8 @@ syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4679,16 +4031,8 @@ syscall 0, 86 ; trap_effect_set_type (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4702,16 +4046,8 @@ syscall 0, 87 ; trap_screen_fadeout (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4725,16 +4061,8 @@ syscall 0, 88 ; trap_screen_fadein (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4748,16 +4076,8 @@ syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4775,16 +4095,8 @@ syscall 0, 90 ; trap_vector_draw (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4799,16 +4111,8 @@ syscall 0, 91 ; trap_vector_inner_prodcut (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4823,16 +4127,8 @@ syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4847,16 +4143,8 @@ syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4871,16 +4159,8 @@ syscall 0, 94 ; trap_partram_add_defence (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4895,16 +4175,8 @@ syscall 0, 95 ; trap_partram_set_levelup_type (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4919,16 +4191,8 @@ syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4943,16 +4207,8 @@ syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4967,16 +4223,8 @@ syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -4992,16 +4240,8 @@ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5014,16 +4254,8 @@ syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5036,16 +4268,8 @@ syscall 0, 101 ; trap_progress_is_secret_movie (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5059,16 +4283,8 @@ syscall 0, 102 ; trap_vector_to_angle (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5081,16 +4297,8 @@ syscall 0, 103 ; trap_progress_is_fm_secret_movie (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5104,16 +4312,8 @@ syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5127,16 +4327,8 @@ syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5151,16 +4343,8 @@ syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5176,16 +4360,8 @@ syscall 1, 2 ; trap_sysobj_moveto (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5198,16 +4374,8 @@ syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5222,16 +4390,8 @@ syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5245,16 +4405,8 @@ syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5279,16 +4431,8 @@ syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5303,16 +4447,8 @@ syscall 1, 7 ; trap_obj_set_act_table (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5327,16 +4463,8 @@ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5351,16 +4479,8 @@ syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5374,16 +4494,8 @@ syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5399,16 +4511,8 @@ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5424,16 +4528,8 @@ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5449,16 +4545,8 @@ syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5472,16 +4560,8 @@ syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5495,16 +4575,8 @@ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5518,16 +4590,8 @@ syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5546,16 +4610,8 @@ syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5570,16 +4626,8 @@ syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5594,16 +4642,8 @@ syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5620,16 +4660,8 @@ syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5647,16 +4679,8 @@ syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5669,16 +4693,8 @@ syscall 1, 23 ; trap_area_world (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5691,16 +4707,8 @@ syscall 1, 24 ; trap_area_area (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5713,16 +4721,8 @@ syscall 1, 25 ; trap_area_map_set (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5735,16 +4735,8 @@ syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5757,16 +4749,8 @@ syscall 1, 27 ; trap_area_event_set (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5780,16 +4764,8 @@ syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5806,16 +4782,8 @@ syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5831,16 +4799,8 @@ syscall 1, 30 ; trap_area_jump (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5855,16 +4815,8 @@ syscall 1, 31 ; trap_area_setjump (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5879,16 +4831,8 @@ syscall 1, 32 ; trap_message_open (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5902,16 +4846,8 @@ syscall 1, 33 ; trap_message_close (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5924,16 +4860,8 @@ syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5949,16 +4877,8 @@ syscall 1, 35 ; trap_area_init (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5972,16 +4892,8 @@ syscall 1, 36 ; trap_bg_hide (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -5995,16 +4907,8 @@ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6019,16 +4923,8 @@ syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6043,16 +4939,8 @@ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6066,16 +4954,8 @@ syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6090,16 +4970,8 @@ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6113,16 +4985,8 @@ syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6136,16 +5000,8 @@ syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6158,16 +5014,8 @@ syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6181,16 +5029,8 @@ syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6203,16 +5043,8 @@ syscall 1, 46 ; func_bg_barrier_on (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6225,16 +5057,8 @@ syscall 1, 47 ; func_bg_barrier_off (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6248,16 +5072,8 @@ syscall 1, 48 ; method_message_is_end (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6273,16 +5089,8 @@ syscall 1, 49 ; method_obj_enable_reaction_command (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6298,16 +5106,8 @@ syscall 1, 50 ; method_obj_disable_reaction_command (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6323,16 +5123,8 @@ syscall 1, 51 ; method_obj_reset_reaction_command (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6347,16 +5139,8 @@ syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6371,16 +5155,8 @@ syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6395,16 +5171,8 @@ syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6422,16 +5190,8 @@ syscall 1, 55 ; method_obj_jump (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6445,16 +5205,8 @@ syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6468,16 +5220,8 @@ syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6493,16 +5237,8 @@ syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6516,16 +5252,8 @@ syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6539,16 +5267,8 @@ syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6565,16 +5285,8 @@ syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6588,16 +5300,8 @@ syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6611,16 +5315,8 @@ syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6634,16 +5330,8 @@ syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6657,16 +5345,8 @@ syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6680,16 +5360,8 @@ syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6704,16 +5376,8 @@ syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6728,16 +5392,8 @@ syscall 1, 68 ; trap_obj_motion_get_loop_top (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6751,16 +5407,8 @@ syscall 1, 69 ; trap_obj_motion_get_time (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6775,16 +5423,8 @@ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6799,16 +5439,8 @@ syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6823,16 +5455,8 @@ syscall 1, 72 ; trap_obj_check_flag (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6848,16 +5472,8 @@ syscall 1, 73 ; trap_obj_hover (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6871,16 +5487,8 @@ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6895,16 +5503,8 @@ syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6918,16 +5518,8 @@ syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6941,16 +5533,8 @@ syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6964,16 +5548,8 @@ syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -6988,16 +5564,8 @@ syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7013,16 +5581,8 @@ syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7037,16 +5597,8 @@ syscall 1, 81 ; trap_obj_act_wedge (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7064,16 +5616,8 @@ syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7089,16 +5633,8 @@ syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7112,16 +5648,8 @@ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7136,16 +5664,8 @@ syscall 1, 85 ; trap_obj_texanm_start (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7160,16 +5680,8 @@ syscall 1, 86 ; trap_obj_texanm_stop (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7186,16 +5698,8 @@ syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7209,16 +5713,8 @@ syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7234,16 +5730,8 @@ syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7259,16 +5747,8 @@ syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7283,16 +5763,8 @@ syscall 1, 91 ; trap_obj_star (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7307,16 +5779,8 @@ syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7330,16 +5794,8 @@ syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7353,16 +5809,8 @@ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7376,16 +5824,8 @@ syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7399,16 +5839,8 @@ syscall 1, 96 ; trap_obj_get_action (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7422,16 +5854,8 @@ syscall 1, 97 ; trap_obj_spec (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7445,16 +5869,8 @@ syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7468,16 +5884,8 @@ syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7491,16 +5899,8 @@ syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7514,16 +5914,8 @@ syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7537,16 +5929,8 @@ syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7562,16 +5946,8 @@ syscall 1, 103 ; trap_obj_set_detach_callback (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7585,16 +5961,8 @@ syscall 1, 104 ; trap_obj_shadow_move_start (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7608,16 +5976,8 @@ syscall 1, 105 ; trap_obj_shadow_move_end (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7634,16 +5994,8 @@ syscall 1, 106 ; trap_signal_reserve_hp (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7658,16 +6010,8 @@ syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7682,16 +6026,8 @@ syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7706,16 +6042,8 @@ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7729,16 +6057,8 @@ syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7754,16 +6074,8 @@ syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7779,16 +6091,8 @@ syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7802,16 +6106,8 @@ syscall 1, 113 ; trap_player_get_movement (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7826,16 +6122,8 @@ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7850,16 +6138,8 @@ syscall 1, 115 ; trap_obj_set_jump_motion (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7872,16 +6152,8 @@ syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7894,16 +6166,8 @@ syscall 1, 118 ; trap_command_cage_off (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7920,16 +6184,8 @@ syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7943,16 +6199,8 @@ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7968,16 +6216,8 @@ syscall 1, 121 ; trap_target_search (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -7991,16 +6231,8 @@ syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8015,16 +6247,8 @@ syscall 1, 123 ; trap_obj_tex_fade_set (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8038,16 +6262,8 @@ syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8064,16 +6280,8 @@ syscall 1, 125 ; trap_obj_tex_fade_start (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8088,16 +6296,8 @@ syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8111,16 +6311,8 @@ syscall 1, 127 ; trap_obj_act_clear (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8135,16 +6327,8 @@ syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8159,16 +6343,8 @@ syscall 1, 129 ; trap_obj_blow (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8183,16 +6359,8 @@ syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8206,16 +6374,8 @@ syscall 1, 131 ; trap_target_dup (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8229,16 +6389,8 @@ syscall 1, 132 ; trap_target_free (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8252,16 +6404,8 @@ syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8275,16 +6419,8 @@ syscall 1, 134 ; trap_obj_show (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8301,16 +6437,8 @@ syscall 1, 135 ; trap_bg_cross_pos (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8324,16 +6452,8 @@ syscall 1, 136 ; trap_bg_is_floor (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8347,16 +6467,8 @@ syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8373,16 +6485,8 @@ syscall 1, 138 ; trap_pax_start (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8400,16 +6504,8 @@ syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8423,16 +6519,8 @@ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8448,16 +6536,8 @@ syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8473,16 +6553,8 @@ syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8497,16 +6569,8 @@ syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8520,16 +6584,8 @@ syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8543,16 +6599,8 @@ syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8568,16 +6616,8 @@ syscall 1, 146 ; trap_obj_hitback (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8591,16 +6631,8 @@ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8615,16 +6647,8 @@ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8642,16 +6666,8 @@ syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8666,16 +6682,8 @@ syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8690,16 +6698,8 @@ syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8712,16 +6712,8 @@ syscall 1, 152 ; trap_status_is_mission (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8736,16 +6728,8 @@ syscall 1, 153 ; trap_obj_reset_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8758,16 +6742,8 @@ syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8784,16 +6760,8 @@ syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8813,16 +6781,8 @@ syscall 1, 156 ; trap_obj_hop (7 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8838,16 +6798,8 @@ syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8861,16 +6813,8 @@ syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8884,16 +6828,8 @@ syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8908,16 +6844,8 @@ syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8931,16 +6859,8 @@ syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8955,16 +6875,8 @@ syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -8979,16 +6891,8 @@ syscall 1, 163 ; trap_target_set_after_player (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9003,16 +6907,8 @@ syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9029,16 +6925,8 @@ syscall 1, 165 ; trap_command_override (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9052,16 +6940,8 @@ syscall 1, 166 ; trap_target_attack (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9076,16 +6956,8 @@ syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9103,16 +6975,8 @@ syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9127,16 +6991,8 @@ syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9150,16 +7006,8 @@ syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9172,16 +7020,8 @@ syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9196,16 +7036,8 @@ syscall 1, 172 ; trap_obj_can_look (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9220,16 +7052,8 @@ syscall 1, 173 ; trap_obj_can_look_pos (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9245,16 +7069,8 @@ syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9270,16 +7086,8 @@ syscall 1, 175 ; trap_obj_look_start_pos (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9294,16 +7102,8 @@ syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9318,16 +7118,8 @@ syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9341,16 +7133,8 @@ syscall 1, 178 ; trap_obj_get_path_movement (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9365,16 +7149,8 @@ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9389,16 +7165,8 @@ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9412,16 +7180,8 @@ syscall 1, 181 ; trap_light_create (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9436,16 +7196,8 @@ syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9463,16 +7215,8 @@ syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9487,16 +7231,8 @@ syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9513,16 +7249,8 @@ syscall 1, 185 ; trap_obj_set_parts_color (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9538,16 +7266,8 @@ syscall 1, 186 ; trap_obj_reset_parts_color (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9560,16 +7280,8 @@ syscall 1, 187 ; trap_status_prize_drain_start (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9582,16 +7294,8 @@ syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9605,16 +7309,8 @@ syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9628,16 +7324,8 @@ syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9651,16 +7339,8 @@ syscall 1, 191 ; trap_obj_lockon_target (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9674,16 +7354,8 @@ syscall 1, 192 ; trap_obj_is_motion_cancel (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9696,16 +7368,8 @@ syscall 1, 193 ; trap_camera_warp (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9720,16 +7384,8 @@ syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9744,16 +7400,8 @@ syscall 1, 195 ; trap_obj_reset_stealth (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9766,16 +7414,8 @@ syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9788,16 +7428,8 @@ syscall 1, 197 ; trap_area_cost_rest (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9811,16 +7443,8 @@ syscall 1, 198 ; trap_obj_set_player_random_pos (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9837,16 +7461,8 @@ syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9861,16 +7477,8 @@ syscall 1, 200 ; trap_obj_set_bg_collision_type (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9884,16 +7492,8 @@ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9907,16 +7507,8 @@ syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9930,16 +7522,8 @@ syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9952,16 +7536,8 @@ syscall 1, 204 ; trap_status_force_leave_start (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9974,16 +7550,8 @@ syscall 1, 205 ; trap_status_force_leave_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -9996,16 +7564,8 @@ syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10019,16 +7579,8 @@ syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10042,16 +7594,8 @@ syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10065,16 +7609,8 @@ syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10089,16 +7625,8 @@ syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10113,16 +7641,8 @@ syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10137,16 +7657,8 @@ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10160,16 +7672,8 @@ syscall 1, 213 ; trap_obj_part (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10183,16 +7687,8 @@ syscall 1, 214 ; trap_obj_hook_stop (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10207,16 +7703,8 @@ syscall 1, 217 ; trap_obj_set_pos_trans (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10232,16 +7720,8 @@ syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10257,16 +7737,8 @@ syscall 1, 219 ; trap_obj_camera_start (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10282,16 +7754,8 @@ syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10307,16 +7771,8 @@ syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10330,16 +7786,8 @@ syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10353,16 +7801,8 @@ syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10376,16 +7816,8 @@ syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10399,16 +7831,8 @@ syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10423,16 +7847,8 @@ syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10447,16 +7863,8 @@ syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10471,16 +7879,8 @@ syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10495,16 +7895,8 @@ syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10519,16 +7911,8 @@ syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10544,16 +7928,8 @@ syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10568,16 +7944,8 @@ syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10593,16 +7961,8 @@ syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10617,16 +7977,8 @@ syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10641,16 +7993,8 @@ syscall 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10665,16 +8009,8 @@ syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10692,16 +8028,8 @@ syscall 1, 237 ; trap_command_override_top (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10715,16 +8043,8 @@ syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10738,16 +8058,8 @@ syscall 1, 239 ; trap_obj_is_unit_active (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10763,16 +8075,8 @@ syscall 1, 240 ; trap_obj_scatter_prize_tt (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10787,16 +8091,8 @@ syscall 1, 241 ; trap_act_shout (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10810,16 +8106,8 @@ syscall 1, 242 ; trap_player_capture_form (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10832,16 +8120,8 @@ syscall 1, 243 ; trap_player_capture_form_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10854,16 +8134,8 @@ syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10876,16 +8148,8 @@ syscall 1, 245 ; trap_target_clear_before_player (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10898,16 +8162,8 @@ syscall 1, 246 ; trap_target_clear_after_player (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10923,16 +8179,8 @@ syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10950,16 +8198,8 @@ syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10973,16 +8213,8 @@ syscall 1, 249 ; trap_status_set_prize_ratio (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -10996,16 +8228,8 @@ syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11020,16 +8244,8 @@ syscall 1, 251 ; trap_light_fadein (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11043,16 +8259,8 @@ syscall 1, 252 ; trap_camera_apply_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11066,16 +8274,8 @@ syscall 1, 253 ; trap_obj_can_capture_control (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11089,16 +8289,8 @@ syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11112,16 +8304,8 @@ syscall 1, 255 ; trap_obj_disable_occ (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11135,16 +8319,8 @@ syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11159,16 +8335,8 @@ syscall 1, 257 ; trap_light_set_fog_near (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11183,16 +8351,8 @@ syscall 1, 258 ; trap_light_set_fog_far (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11207,16 +8367,8 @@ syscall 1, 259 ; trap_light_set_fog_min (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11231,16 +8383,8 @@ syscall 1, 260 ; trap_light_set_fog_max (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11253,16 +8397,8 @@ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11278,16 +8414,8 @@ syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11302,16 +8430,8 @@ syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11324,16 +8444,8 @@ syscall 1, 264 ; trap_status_secure_mode_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11348,16 +8460,8 @@ syscall 1, 265 ; trap_obj_set_medal (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11371,16 +8475,8 @@ syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11395,16 +8491,8 @@ syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11418,16 +8506,8 @@ syscall 1, 268 ; trap_obj_action_lightcycle (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11443,16 +8523,8 @@ syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11467,16 +8539,8 @@ syscall 1, 270 ; trap_obj_motion_disable_anmatr_effect (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11491,16 +8555,8 @@ syscall 1, 271 ; trap_obj_motion_enable_anmatr_effect (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11514,16 +8570,8 @@ syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11538,16 +8586,8 @@ syscall 1, 273 ; trap_signal_hook (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11560,16 +8600,8 @@ syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11583,16 +8615,8 @@ syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11606,16 +8630,8 @@ syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11629,16 +8645,8 @@ syscall 1, 277 ; trap_obj_reraise (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11653,16 +8661,8 @@ syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11677,16 +8677,8 @@ syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11700,16 +8692,8 @@ syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11724,16 +8708,8 @@ syscall 1, 281 ; trap_camera_begin_scope (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11746,16 +8722,8 @@ syscall 1, 283 ; trap_camera_end_scope (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11769,16 +8737,8 @@ syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11793,16 +8753,8 @@ syscall 1, 285 ; trap_obj_show_picture (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11815,16 +8767,8 @@ syscall 1, 286 ; trap_status_hide_shadow (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11837,16 +8781,8 @@ syscall 1, 287 ; trap_status_show_shadow (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11859,16 +8795,8 @@ syscall 1, 288 ; trap_status_begin_free_ability (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11881,16 +8809,8 @@ syscall 1, 289 ; trap_status_end_free_ability (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11905,16 +8825,8 @@ syscall 1, 290 ; trap_picture_change (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11928,16 +8840,8 @@ syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11953,16 +8857,8 @@ syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11975,16 +8871,8 @@ syscall 1, 293 ; trap_event_control_off (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -11997,16 +8885,8 @@ syscall 1, 294 ; trap_event_control_on (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12019,16 +8899,8 @@ syscall 1, 295 ; trap_camera_reset (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12042,16 +8914,8 @@ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12065,16 +8929,8 @@ syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12087,16 +8943,8 @@ syscall 1, 298 ; trap_worldwork_get (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12109,16 +8957,8 @@ syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12131,16 +8971,8 @@ syscall 1, 300 ; trap_prize_num (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12153,16 +8985,8 @@ syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12177,16 +9001,8 @@ syscall 1, 302 ; trap_obj_set_skateboard_mode (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12199,16 +9015,8 @@ syscall 1, 303 ; trap_area_cost_ratio (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12223,16 +9031,8 @@ syscall 1, 304 ; trap_obj_search_by_glance (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12245,16 +9045,8 @@ syscall 1, 305 ; trap_camera_eye (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12267,16 +9059,8 @@ syscall 1, 306 ; trap_camera_at (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12291,16 +9075,8 @@ syscall 1, 307 ; trap_obj_search_by_camera (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12315,16 +9091,8 @@ syscall 1, 308 ; trap_obj_capture_command (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12338,16 +9106,8 @@ syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12361,16 +9121,8 @@ syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12386,16 +9138,8 @@ syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12409,16 +9153,8 @@ syscall 1, 312 ; trap_camera_set_scope_zoom (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12432,16 +9168,8 @@ syscall 1, 313 ; trap_camera_set_scope_closeup_distance (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12455,16 +9183,8 @@ syscall 1, 314 ; trap_camera_set_scope_target_pos (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12480,16 +9200,8 @@ syscall 1, 315 ; trap_picture_set_pos (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12503,16 +9215,8 @@ syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12525,16 +9229,8 @@ syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12549,16 +9245,8 @@ syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12572,16 +9260,8 @@ syscall 1, 319 ; trap_sysobj_is_sora (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12594,16 +9274,8 @@ syscall 1, 320 ; trap_unit_get_enemy_num (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12619,16 +9291,8 @@ syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12641,16 +9305,8 @@ syscall 1, 322 ; trap_command_enable_item (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12664,16 +9320,8 @@ syscall 1, 323 ; trap_obj_count_entry (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12688,16 +9336,8 @@ syscall 1, 324 ; trap_obj_pattern_reset (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12714,16 +9354,8 @@ syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12737,16 +9369,8 @@ syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12760,16 +9384,8 @@ syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12783,16 +9399,8 @@ syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12807,16 +9415,8 @@ syscall 1, 329 ; trap_sheet_set_prize_range (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12832,16 +9432,8 @@ syscall 1, 330 ; trap_obj_set_cannon_camera_offset (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12855,16 +9447,8 @@ syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12878,16 +9462,8 @@ syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12905,16 +9481,8 @@ syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12927,16 +9495,8 @@ syscall 1, 334 ; trap_command_enable (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12951,16 +9511,8 @@ syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12975,16 +9527,8 @@ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -12997,16 +9541,8 @@ syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13022,16 +9558,8 @@ syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13047,16 +9575,8 @@ syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13071,16 +9591,8 @@ syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13093,16 +9605,8 @@ syscall 1, 341 ; trap_prize_num_ca (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13118,16 +9622,8 @@ syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13142,16 +9638,8 @@ syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13165,16 +9653,8 @@ syscall 1, 344 ; trap_obj_clear_occ (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13191,16 +9671,8 @@ syscall 1, 345 ; trap_command_override_slot (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13215,16 +9687,8 @@ syscall 1, 346 ; trap_command_slot_set_status (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13239,16 +9703,8 @@ syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13263,16 +9719,8 @@ syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13286,16 +9734,8 @@ syscall 1, 349 ; trap_obj_effect_kill_all (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13308,16 +9748,8 @@ syscall 1, 350 ; trap_status_close_pete_curtain (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13330,16 +9762,8 @@ syscall 1, 351 ; trap_status_open_pete_curtain (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13352,16 +9776,8 @@ syscall 1, 352 ; trap_area_set_return_tr (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13376,16 +9792,8 @@ syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13398,16 +9806,8 @@ syscall 1, 354 ; trap_event_layer_off (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13420,16 +9820,8 @@ syscall 1, 355 ; trap_player_can_capture_form (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13442,16 +9834,8 @@ syscall 1, 356 ; trap_event_layer_on (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13465,16 +9849,8 @@ syscall 1, 357 ; trap_sheet_attack_level (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13489,16 +9865,8 @@ syscall 1, 358 ; trap_sheet_set_attack_level (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13512,16 +9880,8 @@ syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13535,16 +9895,8 @@ syscall 1, 360 ; trap_obj_reset_command_image (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13558,16 +9910,8 @@ syscall 1, 361 ; trap_sheet_level (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13581,16 +9925,8 @@ syscall 1, 362 ; trap_treasure_get (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13605,16 +9941,8 @@ syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13629,16 +9957,8 @@ syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13652,16 +9972,8 @@ syscall 1, 365 ; trap_command_disable_group (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13675,16 +9987,8 @@ syscall 1, 366 ; trap_command_enable_group (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13700,16 +10004,8 @@ syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13724,16 +10020,8 @@ syscall 2, 0 ; trap_enemy_exec_damage (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13752,16 +10040,8 @@ syscall 2, 1 ; trap_enemy_exec_damage_blow (6 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13777,16 +10057,8 @@ syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13802,16 +10074,8 @@ syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13825,16 +10089,8 @@ syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13848,16 +10104,8 @@ syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13871,16 +10119,8 @@ syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13894,16 +10134,8 @@ syscall 2, 7 ; trap_damage_reaction (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13917,16 +10149,8 @@ syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13942,16 +10166,8 @@ syscall 2, 9 ; trap_btlobj_set_sheet (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13968,16 +10184,8 @@ syscall 2, 10 ; trap_attack_new (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -13993,16 +10201,8 @@ syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14017,16 +10217,8 @@ syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14040,16 +10232,8 @@ syscall 2, 13 ; trap_attack_free (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14063,16 +10247,8 @@ syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14086,16 +10262,8 @@ syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14109,16 +10277,8 @@ syscall 2, 16 ; trap_damage_is_exec_reaction (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14135,16 +10295,8 @@ syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14159,16 +10311,8 @@ syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14184,16 +10328,8 @@ syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14208,16 +10344,8 @@ syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14232,16 +10360,8 @@ syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14256,16 +10376,8 @@ syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14279,16 +10391,8 @@ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14302,16 +10406,8 @@ syscall 2, 24 ; trap_attack_get_owner (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14325,16 +10421,8 @@ syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14348,16 +10436,8 @@ syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14375,16 +10455,8 @@ syscall 2, 27 ; trap_enemy_exec_reflect (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14398,16 +10470,8 @@ syscall 2, 28 ; trap_attack_refresh (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14421,16 +10485,8 @@ syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14445,16 +10501,8 @@ syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14469,16 +10517,8 @@ syscall 2, 31 ; trap_attack_dup (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14492,16 +10532,8 @@ syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14515,16 +10547,8 @@ syscall 2, 33 ; trap_damage_blow_speed (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14538,16 +10562,8 @@ syscall 2, 34 ; trap_attack_get_type (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14561,16 +10577,8 @@ syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14585,16 +10593,8 @@ syscall 2, 36 ; trap_enemy_add_damage (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14609,16 +10609,8 @@ syscall 2, 37 ; trap_attack_set_team (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14634,16 +10626,8 @@ syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14657,16 +10641,8 @@ syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14680,16 +10656,8 @@ syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14703,16 +10671,8 @@ syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14726,16 +10686,8 @@ syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14749,16 +10701,8 @@ syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14772,16 +10716,8 @@ syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14795,16 +10731,8 @@ syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14818,16 +10746,8 @@ syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14844,16 +10764,8 @@ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14867,16 +10779,8 @@ syscall 2, 48 ; trap_limit_player (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14891,16 +10795,8 @@ syscall 2, 49 ; trap_limit_friend (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14917,16 +10813,8 @@ syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14944,16 +10832,8 @@ syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14967,16 +10847,8 @@ syscall 2, 52 ; trap_attack_rc_receiver (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -14989,16 +10861,8 @@ syscall 2, 53 ; trap_enemy_last_dead (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15013,16 +10877,8 @@ syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15036,16 +10892,8 @@ syscall 2, 55 ; trap_limit_light (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15059,16 +10907,8 @@ syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15084,16 +10924,8 @@ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15110,16 +10942,8 @@ syscall 2, 58 ; trap_limit_effect_start_pos (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15136,16 +10960,8 @@ syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15159,16 +10975,8 @@ syscall 2, 60 ; trap_limit_time (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15183,16 +10991,8 @@ syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15209,16 +11009,8 @@ syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15232,16 +11024,8 @@ syscall 2, 63 ; trap_limit_reference (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15255,16 +11039,8 @@ syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15277,16 +11053,8 @@ syscall 2, 65 ; trap_enemy_count_damager (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15300,16 +11068,8 @@ syscall 2, 66 ; trap_attack_get_reflect_count (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15322,16 +11082,8 @@ syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15346,16 +11098,8 @@ syscall 2, 68 ; trap_magic_set_cost (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15369,16 +11113,8 @@ syscall 2, 69 ; trap_magic_can_add_cost (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15392,16 +11128,8 @@ syscall 2, 70 ; trap_damage_parts (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15416,16 +11144,8 @@ syscall 2, 71 ; trap_attack_set_hitmark_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15439,16 +11159,8 @@ syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15462,16 +11174,8 @@ syscall 2, 73 ; trap_bonuslevel_up (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15487,16 +11191,8 @@ syscall 2, 74 ; trap_attack_set_reflect_callback (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15509,16 +11205,8 @@ syscall 2, 75 ; trap_summon_is_tink_exist (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15533,16 +11221,8 @@ syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15557,16 +11237,8 @@ syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15580,16 +11252,8 @@ syscall 2, 78 ; trap_vacuum_destroy (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15604,16 +11268,8 @@ syscall 2, 79 ; trap_vacuum_set_ignore_type (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15628,16 +11284,8 @@ syscall 2, 80 ; trap_vacuum_set_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15654,16 +11302,8 @@ syscall 2, 81 ; trap_vacuum_set_speed (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15678,16 +11318,8 @@ syscall 2, 82 ; trap_vacuum_set_rot_speed (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15702,16 +11334,8 @@ syscall 2, 83 ; trap_vacuum_set_near_range (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15726,16 +11350,8 @@ syscall 2, 84 ; trap_vacuum_set_dist_rate (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15749,16 +11365,8 @@ syscall 2, 85 ; trap_damage_element (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15772,16 +11380,8 @@ syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15797,16 +11397,8 @@ syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15820,16 +11412,8 @@ syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15843,16 +11427,8 @@ syscall 2, 89 ; trap_limit_reset_special_command (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15866,16 +11442,8 @@ syscall 2, 90 ; trap_limit_close_gauge (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15889,16 +11457,8 @@ syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15912,16 +11472,8 @@ syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15935,16 +11487,8 @@ syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15958,16 +11502,8 @@ syscall 2, 94 ; trap_attack_set_system_pax (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -15982,16 +11518,8 @@ syscall 2, 95 ; trap_btlobj_dup_sheet (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16005,16 +11533,8 @@ syscall 2, 96 ; trap_attack_is_valid (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16029,16 +11549,8 @@ syscall 2, 97 ; trap_enemy_set_attacker (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16051,16 +11563,8 @@ syscall 4, 2 ; trap_event_is_exec (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16074,16 +11578,8 @@ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16097,16 +11593,8 @@ syscall 4, 4 ; trap_mission_information (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16121,16 +11609,8 @@ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16144,16 +11624,8 @@ syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16168,16 +11640,8 @@ syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16192,16 +11656,8 @@ syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16216,16 +11672,8 @@ syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16240,16 +11688,8 @@ syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16262,16 +11702,8 @@ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16285,16 +11717,8 @@ syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16307,16 +11731,8 @@ syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16329,16 +11745,8 @@ syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16351,16 +11759,8 @@ syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16374,16 +11774,8 @@ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16400,16 +11792,8 @@ syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16426,16 +11810,8 @@ syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16452,16 +11828,8 @@ syscall 4, 19 ; trap_mission_set_gauge_param (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16475,16 +11843,8 @@ syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16497,16 +11857,8 @@ syscall 4, 21 ; trap_mission_is_activate2d (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16520,16 +11872,8 @@ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16542,16 +11886,8 @@ syscall 4, 23 ; trap_mission_reset_pause_mode (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16564,16 +11900,8 @@ syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16587,16 +11915,8 @@ syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16610,16 +11930,8 @@ syscall 4, 26 ; trap_mission_get_timer (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16632,16 +11944,8 @@ syscall 4, 27 ; trap_mission_stop_combo_counter (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16655,16 +11959,8 @@ syscall 4, 28 ; trap_mission_get_gauge_warning_ratio (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16678,16 +11974,8 @@ syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16700,16 +11988,8 @@ syscall 4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16722,16 +12002,8 @@ syscall 4, 31 ; trap_mission_get_combo_counter (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16744,16 +12016,8 @@ syscall 4, 32 ; trap_mission_return (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16768,16 +12032,8 @@ syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16791,16 +12047,8 @@ syscall 4, 34 ; trap_mission_is_gauge_warning (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16814,16 +12062,8 @@ syscall 4, 35 ; trap_score_type (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16837,16 +12077,8 @@ syscall 4, 36 ; trap_score_score (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16862,16 +12094,8 @@ syscall 4, 37 ; trap_score_update (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16885,16 +12109,8 @@ syscall 4, 38 ; trap_score_get (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16909,16 +12125,8 @@ syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16932,16 +12140,8 @@ syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16956,16 +12156,8 @@ syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -16980,16 +12172,8 @@ syscall 4, 42 ; trap_struggle_increment (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17004,16 +12188,8 @@ syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17027,16 +12203,8 @@ syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17050,16 +12218,8 @@ syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17074,16 +12234,8 @@ syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17097,16 +12249,8 @@ syscall 4, 47 ; trap_mission_warning_timer (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17122,16 +12266,8 @@ syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17145,16 +12281,8 @@ syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17168,16 +12296,8 @@ syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17194,16 +12314,8 @@ syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17217,16 +12329,8 @@ syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17241,16 +12345,8 @@ syscall 4, 53 ; trap_mission_set_combo_counter_warning_se (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17263,16 +12359,8 @@ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17285,16 +12373,8 @@ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17307,16 +12387,8 @@ syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17331,16 +12403,8 @@ syscall 4, 57 ; trap_mission_warning_gauge (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17354,16 +12418,8 @@ syscall 4, 58 ; trap_mission_reset_warning_count (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17377,16 +12433,8 @@ syscall 5, 0 ; trap_get_start_rtn_action (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17401,16 +12449,8 @@ syscall 5, 1 ; trap_set_path_way (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17424,16 +12464,8 @@ syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17448,16 +12480,8 @@ syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17471,16 +12495,8 @@ syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17494,16 +12510,8 @@ syscall 5, 5 ; trap_get_rtn_action (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17517,16 +12525,8 @@ syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17540,16 +12540,8 @@ syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17564,16 +12556,8 @@ syscall 5, 8 ; trap_create_active_path (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17589,16 +12573,8 @@ syscall 5, 9 ; trap_get_path_dir_from_obj (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17613,16 +12589,8 @@ syscall 5, 10 ; trap_forward_path_current_pointer (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17636,16 +12604,8 @@ syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17659,16 +12619,8 @@ syscall 5, 12 ; trap_reset_active_path (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17683,16 +12635,8 @@ syscall 5, 13 ; trap_set_path_target_point (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17707,16 +12651,8 @@ syscall 5, 14 ; trap_get_path_point_pos (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17730,16 +12666,8 @@ syscall 5, 15 ; trap_clear_active_path (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17754,16 +12682,8 @@ syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17778,16 +12698,8 @@ syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17801,16 +12713,8 @@ syscall 5, 18 ; trap_reset_path_current_pointer (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17824,16 +12728,8 @@ syscall 5, 19 ; trap_get_path_current_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17847,16 +12743,8 @@ syscall 5, 20 ; trap_get_path_current_dir (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17870,16 +12758,8 @@ syscall 5, 21 ; trap_get_path_first_point_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17893,16 +12773,8 @@ syscall 5, 22 ; trap_get_path_last_point_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17917,16 +12789,8 @@ syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17941,16 +12805,8 @@ syscall 5, 24 ; trap_set_path_by_group (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17966,16 +12822,8 @@ syscall 5, 25 ; trap_get_path_dir_r (3 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -17990,16 +12838,8 @@ syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18014,16 +12854,8 @@ syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18037,16 +12869,8 @@ syscall 5, 28 ; trap_eh22_path_move_next (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18060,16 +12884,8 @@ syscall 5, 29 ; trap_eh22_path_move_before (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18083,16 +12899,8 @@ syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18106,16 +12914,8 @@ syscall 5, 31 ; trap_eh22_path_get_point (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18131,16 +12931,8 @@ syscall 5, 32 ; trap_eh22_path_play (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18155,16 +12947,8 @@ syscall 5, 33 ; trap_set_rtn_time_param (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18178,16 +12962,8 @@ syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18207,16 +12983,8 @@ syscall 6, 0 ; trap_camera_shake (7 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18231,16 +12999,8 @@ syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18253,16 +13013,8 @@ syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18277,16 +13029,8 @@ syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18300,16 +13044,8 @@ syscall 6, 4 ; trap_target_searcher_reset (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18329,16 +13065,8 @@ syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18354,16 +13082,8 @@ syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18378,16 +13098,8 @@ syscall 6, 7 ; trap_obj_restart (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18402,16 +13114,8 @@ syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18426,16 +13130,8 @@ syscall 6, 9 ; trap_target_dist (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18449,16 +13145,8 @@ syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18474,16 +13162,8 @@ syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18499,16 +13179,8 @@ syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18522,16 +13194,8 @@ syscall 6, 13 ; trap_friend_force_warp (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18545,16 +13209,8 @@ syscall 6, 14 ; trap_friend_get (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18568,16 +13224,8 @@ syscall 6, 15 ; trap_friend_set_warp_level (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18591,16 +13239,8 @@ syscall 6, 16 ; trap_target_clear (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18613,16 +13253,8 @@ syscall 6, 17 ; trap_lockon_show (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18635,16 +13267,8 @@ syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18657,16 +13281,8 @@ syscall 6, 19 ; trap_status_peterpan_prize_drain_start (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18679,16 +13295,8 @@ syscall 6, 20 ; trap_status_peterpan_prize_drain_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18703,16 +13311,8 @@ syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18729,16 +13329,8 @@ syscall 6, 22 ; trap_target_searcher_get_target_num (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18753,16 +13345,8 @@ syscall 6, 23 ; trap_obj_near_parts (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18776,16 +13360,8 @@ syscall 6, 24 ; trap_obj_get_bg_press (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18802,16 +13378,8 @@ syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18828,16 +13396,8 @@ syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18850,16 +13410,8 @@ syscall 6, 27 ; trap_player_dice (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18876,16 +13428,8 @@ syscall 6, 28 ; trap_dice_set_spec (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18898,16 +13442,8 @@ syscall 6, 29 ; trap_player_card (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18927,16 +13463,8 @@ syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18949,16 +13477,8 @@ syscall 6, 31 ; trap_limit_aladdin_prize_drain (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18973,16 +13493,8 @@ syscall 6, 32 ; trap_skateboard_ride (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -18998,16 +13510,8 @@ syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19023,16 +13527,8 @@ syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19046,16 +13542,8 @@ syscall 6, 35 ; trap_obj_attach_camera (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19069,16 +13557,8 @@ syscall 6, 36 ; trap_obj_detach_camera (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19092,16 +13572,8 @@ syscall 6, 37 ; trap_obj_is_attach_camera (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19115,16 +13587,8 @@ syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19138,16 +13602,8 @@ syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19161,16 +13617,8 @@ syscall 6, 40 ; trap_obj_limit_peterpan_idle (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19186,16 +13634,8 @@ syscall 6, 41 ; trap_skateboard_edge_jump (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19212,16 +13652,8 @@ syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19235,16 +13667,8 @@ syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19258,16 +13682,8 @@ syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19281,16 +13697,8 @@ syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19307,16 +13715,8 @@ syscall 6, 46 ; trap_obj_rc_stop_all (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19330,16 +13730,8 @@ syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19354,16 +13746,8 @@ syscall 6, 48 ; trap_skateboardscore_add_count (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19377,16 +13761,8 @@ syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19401,16 +13777,8 @@ syscall 6, 50 ; trap_obj_stop_start (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19427,16 +13795,8 @@ syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19450,16 +13810,8 @@ syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19473,16 +13825,8 @@ syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19496,16 +13840,8 @@ syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19519,16 +13855,8 @@ syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19543,16 +13871,8 @@ syscall 6, 56 ; trap_target_set_group (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19566,16 +13886,8 @@ syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19590,16 +13902,8 @@ syscall 6, 58 ; trap_obj_act_child_push (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19613,16 +13917,8 @@ syscall 6, 59 ; trap_xemnas_get_obj (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19639,16 +13935,8 @@ syscall 6, 60 ; trap_obj_set_stealth_color (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19662,16 +13950,8 @@ syscall 6, 61 ; trap_obj_is_hook (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19685,16 +13965,8 @@ syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19708,16 +13980,8 @@ syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19731,16 +13995,8 @@ syscall 6, 64 ; trap_obj_show_shadow (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19755,16 +14011,8 @@ syscall 6, 65 ; trap_obj_set_scissoring (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19778,16 +14026,8 @@ syscall 6, 66 ; trap_obj_clear_hitback (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19802,16 +14042,8 @@ syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19826,16 +14058,8 @@ syscall 6, 68 ; trap_strike_raid_calc_xyzrot (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19849,16 +14073,8 @@ syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19873,16 +14089,8 @@ syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19897,16 +14105,8 @@ syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19920,16 +14120,8 @@ syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19943,16 +14135,8 @@ syscall 7, 1 ; trap_enemy_stop_all_end (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19966,16 +14150,8 @@ syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -19988,16 +14164,8 @@ syscall 7, 3 ; trap_flare_init (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20010,16 +14178,8 @@ syscall 7, 4 ; trap_flare_new (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20033,16 +14193,8 @@ syscall 7, 5 ; trap_flare_free (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20057,16 +14209,8 @@ syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20082,16 +14226,8 @@ syscall 7, 7 ; trap_flare_set_radius (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20106,16 +14242,8 @@ syscall 7, 8 ; trap_flare_set_effect (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20130,16 +14258,8 @@ syscall 7, 9 ; trap_flare_set_target (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20153,16 +14273,8 @@ syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20175,16 +14287,8 @@ syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20198,16 +14302,8 @@ syscall 7, 12 ; trap_limit_aladdin_exclamation_mark_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20224,16 +14320,8 @@ syscall 7, 13 ; trap_magic_calc_speed (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20248,16 +14336,8 @@ syscall 7, 14 ; trap_attack_set_reaction_offset (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20271,16 +14351,8 @@ syscall 7, 15 ; trap_friend_get_target_size (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20294,16 +14366,8 @@ syscall 7, 16 ; trap_friend_get_current_action (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20318,16 +14382,8 @@ syscall 7, 17 ; trap_friend_set_script_status (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20341,16 +14397,8 @@ syscall 7, 18 ; trap_friend_get_main_status (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20365,16 +14413,8 @@ syscall 7, 19 ; trap_friend_update_target (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20388,16 +14428,8 @@ syscall 7, 21 ; trap_obj_limit_hover_set_spec (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20411,16 +14443,8 @@ syscall 7, 24 ; trap_friend_enable_system_wishdir (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20434,16 +14458,8 @@ syscall 7, 25 ; trap_friend_disable_system_wishdir (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20458,16 +14474,8 @@ syscall 7, 26 ; trap_friend_call (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20480,16 +14488,8 @@ syscall 7, 27 ; trap_limit_start_command (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20502,16 +14502,8 @@ syscall 7, 28 ; trap_trinity_shot_init (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20528,16 +14520,8 @@ syscall 7, 29 ; trap_trinity_shot_start (4 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20550,16 +14534,8 @@ syscall 7, 30 ; trap_trinity_shot_ensure (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20574,16 +14550,8 @@ syscall 7, 31 ; trap_trinity_shot_set_effect_id (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20598,16 +14566,8 @@ syscall 7, 32 ; trap_vacuum_set_effective_range (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20621,16 +14581,8 @@ syscall 7, 33 ; trap_enemy_summon_entry (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20645,16 +14597,8 @@ syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20667,16 +14611,8 @@ syscall 7, 35 ; trap_summon_is_exec (0 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20690,16 +14626,8 @@ syscall 7, 36 ; trap_limit_reset_hit_counter (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20713,16 +14641,8 @@ syscall 8, 0 ; trap_obj_target_radius (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20736,16 +14656,8 @@ syscall 8, 1 ; trap_player_push_ability_button (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20760,16 +14672,8 @@ syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20783,16 +14687,8 @@ syscall 8, 3 ; trap_special_last_xemnus_laser_start (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20805,16 +14701,8 @@ syscall 8, 4 ; trap_special_last_xemnus_laser_attack (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20827,16 +14715,8 @@ syscall 8, 5 ; trap_special_last_xemnus_laser_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20849,16 +14729,8 @@ syscall 8, 6 ; trap_special_last_xemnus_laser_optimize (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20871,16 +14743,8 @@ syscall 8, 7 ; trap_special_last_xemnus_laser_optimize_end (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20894,16 +14758,8 @@ syscall 8, 8 ; trap_camera_apply_inverse_pos (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20916,16 +14772,8 @@ syscall 10, 0 ; trap_empty_func (0 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20940,16 +14788,8 @@ syscall 10, 1 ; trap_stitch_set_screen_position (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20963,16 +14803,8 @@ syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -20986,16 +14818,8 @@ syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21009,16 +14833,8 @@ syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21032,16 +14848,8 @@ syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21056,16 +14864,8 @@ syscall 10, 6 ; trap_obj_set_special_command (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21079,16 +14879,8 @@ syscall 10, 7 ; trap_obj_reset_special_command (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21102,16 +14894,8 @@ syscall 10, 8 ; trap_friend_get_target_last_position (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21126,16 +14910,8 @@ syscall 10, 9 ; trap_genie_change_form (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21149,16 +14925,8 @@ syscall 10, 10 ; trap_genie_get_limit_command (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21174,16 +14942,8 @@ syscall 10, 11 ; trap_obj_set_stop_timer (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21204,16 +14964,8 @@ syscall 10, 12 ; trap_stitch_effect_start (8 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21228,16 +14980,8 @@ syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21253,16 +14997,8 @@ syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21278,16 +15014,8 @@ syscall 10, 15 ; trap_sysobj_motion_cont_push (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21302,16 +15030,8 @@ syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21325,16 +15045,8 @@ syscall 10, 17 ; trap_sysobj_is_zako (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21348,16 +15060,8 @@ syscall 10, 18 ; trap_sysobj_is_boss (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21371,16 +15075,8 @@ syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21394,16 +15090,8 @@ syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21417,16 +15105,8 @@ syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21440,16 +15120,8 @@ syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21464,16 +15136,8 @@ syscall 10, 23 ; trap_enemy_is_attacked_from (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21488,16 +15152,8 @@ syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21511,16 +15167,8 @@ syscall 10, 25 ; trap_peterpan_receive_notify_player_target (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21534,16 +15182,8 @@ syscall 10, 26 ; trap_peterpan_accept_notify_player_target (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21557,16 +15197,8 @@ syscall 10, 27 ; trap_friend_enable_inertia (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21580,16 +15212,8 @@ syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21606,16 +15230,8 @@ syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21629,16 +15245,8 @@ syscall 10, 30 ; trap_sysobj_is_finish_blow (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21652,16 +15260,8 @@ syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21676,16 +15276,8 @@ syscall 10, 32 ; trap_stitch_move_request (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21699,16 +15291,8 @@ syscall 10, 33 ; trap_friend_get_player_attacker (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21723,16 +15307,8 @@ syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21747,16 +15323,8 @@ syscall 10, 35 ; trap_friend_get_action_param (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21770,16 +15338,8 @@ syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21793,16 +15353,8 @@ syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21816,16 +15368,8 @@ syscall 10, 38 ; trap_attack_is_finish (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21839,16 +15383,8 @@ syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21863,16 +15399,8 @@ syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21886,16 +15414,8 @@ syscall 10, 41 ; trap_friend_start_leave (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21909,16 +15429,8 @@ syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21933,16 +15445,8 @@ syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21956,16 +15460,8 @@ syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -21979,16 +15475,8 @@ syscall 10, 45 ; trap_sheet_get_drive_time (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22002,16 +15490,8 @@ syscall 10, 46 ; trap_friend_disable_follow_enemy (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22025,16 +15505,8 @@ syscall 10, 47 ; trap_friend_enable_follow_enemy (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22048,16 +15520,8 @@ syscall 10, 48 ; trap_friend_disable_follow_player (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22071,16 +15535,8 @@ syscall 10, 49 ; trap_friend_enable_follow_player (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22094,16 +15550,8 @@ syscall 10, 50 ; trap_sheet_get_mp (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22120,16 +15568,8 @@ syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22143,16 +15583,8 @@ syscall 10, 52 ; trap_btlobj_is_reflect_motion (1 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22167,16 +15599,8 @@ syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22191,16 +15615,8 @@ syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
 pop unk ; unknown
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22215,16 +15631,8 @@ syscall 10, 55 ; trap_target_searcher_set_check_hide_from_friend (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22239,16 +15647,8 @@ syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22262,16 +15662,8 @@ syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22287,16 +15679,8 @@ syscall 10, 58 ; trap_friend_link_magic (3 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
@@ -22311,16 +15695,8 @@ syscall 10, 59 ; trap_chickenlittle_set_shoot_target (2 in, 0 out)
 
 ```
 
-_Description:_
 
 
-> Not yet described.
-
-
-_Operations:_
-
-
-> Not yet operated.
 
 
 
