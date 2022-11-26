@@ -26,6 +26,7 @@ recordReadMemFrm = False
 traceAiExec = False
 tracePax = False
 showTick = False
+traceArd = True
 
 # internal variables please do not change
 filePath = None
@@ -80,6 +81,15 @@ if tracePax:
     )
     pass
 
+
+if traceArd:
+    @bp(0x181cc0)
+    def sub_181cc0():
+        #a0 = pcsx2.GetUL0("a0")  # a0 points spawn script directly
+        #t5 = pcsx2.ReadUI32(a0)
+        a1 = pcsx2.GetUL0("a1")  # going to run this id
+        pcsx2.WriteLn("# ard map/evt Program 0x%02X" %
+                      (a1, ))
 
 if False:
     # this is F_memcpy
