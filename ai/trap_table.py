@@ -11,12 +11,12 @@ tables = [
      {
       "type": "int",
       "name": "value",
-      "desc": ""
+      "desc": "print this"
      },
      {
-      "type": "string",
-      "name": "value of what",
-      "desc": ""
+      "type": "char *",
+      "name": "name",
+      "desc": "value of what"
      }
     ],
     "ret": [
@@ -2455,7 +2455,7 @@ tables = [
       "desc": ""
      },
      {
-      "type": "string",
+      "type": "char *",
       "name": "actName",
       "desc": ""
      },
