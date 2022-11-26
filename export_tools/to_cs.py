@@ -75,11 +75,16 @@ def descs() -> str:
                 elif pcode.Arg32 & opArg.flags:
                     subAssigns.append("Type = ArgType.Imm32")
                     codeSize += 2
+                elif pcode.Float32 & opArg.flags:
+                    subAssigns.append("Type = ArgType.Float32")
+                    codeSize += 2
 
                 if pcode.AiPos & opArg.flags:
                     subAssigns.append("AiPos = true")
                 if pcode.NextRelative & opArg.flags:
                     subAssigns.append("IsRelative = true")
+                if pcode.WorkPos & opArg.flags:
+                    subAssigns.append("WorkPos = true")
 
                 newArgs.append("new Arg { %s }" % (", ".join(subAssigns)))
 

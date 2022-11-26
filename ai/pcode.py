@@ -10,6 +10,8 @@ Arg16 = 2
 Arg32 = 4
 NextRelative = 8
 AiPos = 16
+WorkPos = 32
+Float32 = 64
 
 Syscall = 256
 Gosub = 512
@@ -48,22 +50,25 @@ class OpDef:
 table: List[OpDef] = [
     # push
     OpDef(0, 0, None, "PUSH.L0 u32 ", "pushImm", 0, [OpArg('imm32', Arg32)]),
-    OpDef(0, 1, None, "PUSH.L1 u32 ", "pushImm", 0, [OpArg('imm32', Arg32)]),
+    OpDef(0, 1, None, "PUSH.L1 u32 ", "pushImmf", 0, [OpArg('float32', Float32)]),
     OpDef(0, 2, 0, "PUSH.L +sp", "pushFromPSp", 0, [OpArg('imm16', Arg16)]),
-    OpDef(0, 2, 1, "PUSH.L +wp", "pushFromPWp", 0, [OpArg('imm16', Arg16)]),
+    OpDef(0, 2, 1, "PUSH.L +wp", "pushFromPWp",
+          0, [OpArg('imm16', Arg16 | WorkPos)]),
     OpDef(0, 2, 2, "PUSH.L +(*sp)", "pushFromPSpVal",
           0, [OpArg('imm16', Arg16)]),
     OpDef(0, 2, 3, "PUSH.L *2 +top", "pushFromPAi",
           0, [OpArg('imm16', Arg16 | AiPos)]),
     OpDef(0, 3, 0, "PUSH.AP +sp", "pushFromFSp", 0, [OpArg('imm16', Arg16)]),
-    OpDef(0, 3, 1, "PUSH.AP +wp", "pushFromFWp", 0, [OpArg('imm16', Arg16)]),
+    OpDef(0, 3, 1, "PUSH.AP +wp", "pushFromFWp",
+          0, [OpArg('imm16', Arg16 | WorkPos)]),
     OpDef(0, 3, 2, "PUSH.AP +(*sp)", "pushFromFSpVal",
           0, [OpArg('imm16', Arg16)]),
     OpDef(0, 3, 3, "PUSH.AP *2 +top", "pushFromFAi",
           0, [OpArg('imm16', Arg16 | AiPos)]),
     # pop
     OpDef(1, None, 0, "POP.L +sp", "popToSp", 0, [OpArg('imm16', Arg16)]),
-    OpDef(1, None, 1, "POP.L +wp", "popToWp", 0, [OpArg('imm16', Arg16)]),
+    OpDef(1, None, 1, "POP.L +wp", "popToWp",
+          0, [OpArg('imm16', Arg16 | WorkPos)]),
     OpDef(1, None, 2, "POP.L +(*sp)", "popToSpVal",
           0, [OpArg('imm16', Arg16)]),
     OpDef(1, None, 3, "POP.L *2 +top", "popToAi",
@@ -72,7 +77,7 @@ table: List[OpDef] = [
     OpDef(2, None, 0, "?", "memcpyToSp", 0, [
           OpArg('imm16', Arg16), OpArg('imm16_2', Arg16)]),
     OpDef(2, None, 1, "?", "memcpyToWp", 0, [
-          OpArg('imm16', Arg16), OpArg('imm16_2', Arg16)]),
+          OpArg('imm16', Arg16), OpArg('imm16_2', Arg16 | WorkPos)]),
     OpDef(2, None, 2, "?", "memcpyToSpVal", 0, [
           OpArg('imm16', Arg16), OpArg('imm16_2', Arg16)]),
     OpDef(2, None, 3, "?", "memcpyToSpAi", 0, [
@@ -123,7 +128,8 @@ table: List[OpDef] = [
     OpDef(6, 1, 3, "DIVF", "divf", 0, []),
     OpDef(6, 1, 4, "MODF", "modf", 0, []),
     # branch
-    OpDef(7, None, 0, "J", "jmp", Jump, [OpArg('imm16', Arg16 | NextRelative)]),
+    OpDef(7, None, 0, "J", "jmp", Jump, [
+          OpArg('imm16', Arg16 | NextRelative)]),
     OpDef(7, None, 1, "JNZ", "jnz", Conditional |
           Jump, [OpArg('imm16', Arg16 | NextRelative)]),
     OpDef(7, None, 2, "JZ", "jz",  Conditional |
