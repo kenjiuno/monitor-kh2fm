@@ -130,9 +130,9 @@ table: List[OpDef] = [
     # branch
     OpDef(7, None, 0, "J", "jmp", Jump, [
           OpArg('imm16', Arg16 | NextRelative)]),
-    OpDef(7, None, 1, "JNZ", "jnz", Conditional |
+    OpDef(7, None, 1, "JZ", "jz", Conditional |
           Jump, [OpArg('imm16', Arg16 | NextRelative)]),
-    OpDef(7, None, 2, "JZ", "jz",  Conditional |
+    OpDef(7, None, 2, "JNZ", "jnz",  Conditional |
           Jump, [OpArg('imm16', Arg16 | NextRelative)]),
     # gosub
     OpDef(8, None, None, "GOSUB", "gosub", Gosub, [
