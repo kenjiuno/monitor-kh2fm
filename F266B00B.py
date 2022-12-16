@@ -27,6 +27,7 @@ traceAiExec = False
 tracePax = False
 showTick = False
 traceArd = True
+traceAiExec2 = True
 
 # internal variables please do not change
 filePath = None
@@ -85,11 +86,31 @@ if tracePax:
 if traceArd:
     @bp(0x181cc0)
     def sub_181cc0():
-        #a0 = pcsx2.GetUL0("a0")  # a0 points spawn script directly
-        #t5 = pcsx2.ReadUI32(a0)
+        # a0 = pcsx2.GetUL0("a0")  # a0 points spawn script directly
+        # t5 = pcsx2.ReadUI32(a0)
         a1 = pcsx2.GetUL0("a1")  # going to run this id
         pcsx2.WriteLn("# ard map/evt Program 0x%02X" %
                       (a1, ))
+
+
+aiexec2 = None
+if traceAiExec2:
+    @bp(0x001da558)
+    def sub_001da558():
+        if not pcsx2.isRec():
+            global aiexec2
+            if aiexec2 == None:
+                pcsx2.StartEETrace(str(exeDir.joinpath('aiexec2.bin')))
+                pcsx2.WriteLn("# Recording to aiexec2.bin")
+                aiexec2 = True
+
+    @bp(0x001da678)
+    def at_001da678():
+        global aiexec2
+        if aiexec2 == True:
+            pcsx2.EndEETrace()
+            pcsx2.WriteLn("# Record done 2")
+            aiexec2 = False
 
 if False:
     # this is F_memcpy
