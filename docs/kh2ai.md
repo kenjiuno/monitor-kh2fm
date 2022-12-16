@@ -1,6 +1,6 @@
 # KH2 ai
 
-Update timestamp: Sun Sep 25 10:44:43 2022 UTC
+Update timestamp: Fri Dec 16 04:35:39 2022 UTC
 
 ## Credits
 
@@ -123,7 +123,7 @@ Instrument list:
 | opcode | sub | ssub | name |
 |--:|--:|--:|---|
 | 0 | 0 | None | [pushImm](#pushimm) |
-| 0 | 1 | None | [pushImm](#pushimm) |
+| 0 | 1 | None | [pushImmf](#pushimmf) |
 | 0 | 2 | 0 | [pushFromPSp](#pushfrompsp) |
 | 0 | 2 | 1 | [pushFromPWp](#pushfrompwp) |
 | 0 | 2 | 2 | [pushFromPSpVal](#pushfrompspval) |
@@ -142,7 +142,7 @@ Instrument list:
 | 2 | None | 3 | [memcpyToSpAi](#memcpytospai) |
 | 3 | None | None | [fetchValue](#fetchvalue) |
 | 4 | None | None | [memcpy](#memcpy) |
-| 5 | 0 | 0 | [cfti](#cfti) |
+| 5 | 0 | 0 | [citf](#citf) |
 | 5 | 0 | 2 | [neg](#neg) |
 | 5 | 0 | 3 | [inv](#inv) |
 | 5 | 0 | 4 | [eqz](#eqz) |
@@ -153,7 +153,7 @@ Instrument list:
 | 5 | 0 | 9 | [neqz](#neqz) |
 | 5 | 0 | 10 | [msbi](#msbi) |
 | 5 | 0 | 11 | [ipos](#ipos) |
-| 5 | 1 | 1 | [citf](#citf) |
+| 5 | 1 | 1 | [cfti](#cfti) |
 | 5 | 1 | 2 | [negf](#negf) |
 | 5 | 1 | 5 | [absf](#absf) |
 | 5 | 1 | 6 | [infzf](#infzf) |
@@ -180,8 +180,8 @@ Instrument list:
 | 6 | 1 | 3 | [divf](#divf) |
 | 6 | 1 | 4 | [modf](#modf) |
 | 7 | None | 0 | [jmp](#jmp) |
-| 7 | None | 1 | [jnz](#jnz) |
-| 7 | None | 2 | [jz](#jz) |
+| 7 | None | 1 | [jz](#jz) |
+| 7 | None | 2 | [jnz](#jnz) |
 | 8 | None | None | [gosub](#gosub) |
 | 9 | None | 0 | [halt](#halt) |
 | 9 | None | 1 | [exit](#exit) |
@@ -1072,37 +1072,24 @@ push(full_ext:4);
 
 
 
-### pushImm
+### pushImmf
 
 _Format:_
 
-`pushImm  imm32`
+`pushImmf  float32`
 
 _Description:_
 
 
-> push(_imm32_);
+> Not yet described.
 
-
-
-
-
-_Example:_
-
-> pushImm -123
-> pushImm 123
-> push -2147483648
-> push 2147483647
 
 
 
 _Operations:_
 
 
-```
-push(full_ext:4);
-
-```
+> Not yet operated.
 
 
 
@@ -1510,16 +1497,14 @@ _Operations:_
 
 
 
-### cfti
+### citf
 
 _Format:_
 
-`cfti  `
+`citf  `
 
 _Description:_
 
-
-> push(popf())
 
 Retrieves the last value pushed on to the stack and converts it from a signed integer to a floating point value, pushing back the result to the stack.
 
@@ -1533,7 +1518,7 @@ _Operations:_
 ```
 local tmp:4 = sp;
 pop(tmp);
-tmp = round(tmp);
+tmp=int2float(tmp);
 push(tmp);
 
 ```
@@ -1841,14 +1826,16 @@ push((tmp s> 0));
 
 
 
-### citf
+### cfti
 
 _Format:_
 
-`citf  `
+`cfti  `
 
 _Description:_
 
+
+> push(popf())
 
 Retrieves the last value pushed on to the stack and converts it from a signed integer to a floating point value, pushing back the result to the stack.
 
@@ -1862,7 +1849,7 @@ _Operations:_
 ```
 local tmp:4 = sp;
 pop(tmp);
-tmp=int2float(tmp);
+tmp = round(tmp);
 push(tmp);
 
 ```
@@ -2459,11 +2446,11 @@ _Operations:_
 
 
 
-### jnz
+### jz
 
 _Format:_
 
-`jnz  imm16`
+`jz  imm16`
 
 _Description:_
 
@@ -2480,11 +2467,11 @@ _Operations:_
 
 
 
-### jz
+### jnz
 
 _Format:_
 
-`jz  imm16`
+`jnz  imm16`
 
 _Description:_
 
@@ -2774,8 +2761,8 @@ _Operations:_
 _Format:_
 
 ```
-push value ; (int) 
-push value of what ; (string) 
+push value ; (int) print this
+push name ; (char *) value of what
 syscall 0, 0 ; trap_puti (2 in, 0 out)
 
 ```
@@ -4460,7 +4447,7 @@ _Format:_
 
 ```
 push unk1 ; (unknown) 
-push actName ; (string) 
+push actName ; (char *) 
 push unk3 ; (unknown) 
 push pc ; (int) routine to process this act
 push unk5 ; (unknown) 

@@ -50,7 +50,8 @@ class OpDef:
 table: List[OpDef] = [
     # push
     OpDef(0, 0, None, "PUSH.L0 u32 ", "pushImm", 0, [OpArg('imm32', Arg32)]),
-    OpDef(0, 1, None, "PUSH.L1 u32 ", "pushImmf", 0, [OpArg('float32', Float32)]),
+    OpDef(0, 1, None, "PUSH.L1 u32 ", "pushImmf",
+          0, [OpArg('float32', Float32)]),
     OpDef(0, 2, 0, "PUSH.L +sp", "pushFromPSp", 0, [OpArg('imm16', Arg16)]),
     OpDef(0, 2, 1, "PUSH.L +wp", "pushFromPWp",
           0, [OpArg('imm16', Arg16 | WorkPos)]),
@@ -87,7 +88,7 @@ table: List[OpDef] = [
     # 4 unk
     OpDef(4, None, None, "?", "memcpy", 0, [OpArg('ssub', ArgSsub)]),
     # unary int
-    OpDef(5, 0, 0, "CFTI", "cfti", 0, []),
+    OpDef(5, 0, 0, "CITF", "citf", 0, []),
     OpDef(5, 0, 2, "NEG", "neg", 0, []),
     OpDef(5, 0, 3, "INV", "inv", 0, []),
     OpDef(5, 0, 4, "EQZ", "eqz", 0, []),
@@ -99,7 +100,7 @@ table: List[OpDef] = [
     OpDef(5, 0, 10, "MSBI", "msbi", 0, []),
     OpDef(5, 0, 11, "IPOS", "ipos", 0, []),
     # unary float
-    OpDef(5, 1, 1, "CITF", "citf", 0, []),
+    OpDef(5, 1, 1, "CFTI", "cfti", 0, []),
     OpDef(5, 1, 2, "NEGF", "negf", 0, []),
     OpDef(5, 1, 5, "ABSF", "absf", 0, []),
     OpDef(5, 1, 6, "INFZF", "infzf", 0, []),
