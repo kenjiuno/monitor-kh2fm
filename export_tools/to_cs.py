@@ -6,8 +6,10 @@ def enums() -> str:
     body = ""
 
     for opDef in pcode.table:
-        body += "%s = 0x%04X,\n" % (opDef.name, (opDef.opc) |
-                                    ((opDef.sub or 0) << 4) | ((opDef.ssub or 0) << 6))
+        body += "%s = 0x%04X,\n" % (
+            opDef.name,
+            (opDef.opc) | ((opDef.sub or 0) << 4) | ((opDef.ssub or 0) << 6),
+        )
 
     return body
 
@@ -20,17 +22,19 @@ def traps() -> str:
                 assigns = []
                 assigns.append("TableIndex = %d" % (tableIdx,))
                 assigns.append("TrapIndex = %d" % (trapIdx,))
-                assigns.append("Name = \"%s\"" % (trap["name"],))
+                assigns.append('Name = "%s"' % (trap["name"],))
                 assigns.append("Flags = 0x%08X" % (trap["flags"],))
 
-                lines.append("\t\t\tnew BdxTrap { %s }," % (
-                    ", ".join(assigns),))
+                lines.append("\t\t\tnew BdxTrap { %s }," % (", ".join(assigns),))
     return "\n".join(lines)
 
 
 def descs() -> str:
     body = ""
     lines = []
+
+    def toCSharpString(content: str) -> str:
+        return '"' + content.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
     for opDef in pcode.table:
         word = (opDef.opc) | ((opDef.sub or 0) << 4) | ((opDef.ssub or 0) << 6)
@@ -43,7 +47,7 @@ def descs() -> str:
         assigns = []
         assigns.append("Code = 0x%04X" % (word,))
         assigns.append("CodeMask = 0x%04X" % (mask,))
-        assigns.append("Name = \"%s\"" % (opDef.name,))
+        assigns.append('Name = "%s"' % (opDef.name,))
 
         if True:
             behavior = opDef.behavior
@@ -66,7 +70,7 @@ def descs() -> str:
 
             for opArg in opDef.args:
                 subAssigns = []
-                subAssigns.append("Name = \"%s\"" % (opArg.name,))
+                subAssigns.append('Name = "%s"' % (opArg.name,))
                 if pcode.ArgSsub & opArg.flags:
                     subAssigns.append("Type = ArgType.Ssub")
                 elif pcode.Arg16 & opArg.flags:
@@ -93,7 +97,12 @@ def descs() -> str:
             if 1 <= len(newArgs):
                 assigns.append("Args = new[] { %s }" % (", ".join(newArgs),))
 
-        lines.append("\t\t\tnew BdxInstructionDesc { %s }," % (
-            ", ".join(assigns),))
+            if 1 <= len(opDef.oldnames):
+                assigns.append(
+                    "OldNames = new[] { %s }"
+                    % (", ".join(map(toCSharpString, opDef.oldnames)),)
+                )
+
+        lines.append("\t\t\tnew BdxInstructionDesc { %s }," % (", ".join(assigns),))
 
     return "\n".join(lines)

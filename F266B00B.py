@@ -26,8 +26,10 @@ recordReadMemFrm = False
 traceAiExec = False
 tracePax = False
 showTick = False
-traceArd = True
-traceAiExec2 = True
+traceArd = False
+traceAiExec2 = False
+recordOnce = False
+printMdlxVtbl = False
 
 # internal variables please do not change
 filePath = None
@@ -111,6 +113,26 @@ if traceAiExec2:
             pcsx2.EndEETrace()
             pcsx2.WriteLn("# Record done 2")
             aiexec2 = False
+
+recordState = 0
+if recordOnce:
+    @bp(0x00101e94)
+    def TickIncrRecordable():
+        global recordState
+        if not pcsx2.isRec():
+            if recordState == 0:
+                pcsx2.StartEETrace(str(exeDir.joinpath('recordonce.bin')))
+                pcsx2.WriteLn("# Recording to recordonce.bin")
+                recordState = 1
+            elif recordState == 1:
+                pcsx2.EndEETrace()
+                pcsx2.WriteLn("# Recording done")
+                recordState = 2
+
+if printMdlxVtbl:
+    @bp(0x001284ac)
+    def procPrintMdlxVtbl():
+        pcsx2.WriteLn("# mdlx vtbl %08X " % (pcsx2.GetUL0('t6')))
 
 if False:
     # this is F_memcpy
