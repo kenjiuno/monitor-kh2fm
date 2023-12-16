@@ -19,6 +19,7 @@ Jump = 1024
 Conditional = 2048
 NeverReturn = 4096
 GosubRet = 8192
+CodeRevealerLabeling = 16384
 
 
 class OpArg:
@@ -61,7 +62,16 @@ class OpDef:
 
 table: List[OpDef] = [
     # push
-    OpDef(0, 0, None, "PUSH.L0 u32 ", "push", 0, [OpArg("imm32", Arg32)], ["pushImm"]),
+    OpDef(
+        0,
+        0,
+        None,
+        "PUSH.L0 u32 ",
+        "push",
+        CodeRevealerLabeling,
+        [OpArg("imm32", Arg32)],
+        ["pushImm"],
+    ),
     OpDef(
         0,
         1,
@@ -90,7 +100,7 @@ table: List[OpDef] = [
         2,
         2,
         "PUSH.L +(*sp)",
-        "push.tp",
+        "push.sp.d",
         0,
         [OpArg("imm16", Arg16)],
         ["pushFromPSpVal"],
@@ -100,20 +110,20 @@ table: List[OpDef] = [
         2,
         3,
         "PUSH.L *2 +top",
-        "push.text",
+        "push.bd",
         0,
         [OpArg("imm16", Arg16 | AiPos)],
         ["pushFromPAi"],
     ),
     OpDef(
-        0, 3, 0, "PUSH.AP +sp", "push.f.sp", 0, [OpArg("imm16", Arg16)], ["pushFromFSp"]
+        0, 3, 0, "PUSH.AP +sp", "push.d.sp", 0, [OpArg("imm16", Arg16)], ["pushFromFSp"]
     ),
     OpDef(
         0,
         3,
         1,
         "PUSH.AP +wp",
-        "push.f.wp",
+        "push.d.wp",
         0,
         [OpArg("imm16", Arg16 | WorkPos)],
         ["pushFromFWp"],
@@ -123,7 +133,7 @@ table: List[OpDef] = [
         3,
         2,
         "PUSH.AP +(*sp)",
-        "push.f.tp",
+        "push.d.sp.d",
         0,
         [OpArg("imm16", Arg16)],
         ["pushFromFSpVal"],
@@ -133,7 +143,7 @@ table: List[OpDef] = [
         3,
         3,
         "PUSH.AP *2 +top",
-        "push.f.text",
+        "push.d.bd",
         0,
         [OpArg("imm16", Arg16 | AiPos)],
         ["pushFromFAi"],
@@ -151,14 +161,21 @@ table: List[OpDef] = [
         ["popToWp"],
     ),
     OpDef(
-        1, None, 2, "POP.L +(*sp)", "pop.tp", 0, [OpArg("imm16", Arg16)], ["popToSpVal"]
+        1,
+        None,
+        2,
+        "POP.L +(*sp)",
+        "pop.sp.d",
+        0,
+        [OpArg("imm16", Arg16)],
+        ["popToSpVal"],
     ),
     OpDef(
         1,
         None,
         3,
         "POP.L *2 +top",
-        "pop.text",
+        "pop.bd",
         0,
         [OpArg("imm16", Arg16 | AiPos)],
         ["popToAi"],
@@ -189,7 +206,7 @@ table: List[OpDef] = [
         None,
         2,
         "?",
-        "memcpy.tp",
+        "memcpy.sp.d",
         0,
         [OpArg("imm16", Arg16), OpArg("imm16_2", Arg16)],
         ["memcpyToSpVal"],
@@ -199,13 +216,13 @@ table: List[OpDef] = [
         None,
         3,
         "?",
-        "memcpy.text",
+        "memcpy.bd",
         0,
         [OpArg("imm16", Arg16), OpArg("imm16_2", Arg16 | AiPos)],
         ["memcpyToSpAi"],
     ),
     # 3 fetch
-    OpDef(3, None, None, "?", "fetch", 0, [OpArg("imm16", Arg16)], ["fetchValue"]),
+    OpDef(3, None, None, "?", "deref", 0, [OpArg("imm16", Arg16)], ["fetchValue"]),
     # 4 memcpyGeneric
     OpDef(4, None, None, "?", "memcpy", 0, [OpArg("ssub", ArgSsub)], []),
     # unary op (integer)

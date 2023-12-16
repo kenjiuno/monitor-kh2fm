@@ -63,6 +63,8 @@ def descs() -> str:
                 assigns.append("NeverReturn = true")
             if pcode.GosubRet & behavior:
                 assigns.append("IsGosubRet = true")
+            if pcode.CodeRevealerLabeling & behavior:
+                assigns.append("CodeRevealerLabeling = true")
 
             newArgs = []
 
