@@ -2,6 +2,7 @@ from invoke import task
 from export_tools import to_xml
 from export_tools import to_sinc
 from export_tools import to_markdown
+from export_tools import to_md_opc
 from export_tools import to_cs
 from export_tools import fixup as fixup_module
 import os
@@ -47,3 +48,9 @@ def cs_trap(c, out_file="trap.cs"):
 def fixup(c, out_file="fixup.json"):
     with open(out_file, "wt") as f:
         print(fixup_module.ver3(), file=f)
+
+
+@task
+def md_opc(c, out_file="md_opc.md"):
+    with open(out_file, "wt") as f:
+        print(to_md_opc.run(), file=f)

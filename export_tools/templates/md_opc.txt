@@ -1,0 +1,5 @@
+| code | old | new name | description |
+|---|---|---|---|
+{%- for opcode in opcodeList %}
+| {{ opcode.code }} | {{ opcode.oldName }} | {{ opcode.name }} | {{ opcode.description }} |
+{%- endfor %}
